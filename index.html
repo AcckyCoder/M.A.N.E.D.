@@ -7,21 +7,20 @@
 </head>
 <body>
     <div id="gameBox">
-
-            <div id="hole">
-                <div id="button">
-                    <div id="triangle"></div>
-                    <div id="lighter_triangle"></div>
-                    <div id="darker_triangle"></div>
-                </div>
-            </div>
-
-
-        <div id="sett">
-            <div id="settButton">
-                <div id="settings"></div>
-            </div>
+        <div id="logo">
+            <img src="images/logo.png" width="100%" height="100%">
+            <div id="playButton" onclick="alert('GameStart')"></div>
         </div>
+        <div id="substrate"></div>
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+        <div id="settingsButton"></div></a>
     </div>
+
+    <div id="light" class="white_content">Настроечки будут тут
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+            Закрыть
+        </a>
+    </div>
+    <div id="fade" class="black_overlay"><div>
 </body>
 </html>
