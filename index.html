@@ -4,20 +4,53 @@
     <link rel="stylesheet" type="text/css" href="gameStyles.css"/>
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
+    <script>
+        function changeId ()
+        {
+            var e = document.getElementById('volume');
+            if(e)
+            {
+                e.id = 'noVolume';
+            }
+            else
+            {
+                document.getElementById('noVolume').id = 'volume';
+            }
+        }
+
+        function ShowSettingsMenu(){
+            document.getElementById('settingMenu').style.display='block';
+            document.getElementById('overlay').style.display='block';
+        }
+
+        function HideSettingsMenu(){
+            document.getElementById('settingMenu').style.display='none';
+            document.getElementById('overlay').style.display='none'
+        }
+    </script>
 </head>
 <body>
-    <div id="gameBox">
+    <div id="mainMenu">
         <div id="logo"></div>
         <div id="substrate"></div>
-        <div id="settingsButton" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"></div>
-        <div id="playButton" onclick="alert('GameStart')"></div>
-    </div>
+        <div class="settings button" id="settingsButton1"
+             onclick="ShowSettingsMenu()">
+        </div>
+        <div class="button" id="playButton" onclick="alert('GameStart')"></div>
 
-    <div id="light" class="white_content">'Настроечки будут тут'
-        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
-            Закрыть
-        </a>
+
+        <div id="overlay" onclick="HideSettingsMenu()">
+
+        </div>
+
+        <div id="settingMenu">
+            <div class="button" id="volume" onclick="changeId()"></div>
+            <div class="button" id="help"></div>
+            <div class="button" id="aboutUs"></div>
+            <div class="settings button" id="settingsButton2"
+                 onclick = "HideSettingsMenu()">
+            </div>
+        </div>
     </div>
-    <div id="fade" class="black_overlay"></div>
 </body>
 </html>
