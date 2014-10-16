@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="aboutUsStyles.css"/>
     <link rel="stylesheet" type="text/css" href="basicStyles.css"/>
     <link rel="stylesheet" type="text/css" href="mainMenuStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="style_input_data.css"/>
     <link rel="script">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
@@ -54,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="button backButton" id="aboutUsBackButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
+            <div class="button backButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
 
         </div>
 
@@ -66,10 +67,19 @@
         <!--Игровое поле-->
         <div id="game" onclick="ShowMenu('game','main')">
 
+
         </div>
 
         <!--Меню начала новой игры-->
         <div id="newGame" onclick="ShowMenu('newGame','main')">
+            <h2>Введите имена игроков</h2>
+            <form name="input_name" id="input_form" action="" method="post">
+                <input type="text" name="player_one">
+                <input type="text" name="player_two">
+                <button type="submit" id="ok"> OK</button>
+            </form>
+
+            <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
 
         </div>
 
