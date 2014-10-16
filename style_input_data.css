@@ -2,16 +2,27 @@
     width: 235px;
     height:235px;
     border: 0;
-  /* background-image: url("Templates/input_name.png");*/
-   background-size: auto;
-   background-repeat:no-repeat;
+    background-image: url("Templates/input_name.png");
+    background-size: cover;
+    background-repeat:no-repeat;
    text-align: center;
    align-content: center;
-}
-#input_form.ok{
-
-
-
-
+   position: absolute;
+   background-position:center;
 }
 
+input.ok{
+    clear: right;
+    clear: left;
+    border-radius: 10px;
+}
+
+input.input{
+border-radius:10px;
+    width: 200px;
+    height: 30px;
+    border-color: burlywood;
+    outline: none;
+    text-align:center;
+
+}
