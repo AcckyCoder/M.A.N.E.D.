@@ -1,8 +1,13 @@
 .photo {
     position: relative;
-    height: 180px;
-    width: 180px;
+    height: 35vh;
+    width: 35vh;
     float: left;
+}
+
+#leshaName, #dimaName, #natashaName, #mashaName, #jenyaName{
+    position: absolute;
+    width: 30vh;
 }
 
 #lesha {
@@ -10,15 +15,15 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 47%;
-    margin-left: -90px;
+    left: 50%;
+    margin-left: -20vh;
     top: 60%;
 }
 
 #leshaName
 {
-    position: absolute;
-    top: 80px;
+    width: 40vh;
+    top: 20vh;
     left: 0;
     z-index: 10;
 }
@@ -33,9 +38,8 @@
 }
 
 #dimaName {
-    position: absolute;
-    top: 100px;
-    left: 0;
+    top: 20vh;
+    left: 10vh;
     z-index: 11;
 }
 
@@ -48,9 +52,8 @@
 }
 
 #jenyaName {
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 25vh;
+    left: -10vh;
     z-index: 12;
 }
 
@@ -66,9 +69,8 @@
 
 #mashaName
 {
-    position: absolute;
-    top: 130px;
-    left: -50px;
+    top: 25vh;
+    left: -10vh;
     z-index: 13;
 }
 
@@ -83,8 +85,8 @@
 
 #natashaName
 {
-    position: absolute;
-    top: 130px;
+    top: 25vh;
+    left: 10vh;
     z-index: 14;
 }
 

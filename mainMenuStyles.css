@@ -1,10 +1,10 @@
 #logo {
-    width:240px;
-    height: 240px;
+    width: 50vh;
+    height: 50vh;
     position: absolute;
     z-index: 2;
     left: 50%;
-    margin: auto auto auto -120px;
+    margin: auto auto auto -25vh;
     background: url("images/gameLogo.png") no-repeat;
     background-size: contain;
 }
@@ -16,37 +16,41 @@
     width: 100%;
     background: url("images/substrate.png") no-repeat;
     background-size: cover;
-    min-height: 480px;
-    min-width: 640px;
+    min-height: 240px;
+    min-width: 320px;
     z-index: 1;
 
 }
 
 #playButton{
-    background: transparent url(images/playButton.png) no-repeat 0 0;
-    width: 234px;
-    height: 202px;
+    background: url(images/playButton.png) no-repeat 0 0;
+    background-size: cover;
+    width: 40vh; /*100*/
+    height: 34.4vh;   /*86*/
     position: absolute;
-    top: 62%;
-    margin-top: -101px;
+    top: 50%;
     left: 50%;
-    margin-left: -117px;
+    margin-left: -20vh;
     z-index: 4;
 }
 
 #playButton:active{
-    background-position: 0 -202px ;
-    width: 249px;
-    height: 216px;
+    background-position: 0 -34.6vh ;
 }
 
 
 .settings{
     background: url(images/settingsButton.png) no-repeat 0 0;
-    width: 150px;
-    height: 150px;
+    width: 21.3vh;
+    height: 21.3vh;
     position: absolute;
+    background-size: cover;
 }
+
+.settings:active{
+    background-position: 0 -21.4vh ;
+}
+
 
 #settingsButton1{
     bottom: 6%;
@@ -59,15 +63,11 @@
     z-index: 3;
 }
 
-.settings:active{
-    background-position: 0 -150px ;
-    width: 150px;
-    height: 150px;
-}
+
 
 #settingMenu {
-    width: 275px;
-    height: 275px;
+    width: 39vh;
+    height: 39vh;
     position: absolute;
     display: none;
     bottom: 6%;
@@ -89,44 +89,44 @@
 {
     background: url("images/menuButtons.png");
     position: absolute;
+    background-size: cover;
     background-position: 0 0;
-    width: 120px;
-    height: 120px;
+    width: 15vh;
+    height: 15vh;
 }
 
-#volume {
-    left: 25px;
-    top: 25px;
+#volume, #noVolume {
+    left: 7vh;
+    top: 7vh;
 }
+
 #volume:active{
-    background-position: -120px 0;
+    background-position: 0 -15vh;
 }
 
 #noVolume {
-    background-position: 0 -120px;
-    left: 25px;
-    top: 25px;
+    background-position: 0 -30vh;
 }
 
 #noVolume:active{
-    background-position: -120px -120px;
+    background-position: 0 -45vh;
 }
 
 #aboutUs {
-    left: 150px;
-    top: 0;
-    background-position: 0 -240px;
+    left: 22vh;
+    top: 1vh;
+    background-position: 0 -60.075vh;
 }
 #aboutUs:active{
-    background-position: -120px -240px;
+    background-position: 0 -75.15vh;
 }
 
 #help {
-    top: 150px;
-    left: 0;
-    background-position: 0 -360px;
+    top: 22vh;
+    left: 1vh;
+    background-position: 0 -90.15vh;
 }
 
 #help:active{
-    background-position: -120px -360px;
+    background-position: 0 -105.3vh;
 }

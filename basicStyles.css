@@ -4,8 +4,10 @@ html, body {
 
 .menu{
     margin: 2%;
-    min-height: 480px;
-    min-width: 640px;
+    /*min-height: 480px;*/
+    /*min-width: 854px;*/
+    min-height: 240px;
+    min-width: 320px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
     background: url("images/background.png") center repeat-x ;
     background-size: cover;
@@ -40,13 +42,14 @@ html, body {
 .backButton {
     background: url("images/backButton.png");
     position: absolute;
+    background-size: cover;
     background-position: 0 0;
-    width: 150px;
-    height: 150px;
+    width: 21.3vh;
+    height: 21.3vh;
     bottom: 6%;
     left: 5%;
 }
 
 .backButton:active{
-    background-position: 150px 0;
+    background-position: 0 -21.3vh;;
 }
