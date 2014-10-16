@@ -1,0 +1,38 @@
+html, body {
+    height: 96%;
+}
+
+.menu{
+    margin: 2%;
+    min-height: 480px;
+    min-width: 640px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    background: url("images/background.png") center repeat-x ;
+    background-size: cover;
+    height: 100%;
+
+}
+
+
+
+#main {
+    display: block;
+    height: 100%;
+}
+
+#aboutUsMenu, #helpMenu,#game,#newGame {
+    display: none;
+    height: 100%;
+}
+
+#aboutUsMenu {
+    background-image: url("images/we/title.png");
+    background-size: 30%;
+    background-position: top ;
+    background-repeat: no-repeat;
+}
+
+.button:hover
+{
+    cursor: pointer;
+}

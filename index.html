@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <link rel="stylesheet" type="text/css" href="gameStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="aboutUsStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="basicStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="mainMenuStyles.css"/>
+    <link rel="script">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
-    <script>
-        function changeId ()
-        {
-            var e = document.getElementById('volume');
-            if(e)
-            {
-                e.id = 'noVolume';
-            }
-            else
-            {
-                document.getElementById('noVolume').id = 'volume';
-            }
-        }
-
-        function ShowSettingsMenu(){
-            document.getElementById('settingMenu').style.display='block';
-            document.getElementById('overlay').style.display='block';
-        }
-
-        function HideSettingsMenu(){
-            document.getElementById('settingMenu').style.display='none';
-            document.getElementById('overlay').style.display='none'
-        }
-    </script>
+    <script src="Scripts/MainMenuScripts.js"></script>
+    <script src="Scripts/AbutUsScripts.js"></script>
 </head>
 <body>
-    <div id="mainMenu">
-        <div id="logo"></div>
-        <div id="substrate"></div>
-        <div class="settings button" id="settingsButton1"
-             onclick="ShowSettingsMenu()">
-        </div>
-        <div class="button" id="playButton" onclick="alert('GameStart')"></div>
+    <div class="menu">
 
-
-        <div id="overlay" onclick="HideSettingsMenu()">
-
-        </div>
-
-        <div id="settingMenu">
-            <div class="button" id="volume" onclick="changeId()"></div>
-            <div class="button" id="help"></div>
-            <div class="button" id="aboutUs"></div>
-            <div class="settings button" id="settingsButton2"
-                 onclick = "HideSettingsMenu()">
+        <!--Стартовое меню игры-->
+        <div id="main">
+            <div id="logo"></div>
+            <div id="substrate"></div>
+            <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()"></div>
+            <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
+            <div id="overlay" onclick="HideSettingsMenu()"></div>
+            <div id="settingMenu">
+                <div class="button" id="volume" onclick="changeId()"></div>
+                <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')"></div>
+                <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')"></div>
+                <div class="settings button" id="settingsButton2" onclick="HideSettingsMenu()"></div>
             </div>
         </div>
+
+        <!--Меню "О разработчиках"-->
+        <div id="aboutUsMenu" >
+
+            <div class="photo" id="jenya" onclick="ShowInfo(this.id);">
+                <img id="jenyaName" src="images/we/Женя.png" >
+            </div>
+            <div class="photo" id="dima" onclick="ShowInfo(this.id);">
+                <img id="dimaName" src="images/we/Дима.png">
+            </div>
+            <div class="photo" id="masha" onclick="ShowInfo(this.id);">
+                <img id="mashaName" src="images/we/Маша.png">
+            </div>
+            <div class="photo" id="natasha" onclick="ShowInfo(this.id);">
+                <img id="natashaName" src="images/we/Наташа.png">
+            </div>
+            <div class="photo" id="lesha" onclick="ShowInfo(this.id);">
+                <img id="leshaName" src="images/we/Лёша%20Team%20Lead.png">
+            </div>
+
+            <div id="blackOverlayAboutUs" onclick="ShowMenu('blackOverlayAboutUs',null);">
+                <div id="textHere">
+                    <h1 id="name"></h1>
+                    <span id="description"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Меню "Правила игры"-->
+        <div id="helpMenu" onclick="ShowMenu('helpMenu','main')">
+
+        </div>
+
+        <!--Игровое поле-->
+        <div id="game" onclick="ShowMenu('game','main')">
+
+        </div>
+
+        <!--Меню начала новой игры-->
+        <div id="newGame" onclick="ShowMenu('newGame','main')">
+
+        </div>
+
     </div>
 </body>
 </html>
