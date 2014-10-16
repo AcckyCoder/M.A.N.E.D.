@@ -59,8 +59,8 @@
     background-image: url("images/we/Машка.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: 40%;
-    left: 20%;
+    top: 35%;
+    left: 25%;
     position: absolute;
 }
 
@@ -76,8 +76,8 @@
     background-image: url("images/we/Наташка.png");
     background-repeat: no-repeat;
     background-size: contain;
-    top: 40%;
-    right: 20%;
+    top: 35%;
+    right: 25%;
     position: absolute;
 }
 
@@ -85,7 +85,6 @@
 {
     position: absolute;
     top: 130px;
-    left: 50px;
     z-index: 14;
 }
 
@@ -116,4 +115,6 @@
     text-align: center;
     font-size: 4vh;
 }
+
+
 

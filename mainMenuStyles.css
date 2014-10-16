@@ -23,19 +23,19 @@
 }
 
 #playButton{
-    background: transparent url(images/sprites.png) no-repeat 0 0;
-    width: 249px;
-    height: 216px;
+    background: transparent url(images/playButton.png) no-repeat 0 0;
+    width: 234px;
+    height: 202px;
     position: absolute;
     top: 62%;
-    margin-top: -113px;
+    margin-top: -101px;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -117px;
     z-index: 4;
 }
 
 #playButton:active{
-    background-position: 0 -218px ;
+    background-position: 0 -202px ;
     width: 249px;
     height: 216px;
 }
@@ -90,11 +90,11 @@
     background: url("images/menuButtons.png");
     position: absolute;
     background-position: 0 0;
+    width: 120px;
+    height: 120px;
 }
 
 #volume {
-    width: 120px;
-    height: 120px;
     left: 25px;
     top: 25px;
 }
@@ -104,8 +104,6 @@
 
 #noVolume {
     background-position: 0 -120px;
-    width: 120px;
-    height: 120px;
     left: 25px;
     top: 25px;
 }
@@ -115,8 +113,6 @@
 }
 
 #aboutUs {
-    width: 120px;
-    height: 120px;
     left: 150px;
     top: 0;
     background-position: 0 -240px;
@@ -126,8 +122,6 @@
 }
 
 #help {
-    width: 120px;
-    height: 120px;
     top: 150px;
     left: 0;
     background-position: 0 -360px;

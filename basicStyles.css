@@ -36,3 +36,17 @@ html, body {
 {
     cursor: pointer;
 }
+
+.backButton {
+    background: url("images/backButton.png");
+    position: absolute;
+    background-position: 0 0;
+    width: 150px;
+    height: 150px;
+    bottom: 6%;
+    left: 5%;
+}
+
+.backButton:active{
+    background-position: 150px 0;
+}
