@@ -5,13 +5,13 @@
     float: left;
 }
 
-#leshaName, #dimaName, #natashaName, #mashaName, #jenyaName{
+#leshaName, #dimaName, #natashaName, #mashaName, #jenyaName {
     position: absolute;
     width: 30vh;
 }
 
 #lesha {
-    background-image: url("images/we/Лешка.png");
+    background-image: url("../images/we/Лешка.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -20,8 +20,7 @@
     top: 60%;
 }
 
-#leshaName
-{
+#leshaName {
     width: 40vh;
     top: 20vh;
     left: 0;
@@ -29,7 +28,7 @@
 }
 
 #dima {
-    background-image: url("images/we/Димка.png");
+    background-image: url("../images/we/Димка.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 10%;
@@ -44,7 +43,7 @@
 }
 
 #jenya {
-    background-image: url("images/we/Женька.png");
+    background-image: url("../images/we/Женька.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 10%;
@@ -57,9 +56,8 @@
     z-index: 12;
 }
 
-
 #masha {
-    background-image: url("images/we/Машка.png");
+    background-image: url("../images/we/Машка.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 35%;
@@ -67,15 +65,14 @@
     position: absolute;
 }
 
-#mashaName
-{
+#mashaName {
     top: 25vh;
     left: -10vh;
     z-index: 13;
 }
 
 #natasha {
-    background-image: url("images/we/Наташка.png");
+    background-image: url("../images/we/Наташка.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 35%;
@@ -83,14 +80,13 @@
     position: absolute;
 }
 
-#natashaName
-{
+#natashaName {
     top: 25vh;
     left: 10vh;
     z-index: 14;
 }
 
-#blackOverlayAboutUs {
+#whiteOverlayAboutUs {
 
     width: 90%;
     height: 90%;
@@ -112,10 +108,7 @@
     top: 5%;
     left: 5%;
     z-index: 101;
-    font-family: "Franklin Gothic Heavy",sans-serif;
-    color: saddlebrown;
-    text-align: center;
-    font-size: 4vh;
+
 }
 
 

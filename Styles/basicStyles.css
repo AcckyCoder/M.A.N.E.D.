@@ -1,46 +1,47 @@
 html, body {
     height: 96%;
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    color: saddlebrown;
+    text-align: center;
+    font-size: 4vh;
 }
 
-.menu{
+.menu {
     margin: 2%;
     /*min-height: 480px;*/
     /*min-width: 854px;*/
     min-height: 240px;
     min-width: 320px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    background: url("images/background.png") center repeat-x ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+    background: url("../images/background.png") center repeat-x;
     background-size: cover;
     height: 100%;
 
 }
-
-
 
 #main {
     display: block;
     height: 100%;
 }
 
-#aboutUsMenu, #helpMenu,#game,#newGame {
+#aboutUsMenu, #helpMenu, #game, #newGame {
     display: none;
     height: 100%;
 }
 
 #aboutUsMenu {
-    background-image: url("images/we/title.png");
+    background-image: url("../images/we/title.png");
     background-size: 30%;
-    background-position: top ;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
-.button:hover
-{
+.button:hover {
     cursor: pointer;
 }
 
 .backButton {
-    background: url("images/backButton.png");
+    background: url("../images/backButton.png");
     position: absolute;
     background-size: cover;
     background-position: 0 0;
@@ -50,6 +51,6 @@ html, body {
     left: 5%;
 }
 
-.backButton:active{
+.backButton:active {
     background-position: 0 -21.3vh;;
 }
