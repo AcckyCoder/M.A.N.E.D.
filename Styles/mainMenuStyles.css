@@ -23,7 +23,7 @@
 }
 
 #playButton {
-    background: url(../images/playButton.png) no-repeat 0 0;
+    background: url("../images/playButton.png") no-repeat 0 0;
     background-size: cover;
     width: 40vh; /*100*/
     height: 34.4vh; /*86*/
@@ -39,7 +39,7 @@
 }
 
 .settings {
-    background: url(../images/settingsButton.png) no-repeat 0 0;
+    background: url("../images/settingsButton.png") no-repeat 0 0;
     width: 21.3vh;
     height: 21.3vh;
     position: absolute;
@@ -83,47 +83,48 @@
 }
 
 #volume, #aboutUs, #help, #noVolume {
-    background: url("../images/menuButtons.png");
-    position: absolute;
     background-size: cover;
-    background-position: 0 0;
+    position: absolute;
     width: 15vh;
     height: 15vh;
 }
 
-#volume, #noVolume {
+#volume {
     left: 7vh;
     top: 7vh;
+    background-image: url("../images/menuButtons/volume_unpressed.png");
 }
 
 #volume:active {
-    background-position: 0 -15vh;
+    background-image: url("../images/menuButtons/volume_pressed.png");
 }
 
 #noVolume {
-    background-position: 0 -30vh;
+    left: 7vh;
+    top: 7vh;
+    background-image: url("../images/menuButtons/notVolume_unpressed.png");
 }
 
 #noVolume:active {
-    background-position: 0 -45vh;
+    background-image: url("../images/menuButtons/notVolume_pressed.png");
 }
 
 #aboutUs {
     left: 22vh;
     top: 1vh;
-    background-position: 0 -60.075vh;
+    background-image: url("../images/menuButtons/info_unpressed.png");
 }
 
 #aboutUs:active {
-    background-position: 0 -75.15vh;
+    background-image: url("../images/menuButtons/info_pressed.png");
 }
 
 #help {
     top: 22vh;
     left: 1vh;
-    background-position: 0 -90.15vh;
+    background-image: url("../images/menuButtons/help_unpressed.png");
 }
 
 #help:active {
-    background-position: 0 -105.3vh;
+    background-image: url("../images/menuButtons/help_pressed.png");
 }
