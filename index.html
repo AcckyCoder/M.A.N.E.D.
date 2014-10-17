@@ -11,6 +11,7 @@
     <title>M.A.N.E.D.</title>
     <script src="Scripts/MainMenuScripts.js"></script>
     <script src="Scripts/AbutUsScripts.js"></script>
+    <script src="Scripts/data_of_player.js"></script>
 </head>
 <body>
     <div class="menu">
@@ -79,11 +80,10 @@
         <div id="newGame">
             <h2>Введите имена игроков</h2>
             <form name="input_name" id="input_form" action="" method="post">
-                <input type="text" name="player_one">
-                <input type="text" name="player_two">
-                <button type="submit" id="ok"> OK</button>
+                <input type="text" name="player_one" id="player_one">
+                <input type="text" name="player_two" id="player_two">
+                <button type="submit" id="ok" onclick="name_of_player"> OK</button>
             </form>
-
             <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
         </div>
     </div>

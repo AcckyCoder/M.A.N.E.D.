@@ -24,5 +24,8 @@ border-radius:10px;
     border-color: burlywood;
     outline: none;
     text-align:center;
+}
+div.newGame {
+    align-content: center;
 
 }
