@@ -24,9 +24,15 @@ html, body {
     height: 100%;
 }
 
-#aboutUsMenu, #helpMenu, #game, #newGame {
+#aboutUsMenu, #helpMenu, #game, #newGame, #pauseMenu {
     display: none;
     height: 100%;
+}
+
+#pauseMenu
+{
+    background-color: rgba(0,0,0,0.8);
+
 }
 
 #aboutUsMenu {
@@ -35,6 +41,7 @@ html, body {
     background-position: top;
     background-repeat: no-repeat;
 }
+
 
 .button:hover {
     cursor: pointer;

@@ -1,4 +1,4 @@
-#logo {
+.logo {
     width: 50vh;
     height: 50vh;
     position: absolute;
@@ -127,4 +127,11 @@
 
 #help:active {
     background-image: url("../images/menuButtons/help_pressed.png");
+}
+
+.pauseLink {
+    position: absolute;
+    font-size: 8pt;
+    top: 0px;
+    text-align: center;
 }

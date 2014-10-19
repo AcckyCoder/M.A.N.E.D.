@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <link rel="stylesheet" type="text/css" href="Styles/pauseMenuStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/aboutUsStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/basicStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/mainMenuStyles.css"/>
@@ -18,7 +19,7 @@
 
         <!--Стартовое меню игры-->
         <div id="main">
-            <div id="logo"></div>
+            <div class="logo"></div>
             <div id="substrate"></div>
             <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()"></div>
             <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
@@ -29,6 +30,8 @@
                 <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')"></div>
                 <div class="settings button" id="settingsButton2" onclick="HideSettingsMenu()"></div>
             </div>
+            <!--TODO: Удалить после добавлени меню паузы в игру-->
+            <a class="pauseLink" onclick="ShowMenu('main', 'pauseMenu');">Меню паузы</a>
         </div>
 
         <!--Меню "О разработчиках"-->
@@ -85,6 +88,21 @@
                 <button type="submit" id="ok" onclick="name_of_player"> OK</button>
             </form>
             <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
+        </div>
+
+
+
+        <!--Игровое поле-->
+        <div id="pauseMenu">
+            <div id="blur"><img src="http://thefusejoplin.com/wp-content/uploads/2014/08/Clash-of-Clans.png" width="100%" height="100%"></div>
+            <div class="logo" id="inPauseMenu"></div>
+            <div id="pauseButtonsWrapper">
+                <div class="button" id="resume"></div>
+                <div class="button" id="save"></div>
+                <div class="button" id="exit"></div>
+            </div>
+            <!--TODO: Удалить после добавлени меню паузы в игру-->
+            <a class="pauseLink" onclick="ShowMenu('pauseMenu', 'main');">Главное меню</a>
         </div>
     </div>
 </body>

@@ -1,0 +1,57 @@
+#blur {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#inPauseMenu {
+    position: absolute;
+    top: 4vh;
+}
+
+#resume, #exit, #save{
+    background-size: cover;
+    width: 30vh;
+    height: 30vh;
+    position: relative;
+    float: left;
+    left: 0;
+    margin: 1.5vh;
+}
+
+#resume {
+    background-image: url("../images/menuButtons/play_unpressed.png");
+}
+
+#resume:active{
+    background-image: url("../images/menuButtons/play_pressed.png");
+}
+
+#save {
+    background-image: url("../images/menuButtons/save_unpressed.png");
+}
+
+#save:active{
+    background-image: url("../images/menuButtons/save_pressed.png");
+}
+
+#exit {
+    background-image: url("../images/menuButtons/exit_unpressed.png");
+}
+
+#exit:active{
+    background-image: url("../images/menuButtons/exit_pressed.png");
+}
+
+#pauseButtonsWrapper {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    margin: auto auto auto -49.5vh;
+}
