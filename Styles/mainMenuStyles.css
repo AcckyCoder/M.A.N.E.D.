@@ -2,11 +2,11 @@
     width: 50vh;
     height: 50vh;
     position: absolute;
-    z-index: 2;
     left: 50%;
     margin: auto auto auto -25vh;
     background: url("../images/gameLogo.png") no-repeat;
     background-size: contain;
+    z-index: 1001;
 }
 
 #substrate {
