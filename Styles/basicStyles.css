@@ -1,4 +1,4 @@
-html, body {
+﻿html, body {
     height: 96%;
     font-family: "Franklin Gothic Heavy", sans-serif;
     color: saddlebrown;
@@ -13,7 +13,7 @@ html, body {
     min-height: 240px;
     min-width: 320px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
-    background: url("../images/background.png") center repeat-x;
+    background: url("../images/background.jpg") center repeat-x;
     background-size: cover;
     height: 100%;
 
