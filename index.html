@@ -7,13 +7,27 @@
     <link rel="stylesheet" type="text/css" href="Styles/mainMenuStyles.css"/>
     <link rel="stylesheet" type="text/css" href="style_input_data.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/RulesGameStyles.css">
-    <link rel="script">
+    <link rel="stylesheet" type="text/css" href="Styles/Сloud.css">
+
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
     <script src="Scripts/MainMenuScripts.js"></script>
     <script src="Scripts/AbutUsScripts.js"></script>
     <script src="Scripts/data_of_player.js"></script>
     <script src="Scripts/working_audio.js"></script>
+    <script src="Scripts/JQ/jquery-1.6.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/JQ/jquery.spritely-0.6.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
+            window.actions = {
+                walkingClouds: function () {
+                    $('#far-clouds').spSpeed(2);
+                }
+                };
+        });
+    </script>
+
 </head>
 <body>
 <audio src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won%20.ogg" autoplay="autoplay" id="myaudio"> </audio>
@@ -22,7 +36,9 @@
         <!--Стартовое меню игры-->
         <div id="main">
             <div class="logo"></div>
-            <div id="substrate"></div>
+
+            <div id="substrate" onload=action.walkingClouds()></div>
+            <div id="far-clouds"  onload=action.walkingClouds()></div>
             <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()"></div>
             <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
             <div id="overlay" onclick="HideSettingsMenu()"></div>
