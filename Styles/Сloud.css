@@ -1,0 +1,9 @@
+.far-clouds {
+   background: transparent url(/images/far-clouds.png) 305px 102px repeat-x;;
+   z-index:10;
+   top:40%;
+   left:40%;
+   height: 323px;
+   width: 698px;
+}
+
