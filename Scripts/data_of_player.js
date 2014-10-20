@@ -9,10 +9,15 @@ function name_of_player(){
 do {
     one_player = document.getElementById("player_one");
     two_player = document.getElementById("player_two");
+    if (one_player!=""||two_player!=""){
+      Start();
+    }
 }while(one_player==""||two_player=="");
 
-    alert("test_function");
+function Start(){
 
+
+}
 
 }
 
