@@ -1,9 +1,17 @@
-.far-clouds {
-   background: transparent url(/images/far-clouds.png) 305px 102px repeat-x;;
-   z-index:10;
-   top:40%;
-   left:40%;
-   height: 323px;
-   width: 698px;
+#far-clouds {
+   background-image: url("../images/far-clouds.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+   z-index:2;
+   /*top:40%;*/
+   /*left:40%;*/
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    min-height: 240px;
+    min-width: 320px;
+
 }
 

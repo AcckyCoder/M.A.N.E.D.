@@ -19,7 +19,7 @@
     <script src="Scripts/JQ/jquery.spritely-0.6.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
+            $('#far-clouds').pan({fps: 60, speed: 0.7, dir: 'left', depth: 30});
             window.actions = {
                 walkingClouds: function () {
                     $('#far-clouds').spSpeed(2);
@@ -36,11 +36,10 @@
 
         <!--Стартовое меню игры-->
         <div id="main">
-
-
             <div class="logo"></div>
-            <div id="far-clouds"  onload=action.walkingClouds()></div>
+
             <div id="substrate" onload=action.walkingClouds()></div>
+            <div id="far-clouds"  onload=action.walkingClouds()></div>
             <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()"></div>
             <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
             <div id="overlay" onclick="HideSettingsMenu()"></div>
