@@ -111,5 +111,10 @@
 
 }
 
+#description {
+    overflow: auto;
+    text-align: justify;
+}
+
 
 
