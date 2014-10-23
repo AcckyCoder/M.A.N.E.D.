@@ -1,0 +1,51 @@
+#blackOverlayRulesGame {
+
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    opacity: 0.9;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 5%;
+    left: 5%;
+    border-radius: 5%;
+}
+
+#textHere {
+    border: solid medium saddlebrown;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    z-index: 101;
+    font-family: "Franklin Gothic Heavy",sans-serif;
+    color: saddlebrown;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.text {
+    text-align: left;
+}
+.layer1 {
+    font: 45pt sans-serif;
+    color: black;
+}
+.h1
+{
+    font: 200% serif;
+
+}
+
+P {
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+    font: 150% serif;
+}
+
+table {
+    width: 1100;
+    align: right;
+}
