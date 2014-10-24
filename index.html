@@ -48,18 +48,19 @@
 
             <div id="substrate" onload=action.walkingClouds()></div>
             <div id="far-clouds"  onload=action.walkingClouds()></div>
-            <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()"></div>
+            <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()" alt="Настройки" title="Настройки"></div>
             <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
             <div id="overlay" onclick="HideSettingsMenu()"></div>
             <div id="settingMenu">
-                <div class="button" id="volume" onclick="changeId()"></div>
-                <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')"></div>
-                <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')"></div>
+                <div class="button" id="volume" onclick="changeId()" alt="Вкл/Выкл звук" title="Вкл/Выкл звук"></div>
+                <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')" alt="Правила игры" title="Правила игры">
+                </div>
+                <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')" alt="О разработчиках" title="О разработчиках"></div>
                 <div class="settings button" id="settingsButton2" onclick="HideSettingsMenu()"></div>
             </div>
             <!--TODO: Удалить после добавлени меню паузы в игру-->
             <a class="pauseLink" onclick="ShowMenu('main', 'pauseMenu');">Меню паузы</a>
-        </div>
+         </div>
 
         <!--Меню "О разработчиках"-->
         <div id="aboutUsMenu">

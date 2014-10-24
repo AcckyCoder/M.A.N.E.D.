@@ -135,3 +135,28 @@
     top: 0px;
     text-align: center;
 }
+
+/*---------При наведении--------------*/
+
+.support-hover,
+.support-hover-two {
+    display: inline-block;
+    position: relative;
+    color: #06C;
+    text-decoration: none;
+    cursor: pointer;
+}
+.support-hover em,
+.support-hover-two em {
+    background: #FF6600;
+    border-radius: 20px;
+    border: 1px solid #999;
+    text-align: center;
+    color: #FFF;
+    font: normal bold 16px Arial;
+    padding: 0 4px;
+}
+a.support-hover:hover em,
+a.support-hover-two:hover em {
+    background: #6699FF;
+}
