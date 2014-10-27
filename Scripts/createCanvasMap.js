@@ -78,5 +78,23 @@ function createHexGrid(){
             }
         }
     }
+    function drawHexagon(canvasContext, x, y, fill) {
+        var fill = fill || false;
+
+        canvasContext.beginPath();
+        canvasContext.moveTo(x + hexRadius, y);
+        canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight);
+        canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight + sideLength);
+        canvasContext.lineTo(x + hexRadius, y + hexRectangleHeight);
+        canvasContext.lineTo(x, y + sideLength + hexHeight);
+        canvasContext.lineTo(x, y + hexHeight);
+        canvasContext.closePath();
+
+        if(fill) {
+            canvasContext.fill();
+        } else {
+            canvasContext.stroke();
+        }
+    }
 
 }
