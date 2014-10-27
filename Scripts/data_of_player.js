@@ -10,14 +10,14 @@ do {
     one_player = document.getElementById("player_one");
     two_player = document.getElementById("player_two");
     if (one_player!=""||two_player!=""){
-      Start();
+        createHexGrid();
     }
 }while(one_player==""||two_player=="");
 
-function Start(){
+/*function Start(){
+    createHexGrid();
 
-
-}
+}*/
 
 }
 

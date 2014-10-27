@@ -62,3 +62,9 @@
 .backButton:active {
     background-position: 0 -21.3vh;;
 }
+#hexmap{
+    border:0;
+    display:block;
+    margin:0 auto;
+    margin-left: 200px;
+}
