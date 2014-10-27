@@ -5,17 +5,17 @@
 function changeId ()
 {
     var e = document.getElementById('volume');
-    var myaudio = document.getElementById("myaudio");
+    var myaudio = document.getElementById("my_audio");
 
     if(e)
     {
         e.id = 'noVolume';
-        document.getElementById("myaudio").pause();
+        myaudio.pause();
     }
     else
     {
         document.getElementById('noVolume').id = 'volume';
-        document.getElementById("myaudio").play();
+        myaudio.play();
     }
 }
 
