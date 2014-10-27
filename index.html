@@ -15,7 +15,9 @@
     <script src="Scripts/data_of_player.js"></script>
     <script src="Scripts/JQ/jquery-1.6.3.min.js" type="text/javascript"></script>
     <script src="Scripts/JQ/jquery.spritely-0.6.js" type="text/javascript"></script>
+    <script src="Scripts/Working_sound.js"></script>
     <script type="text/javascript">
+
 
         //код,отвечающий за движение облаков
         $(document).ready(function() {
@@ -28,7 +30,7 @@
         });
          //код,отвечающий за зацикливание трека
         $(function(){
-            wingsSound = document.getElementById("myaudio");
+            wingsSound = document.getElementById("my_audio");
             wingsSound.addEventListener('ended', function() {
                 this.currentTime = 0;
                 this.play();
@@ -39,7 +41,11 @@
 </head>
 <body>
 
-<audio src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won%20.ogg"  id="myaudio" > </audio>
+<audio src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"  id="my_audio" > </audio>
+<audio id="button_click">
+    <source src="Audio/bell_ring.mp3" >
+</audio>
+
     <div class="menu">
 
         <!--Стартовое меню игры-->
