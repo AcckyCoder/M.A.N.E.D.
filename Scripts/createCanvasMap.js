@@ -5,6 +5,11 @@
  * Time: 15:49
  * To change this template use File | Settings | File Templates.
  */
+
+var img = new Image();
+img.src = './icon_and_texute/grass.jpg';
+var selectColor = "rgba(0, 0, 0, 0.5)";
+
 function createHexGrid(){
     var canvas = document.getElementById('hexmap');
     //var img = new Image();
@@ -27,7 +32,7 @@ function createHexGrid(){
         var ctx = canvas.getContext('2d');
 
         //    ctx.drawImage(img);
-        ctx.fillStyle = "#000000";
+        ctx.fillStyle = selectColor;
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
 
@@ -57,7 +62,7 @@ function createHexGrid(){
 
             if(hexX >= 0 && hexX < boardWidth) {
                 if(hexY >= 0 && hexY < boardHeight) {
-                    ctx.fillStyle = "#000000";
+                    ctx.fillStyle = selectColor;
                     drawHexagon(ctx, screenX, screenY, true);
                 }
             }
@@ -70,7 +75,7 @@ function createHexGrid(){
         for(i = 0; i < width; ++i) {
             for(j = 0; j < height; ++j) {
                 drawHexagon(
-                    ctx,
+                    canvasContext,
                     i * hexRectangleWidth + ((j % 2) * hexRadius),
                     j * (sideLength + hexHeight),
                     false
@@ -80,7 +85,7 @@ function createHexGrid(){
     }
     function drawHexagon(canvasContext, x, y, fill) {
         var fill = fill || false;
-
+        canvasContext.save();
         canvasContext.beginPath();
         canvasContext.moveTo(x + hexRadius, y);
         canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight);
@@ -90,11 +95,16 @@ function createHexGrid(){
         canvasContext.lineTo(x, y + hexHeight);
         canvasContext.closePath();
 
+        canvasContext.clip();
+        canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
+
         if(fill) {
             canvasContext.fill();
         } else {
             canvasContext.stroke();
         }
+
+        canvasContext.restore();
     }
 
 }
