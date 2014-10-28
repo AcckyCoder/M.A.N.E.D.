@@ -6,6 +6,10 @@
     font-size: 4vh;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 .menu {
     margin: 2%;
     /*min-height: 480px;*/
