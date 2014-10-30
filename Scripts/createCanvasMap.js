@@ -9,24 +9,40 @@
 var img = new Image();
 img.src = './icon_and_texute/grass.jpg';
 var selectColor = "rgba(0, 0, 0, 0.5)";
+var hexHeight,
+    hexRadius,
+    hexRectangleHeight,
+    hexRectangleWidth,
+    hexagonAngle = 0.523598776, // 30 degrees in radians
+    sideLength = 36,
+    boardWidth = 30,
+    boardHeight = 15;
 
 function createHexGrid(){
-    var canvas = document.getElementById('hexmap');
-    //var img = new Image();
-    // img.src='form_avto.png';
-    var hexHeight,
-        hexRadius,
-        hexRectangleHeight,
-        hexRectangleWidth,
-        hexagonAngle = 0.523598776, // 30 degrees in radians
-        sideLength = 36,
-        boardWidth = 15,
-        boardHeight = 9;
+
+    $("#hoverMap").draggable();
+    $("#hexMap").draggable({
+        stop: function (event, ui) {
+            if (parseInt($("#hexMap").position.left) < 0) {
+                $("#hexMap").position.left = '0px';
+                console.log('stop');
+            }
+        }
+    });
+
+
+    var canvas = document.getElementById('hexMap');
+
+    canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
 
     hexHeight = Math.sin(hexagonAngle) * sideLength;
     hexRadius = Math.cos(hexagonAngle) * sideLength;
     hexRectangleHeight = sideLength + 2 * hexHeight;
     hexRectangleWidth = 2 * hexRadius;
+    canvas.height = hexRadius * (boardHeight * 2) - (boardHeight * hexHeight) / 3 - hexHeight;
+    console.log(hexHeight);
+    canvas.width = hexRadius * boardWidth * 2 + hexRadius;
+
 
     if (canvas.getContext){
         var ctx = canvas.getContext('2d');
@@ -35,76 +51,83 @@ function createHexGrid(){
         ctx.fillStyle = selectColor;
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
-
-        drawBoard(ctx, boardWidth, boardHeight);
-
-        canvas.addEventListener("mousemove", function(eventInfo) {
-            var x,
-                y,
-                hexX,
-                hexY,
-                screenX,
-                screenY;
-
-            /*x = eventInfo.offsetX || eventInfo.layerX;
-             y = eventInfo.offsetY || eventInfo.layerY;*/
-            x = eventInfo.layerX - eventInfo.currentTarget.offsetLeft;
-            y = eventInfo.layerY - eventInfo.currentTarget.offsetTop;
-            hexY = Math.floor(y / (hexHeight + sideLength));
-            hexX = Math.floor((x - (hexY % 2) * hexRadius) / hexRectangleWidth);
-
-            screenX = hexX * hexRectangleWidth + ((hexY % 2) * hexRadius);
-            screenY = hexY * (hexHeight + sideLength);
-
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            drawBoard(ctx, boardWidth, boardHeight);
-
-            if(hexX >= 0 && hexX < boardWidth) {
-                if(hexY >= 0 && hexY < boardHeight) {
-                    ctx.fillStyle = selectColor;
-                    drawHexagon(ctx, screenX, screenY, true);
-                }
-            }
-        });
+        drawBoard(ctx, boardWidth, boardHeight)
     }
-    function drawBoard(canvasContext, width, height) {
-        var i,
-            j;
+}
 
-        for(i = 0; i < width; ++i) {
-            for(j = 0; j < height; ++j) {
-                drawHexagon(
-                    canvasContext,
+function MouseMoveEventHandler(event) {
+    var x,
+        y,
+        hexX,
+        hexY,
+        screenX,
+        screenY;
+
+    x = event.layerX - event.currentTarget.offsetLeft;
+    y = event.layerY - event.currentTarget.offsetTop;
+    hexY = Math.floor(y / (hexHeight + sideLength));
+    hexX = Math.floor((x - (hexY % 2) * hexRadius) / hexRectangleWidth);
+
+    screenX = hexX * hexRectangleWidth + ((hexY % 2) * hexRadius);
+    screenY = hexY * (hexHeight + sideLength);
+
+    var canvas = document.getElementById('hoverMap');
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+
+        //    ctx.drawImage(img);
+        ctx.fillStyle = selectColor;
+        ctx.strokeStyle = "#CCCCCC";
+        ctx.lineWidth = 2;
+
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+
+        if (hexX >= 0 && hexX < boardWidth) {
+            if (hexY >= 0 && hexY < boardHeight) {
+                ctx.fillStyle = selectColor;
+                drawHexagon(ctx, screenX, screenY, true);
+            }
+        }
+    }
+    ctx.strokeText(event.clientX.toString(), 150, 150);
+}
+function drawBoard(canvasContext, width, height) {
+
+
+    for (var i = 0; i < width; ++i) {
+        for (var j = 0; j < height; ++j) {
+            drawHexagon(
+                canvasContext,
                     i * hexRectangleWidth + ((j % 2) * hexRadius),
                     j * (sideLength + hexHeight),
-                    false
-                );
-            }
+                false
+            );
         }
     }
-    function drawHexagon(canvasContext, x, y, fill) {
-        var fill = fill || false;
-        canvasContext.save();
-        canvasContext.beginPath();
-        canvasContext.moveTo(x + hexRadius, y);
-        canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight);
-        canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight + sideLength);
-        canvasContext.lineTo(x + hexRadius, y + hexRectangleHeight);
-        canvasContext.lineTo(x, y + sideLength + hexHeight);
-        canvasContext.lineTo(x, y + hexHeight);
-        canvasContext.closePath();
+}
 
-        canvasContext.clip();
-        canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
 
-        if(fill) {
-            canvasContext.fill();
-        } else {
-            canvasContext.stroke();
-        }
+function drawHexagon(canvasContext, x, y, fill) {
 
-        canvasContext.restore();
+    canvasContext.save();
+    canvasContext.beginPath();
+    canvasContext.moveTo(x + hexRadius, y);
+    canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight);
+    canvasContext.lineTo(x + hexRectangleWidth, y + hexHeight + sideLength);
+    canvasContext.lineTo(x + hexRadius, y + hexRectangleHeight);
+    canvasContext.lineTo(x, y + sideLength + hexHeight);
+    canvasContext.lineTo(x, y + hexHeight);
+    canvasContext.closePath();
+
+    canvasContext.clip();
+    canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
+
+    if (fill) {
+        canvasContext.fill();
+    } else {
+        canvasContext.stroke();
     }
 
+    canvasContext.restore();
 }

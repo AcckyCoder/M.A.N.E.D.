@@ -5,6 +5,7 @@
     text-align: center;
     font-size: 4vh;
     margin: 0;
+
 }
 
 h2 {
@@ -67,8 +68,21 @@ h2 {
 
 #hexMap {
     display: block;
-    /*width: 100%;*/
-    /*height: 100%;*/
     position: relative;
     border: 1px solid black;
+}
+
+#game {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#hoverMap {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

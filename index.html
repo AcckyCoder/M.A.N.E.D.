@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+
+    <link rel="stylesheet" href='Scripts/jquery-ui-1.11.2.custom/jquery-ui.css'>
+    <script src="Scripts/JQ/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="Styles/pauseMenuStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/aboutUsStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/basicStyles.css"/>
@@ -10,8 +16,9 @@
     <link rel="stylesheet" type="text/css" href="Styles/Сloud.css">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
-    <script src="Scripts/JQ/jquery-1.6.3.min.js" type="text/javascript"></script>
-    <script src="Scripts/JQ/jquery.spritely-0.6.js" type="text/javascript"></script>
+
+    <script src="Scripts/JQ/jquery.spritely.js" type="text/javascript"></script>
+
     <script src="Scripts/MainMenuScripts.js"></script>
     <script src="Scripts/AbutUsScripts.js"></script>
     <script src="Scripts/data_of_player.js"></script>
@@ -92,8 +99,9 @@
 
     <!--Игровое поле-->
     <div id="game">
+        <canvas id="hexMap" width="2000px" height="2000px"></canvas>
+        <!--<canvas id="hoverMap" width="2000px" height="2000px"></canvas>-->
 
-        <canvas id="hexMap" width="1000px" height="500px"></canvas>
         <!--<div class="button backButton" onclick="ShowMenu('game','main')"></div>-->
     </div>
 
