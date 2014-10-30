@@ -20,28 +20,15 @@ var hexHeight,
 
 function createHexGrid(){
 
-    $("#hoverMap").draggable();
-    $("#hexMap").draggable({
-        stop: function (event, ui) {
-            if (parseInt($("#hexMap").position.left) < 0) {
-                $("#hexMap").position.left = '0px';
-                console.log('stop');
-            }
-        },
-        containment: "#game", scroll: false
-    });
-
-
     var canvas = document.getElementById('hexMap');
-
     canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
+    $("#hexMap").draggable();
 
     hexHeight = Math.sin(hexagonAngle) * sideLength;
     hexRadius = Math.cos(hexagonAngle) * sideLength;
     hexRectangleHeight = sideLength + 2 * hexHeight;
     hexRectangleWidth = 2 * hexRadius;
     canvas.height = hexRadius * (boardHeight * 2) - (boardHeight * hexHeight) / 3 - hexHeight;
-    console.log(hexHeight);
     canvas.width = hexRadius * boardWidth * 2 + hexRadius;
 
 
