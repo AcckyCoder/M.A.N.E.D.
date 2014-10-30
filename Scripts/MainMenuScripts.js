@@ -31,22 +31,5 @@ function ShowMenu(whatHide, whatShow) {
     document.getElementById(whatShow).style.display = 'block';
 }
 
-//код,отвечающий за движение облаков
-$(document).ready(function () {
-    $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
-    window.actions = {
-        walkingClouds: function () {
-            $('#far-clouds').spSpeed(2);
-        }
-    };
-});
-//код,отвечающий за зацикливание трека
-$(function () {
-    var wingsSound = document.getElementById("my_audio");
-    wingsSound.addEventListener('ended', function () {
-        this.currentTime = 0;
-        this.play();
-    }, false);
-    wingsSound.play();
-});
+
 
