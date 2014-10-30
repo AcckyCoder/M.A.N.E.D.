@@ -27,7 +27,8 @@ function createHexGrid(){
                 $("#hexMap").position.left = '0px';
                 console.log('stop');
             }
-        }
+        },
+        containment: "#game", scroll: false
     });
 
 
