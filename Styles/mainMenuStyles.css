@@ -160,3 +160,17 @@ a.support-hover:hover em,
 a.support-hover-two:hover em {
     background: #6699FF;
 }
+
+#pauseButton {
+    background-image: url("../images/menuButtons/pause_unpressed.png");
+    background-size: cover;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    width: 20vh;
+    height: 20vh;
+}
+
+#pauseButton:active{
+    background-image: url("../images/menuButtons/pause_pressed.png");
+}
