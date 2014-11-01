@@ -7,7 +7,7 @@
  */
 
 var img = new Image();
-img.src = './icon_and_texute/grass.jpg';
+img.src = './icon_and_texute/rocks.jpg';
 var selectColor = "rgba(0, 0, 0, 0.5)";
 var hexHeight,
     hexRadius,
@@ -25,8 +25,8 @@ function getKeyCode(event) {
 }
 
 document.onkeydown = function(e){
-   var scrollTopMax= $('body').height()-$(window).height()+2;
-   var scrollLeftMax= $('body').width()-$(window).width()+2;
+   var scrollTopMax= $('#game').height()-$(window).height()+202;
+   var scrollLeftMax= $('#game').width()-$(window).width()+202;
 
    switch (parseInt(getKeyCode(e))) {
        case 37:    // left
@@ -81,6 +81,7 @@ function createHexGrid(){
 
     var canvas = document.getElementById('hexMap');
     canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
+    canvas.addEventListener('click', CanvasClickEventHandler, false);
     //$("#hexMap").draggable();
     $('html').css('overflow', 'hidden');
     hexHeight = Math.sin(hexagonAngle) * sideLength;
@@ -89,8 +90,8 @@ function createHexGrid(){
     hexRectangleWidth = 2 * hexRadius;
     canvas.height = hexRadius * (boardHeight * 2) - (boardHeight * hexHeight) / 3 - hexHeight;
     canvas.width = hexRadius * boardWidth * 2 + hexRadius;
-    $('body').height(canvas.height);
-    $('body').width(canvas.width);
+    $('#game').height(canvas.height);
+    $('#game').width(canvas.width);
 
 
     if (canvas.getContext){
@@ -103,7 +104,9 @@ function createHexGrid(){
         drawBoard(ctx, boardWidth, boardHeight)
     }
 }
-
+function CanvasClickEventHandler(e){
+    alert(e.layerX+"  "+ e.layerY);
+}
 function MouseMoveEventHandler(event) {
     var x,
         y,
