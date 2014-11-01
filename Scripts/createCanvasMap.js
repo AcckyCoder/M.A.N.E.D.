@@ -22,8 +22,8 @@ function createHexGrid(){
 
     var canvas = document.getElementById('hexMap');
     canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
-    $("#hexMap").draggable();
-
+    //$("#hexMap").draggable();
+    $('html').css('overflow', 'hidden');
     hexHeight = Math.sin(hexagonAngle) * sideLength;
     hexRadius = Math.cos(hexagonAngle) * sideLength;
     hexRectangleHeight = sideLength + 2 * hexHeight;
