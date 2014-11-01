@@ -30,6 +30,8 @@ function createHexGrid(){
     hexRectangleWidth = 2 * hexRadius;
     canvas.height = hexRadius * (boardHeight * 2) - (boardHeight * hexHeight) / 3 - hexHeight;
     canvas.width = hexRadius * boardWidth * 2 + hexRadius;
+    $('body').height(canvas.height);
+    $('body').width(canvas.width);
 
 
     if (canvas.getContext){
