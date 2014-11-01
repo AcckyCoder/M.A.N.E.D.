@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89bb019-8e20-4cf8-b8f8-a8f8da624dde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Styles/basicStyles.css" afterPath="$PROJECT_DIR$/Styles/basicStyles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/createCanvasMap.js" afterPath="$PROJECT_DIR$/Scripts/createCanvasMap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="M.A.N.E.D.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="6563" selection-end="6563" vertical-scroll-proportion="-5.4615383" vertical-offset="2119" max-vertical-offset="2975">
+            <state line="52" column="0" selection-start="2104" selection-end="2104" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="2941">
               <folding />
             </state>
           </provider>
@@ -77,17 +75,28 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../MANED.RU/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="8" selection-start="6001" selection-end="6037" vertical-scroll-proportion="0.0" vertical-offset="3621" max-vertical-offset="4386">
+            <state line="231" column="48" selection-start="7433" selection-end="7456" vertical-scroll-proportion="0.0" vertical-offset="3621" max-vertical-offset="4386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createCanvasMap.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createCanvasMap.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="27" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2176">
+            <state line="20" column="0" selection-start="496" selection-end="496" vertical-scroll-proportion="0.23089983" vertical-offset="204" max-vertical-offset="3179">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/jumper_game-master/src/Util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-10.04" vertical-offset="3642" max-vertical-offset="5899">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basicStyles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="basicStyles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Styles/basicStyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="7" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.71137524" vertical-offset="788" max-vertical-offset="1377">
+            <state line="75" column="0" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="737" max-vertical-offset="1377">
               <folding />
             </state>
           </provider>
@@ -132,9 +141,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/Styles/basicStyles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Scripts/createCanvasMap.js" />
-        <option value="$PROJECT_DIR$/Styles/basicStyles.css" />
       </list>
     </option>
   </component>
@@ -262,6 +271,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -402,6 +424,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Styles/mainMenuStyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="16" selection-end="17" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="3077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Styles/basicStyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="737" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/jquery-ui-1.11.2.custom/jquery-ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="283254">
@@ -415,37 +451,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2104" selection-end="2104" vertical-scroll-proportion="-34.0" vertical-offset="0" max-vertical-offset="2941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../MANED.RU/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="8" selection-start="6001" selection-end="6037" vertical-scroll-proportion="0.0" vertical-offset="3621" max-vertical-offset="4386">
+        <state line="231" column="48" selection-start="7433" selection-end="7456" vertical-scroll-proportion="0.0" vertical-offset="3621" max-vertical-offset="4386">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/jumper_game-master/src/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-10.04" vertical-offset="3642" max-vertical-offset="5899">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="27" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="6563" selection-end="6563" vertical-scroll-proportion="-5.4615383" vertical-offset="2119" max-vertical-offset="2975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styles/mainMenuStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="16" selection-end="17" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="3077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Styles/basicStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="7" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.71137524" vertical-offset="788" max-vertical-offset="1377">
+        <state line="20" column="0" selection-start="496" selection-end="496" vertical-scroll-proportion="0.23089983" vertical-offset="204" max-vertical-offset="3179">
           <folding />
         </state>
       </provider>

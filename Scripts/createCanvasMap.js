@@ -17,6 +17,65 @@ var hexHeight,
     sideLength = 36,
     boardWidth = 30,
     boardHeight = 15;
+var SrollInterval, scroll=false;
+
+function getKeyCode(event) {
+    var e = event || window.event;
+    return keyCode = e.which || e.KeyCode;
+}
+
+document.onkeydown = function(e){
+   var scrollTopMax= $('body').height()-$(window).height()+2;
+   var scrollLeftMax= $('body').width()-$(window).width()+2;
+
+   switch (parseInt(getKeyCode(e))) {
+       case 37:    // left
+           if (scroll==false)
+               SrollInterval = setInterval(function(){
+                   if ($(window).scrollLeft()>0)
+                   {
+                       $(window).scrollLeft($(window).scrollLeft()-5);
+                   }
+               }, 10);
+           scroll=true;
+           break;
+       case 38:    // top
+           if (scroll==false)
+               SrollInterval = setInterval(function(){
+                   if ($(window).scrollTop()>0)
+                   {
+                       $(window).scrollTop($(window).scrollTop()-5);
+                   }
+               }, 10);
+           scroll=true;
+           break;
+       case 39:    // right
+           if (scroll==false)
+               SrollInterval = setInterval(function(){
+                   if ($(window).scrollLeft()<scrollLeftMax)
+                   {
+                       $(window).scrollLeft($(window).scrollLeft()+5);
+                   }
+               }, 10);
+           scroll=true;
+           break;
+       case 40:    // down
+           if (scroll==false)
+               SrollInterval = setInterval(function(){
+                   if ($(window).scrollTop()<scrollTopMax)
+                   {
+                       $(window).scrollTop($(window).scrollTop()+5);
+                   }
+               }, 10);
+           scroll=true;
+           break;
+   }
+
+}
+document.onkeyup = function(e){
+    clearInterval(SrollInterval);
+    scroll=false;
+}
 
 function createHexGrid(){
 
