@@ -74,7 +74,7 @@
       <file leaf-file-name="createCanvasMap.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="13" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.7792869" vertical-offset="1700" max-vertical-offset="3587">
+            <state line="202" column="16" selection-start="6317" selection-end="6317" vertical-scroll-proportion="0.96985817" vertical-offset="2887" max-vertical-offset="4981">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="Util.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/jumper_game-master/src/Util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-10.04" vertical-offset="3642" max-vertical-offset="5899">
+            <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-109.08" vertical-offset="1166" max-vertical-offset="5899">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -295,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -405,15 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/jumper_game-master/src/Util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-10.04" vertical-offset="3642" max-vertical-offset="5899">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../MANED.RU/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="231" column="48" selection-start="7433" selection-end="7456" vertical-scroll-proportion="2.1510417" vertical-offset="2688" max-vertical-offset="4386">
@@ -480,9 +471,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/jumper_game-master/src/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="12" selection-start="7544" selection-end="7572" vertical-scroll-proportion="-109.08" vertical-offset="1166" max-vertical-offset="5899">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="13" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.7792869" vertical-offset="1700" max-vertical-offset="3587">
+        <state line="202" column="16" selection-start="6317" selection-end="6317" vertical-scroll-proportion="0.96985817" vertical-offset="2887" max-vertical-offset="4981">
           <folding />
         </state>
       </provider>

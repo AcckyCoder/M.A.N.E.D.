@@ -17,7 +17,7 @@ var hexHeight,
     sideLength = 36,
     boardWidth = 30,
     boardHeight = 15;
-var SrollInterval, scroll=false;
+var SrollInterval,SrollIntervalml,SrollIntervalmt, scroll=false, scrollml=false, scrollmt=false;
 
 function getKeyCode(event) {
     var e = event || window.event;
@@ -80,7 +80,7 @@ document.onkeyup = function(e){
 function createHexGrid(){
 
     var canvas = document.getElementById('hexMap');
-    canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
+    //canvas.addEventListener('mousemove', MouseMoveEventHandler, false);
     canvas.addEventListener('click', CanvasClickEventHandler, false);
     //$("#hexMap").draggable();
     $('html').css('overflow', 'hidden');
@@ -126,8 +126,90 @@ function createHexGrid(){
                     drawHexagon(ctx, screenX, screenY, true);
                 }
             }
-    }
+    };
+
+
+
+    $('#game').height();
+
+
+
+
+    $(window).mousemove(function(e){
+        var scrollTopMax= $('#game').height()-$(window).height()+202;
+        var scrollLeftMax= $('#game').width()-$(window).width()+202;
+       if(e.clientX<5) //left
+       {
+           if (scrollml==false)
+           {
+               SrollIntervalml = setInterval(function(){
+                   if ($(window).scrollLeft()>0)
+                   {
+                       $(window).scrollLeft($(window).scrollLeft()-5);
+                   }
+               }, 10);
+                scrollml=true;
+           }
+       }
+       else
+       {
+           if(e.clientX>($(window).width()-5)) //right
+           {
+               if (scrollml==false)
+               {
+                   SrollIntervalml = setInterval(function(){
+                       if ($(window).scrollLeft()<scrollLeftMax)
+                       {
+                           $(window).scrollLeft($(window).scrollLeft()+5);
+                       }
+                   }, 10);
+                   scrollml=true;
+               }
+           }
+           else
+           {
+               clearInterval(SrollIntervalml);
+               scrollml=false;
+           }
+       }
+        if(e.clientY<5) //top
+        {
+            if (scrollmt==false)
+            {
+                SrollIntervalmt = setInterval(function(){
+                    if ($(window).scrollTop()>0)
+                    {
+                        $(window).scrollTop($(window).scrollTop()-5);
+                    }
+                }, 10);
+                scrollmt=true;
+            }
+        }
+        else
+        {
+            if(e.clientY>($(window).height()-5)) //right
+            {
+                if (scrollmt==false)
+                {
+                    SrollIntervalmt = setInterval(function(){
+                        if ($(window).scrollTop()<scrollLeftMax)
+                        {
+                            $(window).scrollTop($(window).scrollTop()+5);
+                        }
+                    }, 10);
+                    scrollmt=true;
+                }
+            }
+            else
+            {
+                clearInterval(SrollIntervalmt);
+                scrollmt=false;
+            }
+        }
+    });
+
 }
+
 function MouseMoveEventHandler(event) {
     var x,
         y,
