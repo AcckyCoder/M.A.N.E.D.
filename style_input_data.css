@@ -17,15 +17,14 @@
 #firstPalyer {
     top:30%;
     clear: both;
-    width:70vh;
+    width:90vh;
     height: 10vh;
     margin-left: 30vh;
-
 
 }
 #secondPlayer {
     top: 50%;
-    width:70vh;
+    width:90vh;
     height: 10vh;
     clear: both;
     position: absolute;
