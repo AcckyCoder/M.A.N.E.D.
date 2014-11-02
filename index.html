@@ -138,15 +138,12 @@
     <!--Меню начала новой игры-->
     <div id="newGame">
         <h2>Введите имена игроков</h2>
-
-        <form name="input_name" id="input_form" action="" method="post">
-            <input type="text" name="player_one" id="player_one" id="name_player">
-            <input type="text" name="player_two" id="player_two" id="name_player_two">
-            <button id="ok" onclick="ShowMenu('newGame','game');name_of_player();return false"> OK</button>
+        <form class="bl_form">
+            <input type="text" class="label_better" id="firstPalyer" placeholder="Имя 1 игрока">
+            <input type="text" class="label_better" id="secondPlayer" placeholder="Имя 2 игрока">
         </form>
         <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
     </div>
-
 
     <!--Игровое поле-->
     <div id="pauseMenu">
