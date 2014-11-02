@@ -103,9 +103,30 @@ function createHexGrid(){
         ctx.lineWidth = 2;
         drawBoard(ctx, boardWidth, boardHeight)
     }
-}
-function CanvasClickEventHandler(e){
-    alert(e.layerX+"  "+ e.layerY);
+
+    function CanvasClickEventHandler(e){
+            var x,
+                y,
+                hexX,
+                hexY,
+                screenX,
+                screenY;
+
+            x = e.offsetX || e.layerX;
+            y = e.offsetY || e.layerY;
+            hexY = Math.floor(y / (hexHeight + sideLength));
+            hexX = Math.floor((x - (hexY % 2) * hexRadius) / hexRectangleWidth);
+            screenX = hexX * hexRectangleWidth + ((hexY % 2) * hexRadius);
+            screenY = hexY * (hexHeight + sideLength);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBoard(ctx, boardWidth, boardHeight);
+            if(hexX >= 0 && hexX < boardWidth) {
+                if(hexY >= 0 && hexY < boardHeight) {
+                    ctx.fillStyle = "#000000";
+                    drawHexagon(ctx, screenX, screenY, true);
+                }
+            }
+    }
 }
 function MouseMoveEventHandler(event) {
     var x,

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89bb019-8e20-4cf8-b8f8-a8f8da624dde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Styles/basicStyles.css" afterPath="$PROJECT_DIR$/Styles/basicStyles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/createCanvasMap.js" afterPath="$PROJECT_DIR$/Scripts/createCanvasMap.js" />
     </list>
     <ignored path="M.A.N.E.D.iws" />
@@ -72,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createCanvasMap.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createCanvasMap.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="63" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="3230">
+            <state line="127" column="13" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.7792869" vertical-offset="1700" max-vertical-offset="3587">
               <folding />
             </state>
           </provider>
@@ -110,10 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Working_sound.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Working_sound.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Working_sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ion.sound.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/JQ/ion.sound.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
               <folding />
             </state>
           </provider>
@@ -287,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -451,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="63" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="3230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="0" selection-start="2104" selection-end="2104" vertical-scroll-proportion="28.76923" vertical-offset="1632" max-vertical-offset="2941">
@@ -468,6 +469,20 @@
     <entry file="file://$PROJECT_DIR$/Scripts/Working_sound.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/JQ/ion.sound.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="13" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.7792869" vertical-offset="1700" max-vertical-offset="3587">
           <folding />
         </state>
       </provider>
