@@ -7,7 +7,7 @@
  */
 
 var img = new Image();
-img.src = './icon_and_texute/rocks.jpg';
+//img.src = './icon_and_texute/rocks.jpg';
 var selectColor = "rgba(0, 0, 0, 0.5)";
 var hexHeight,
     hexRadius,
@@ -101,7 +101,7 @@ function createHexGrid(){
         ctx.fillStyle = selectColor;
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
-        drawBoard(ctx, boardWidth, boardHeight)
+        drawBoard(ctx, boardWidth, boardHeight);
     }
 
     function CanvasClickEventHandler(e){
@@ -119,10 +119,10 @@ function createHexGrid(){
             screenX = hexX * hexRectangleWidth + ((hexY % 2) * hexRadius);
             screenY = hexY * (hexHeight + sideLength);
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawBoard(ctx, boardWidth, boardHeight);
+        drawBoard(ctx, boardWidth, boardHeight);
             if(hexX >= 0 && hexX < boardWidth) {
                 if(hexY >= 0 && hexY < boardHeight) {
-                    ctx.fillStyle = "#000000";
+                    ctx.fillStyle = selectColor;//"#000000";
                     drawHexagon(ctx, screenX, screenY, true);
                 }
             }
@@ -276,6 +276,7 @@ function drawHexagon(canvasContext, x, y, fill) {
     canvasContext.closePath();
 
     canvasContext.clip();
+    img.src=randomTexture();
     canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
 
     if (fill) {
@@ -285,4 +286,25 @@ function drawHexagon(canvasContext, x, y, fill) {
     }
 
     canvasContext.restore();
+}
+function randomTexture(){
+    //texture random;
+    var randomTexture=Math.floor(Math.random()*5)+1;
+    var srcPath='';
+    switch (randomTexture){
+        case 0: srcPath='./icon_and_texute/rocks.jpg';
+            break;
+        case 1: srcPath='./icon_and_texute/trees.jpg';
+            break;
+        case 2: srcPath='./icon_and_texute/grass.jpg';
+            break;
+        case 3: srcPath='./icon_and_texute/gas.jpg';
+            break;
+        case 4: srcPath='./icon_and_texute/coal.jpg';
+            break;
+        case 5: srcPath='./icon_and_texute/City.png';
+            break;
+        default: srcPath='./icon_and_texute/grass.jpg';
+    }
+    return srcPath;
 }
