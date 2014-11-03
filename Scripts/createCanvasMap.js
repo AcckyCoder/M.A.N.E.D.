@@ -303,7 +303,7 @@ function randomTexture(){
             break;
         case 4: srcPath='./icon_and_texute/coal.jpg';
             break;
-        case 5: if(cityProbably<0.3066)
+        case 5: if(cityProbably<0.2066)
                      srcPath='./icon_and_texute/City.png';
                 else srcPath='./icon_and_texute/grass.jpg';
             break;
