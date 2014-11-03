@@ -164,7 +164,7 @@ a.support-hover-two:hover em {
 #pauseButton {
     background-image: url("../images/menuButtons/pause_unpressed.png");
     background-size: cover;
-    position: absolute;
+    position: fixed;
     top: 2vh;
     left: 2vh;
     width: 20vh;

@@ -11,6 +11,7 @@ do {
     two_player = document.getElementById("player_two");
     if (one_player!=""||two_player!=""){
         createHexGrid();
+
     }
 }while(one_player==""||two_player=="");
 
