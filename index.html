@@ -39,21 +39,50 @@
             };
         });
 
+        function get_cookie ( cookie_name )
+        {
+            var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+
+            if ( results )
+                return ( unescape ( results[2] ) );
+            else
+                return null;
+        }
+
+        window.onload = function(){
+            var cookie = get_cookie('music');
+            console.log(cookie);
+            if(cookie === "false"){
+                console.log(cookie);
+                document.getElementById('volume').id = 'noVolume';
+            }
+        }
         //код,отвечающий за зацикливание трека
         $(function () {
+            var cookie = get_cookie('music');
             var wingsSound = document.getElementById("my_audio");
             wingsSound.addEventListener('ended', function () {
                 this.currentTime = 0;
-                this.play();
+                if(cookie==="true")
+                {
+                    this.play();
+                }
             }, false);
-            wingsSound.play();
+
+            if(cookie==="true")
+            {
+                wingsSound.play();
+            }
+
         });
 
     </script>
 </head>
 <body>
 
-<audio src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3" id="my_audio"></audio>
+<audio id="my_audio">
+    <source src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3" >
+</audio>
 <audio id="button_click">
     <source src="Audio/bell_ring.mp3">
 </audio>
