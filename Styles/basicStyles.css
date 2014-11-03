@@ -76,3 +76,17 @@ h2 {
     padding: 100px;
     background: url("../images/water.jpg") center repeat;
 }
+
+.resumeButton {
+    position: absolute;
+    right: 5%;
+    bottom: 6%;
+    background-image: url("../images/menuButtons/play_unpressed.png");
+    background-size: cover;
+    width: 21.3vh;
+    height: 21.3vh;
+}
+
+.resumeButton:active{
+    background-image: url("../images/menuButtons/play_pressed.png");
+}
