@@ -289,7 +289,7 @@ function drawHexagon(canvasContext, x, y, fill) {
 }
 function randomTexture(){
     //texture random;
-    var randomTexture=Math.floor(Math.random()*5)+1;
+    var randomTexture=Math.floor(Math.random()*6)+1;
     var cityProbably=Math.random();
     var srcPath='';
     switch (randomTexture){
@@ -307,6 +307,8 @@ function randomTexture(){
                      srcPath='./icon_and_texute/City.png';
                 else srcPath='./icon_and_texute/grass.jpg';
             break;
+        case 6: srcPath='./icon_and_texute/field.jpg';
+                break;
         default: srcPath='./icon_and_texute/grass.jpg';
     }
     return srcPath;
