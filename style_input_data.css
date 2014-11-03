@@ -1,0 +1,35 @@
+
+.label_better {
+    padding-top: 15px;
+    background: rgba(255, 237, 58, 0.80);
+    box-shadow: 0 1px 4px rgba(0,0,0,1);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 28px;
+    text-align: center;
+    outline: none;
+    width: 70%;
+    position: absolute;
+    margin: 10px;
+    left: 15%;
+}
+#firstPalyer {
+    top:30%;
+    clear: both;
+    width:90vh;
+    height: 10vh;
+    margin-left: 30vh;
+
+}
+#secondPlayer {
+    top: 50%;
+    width:90vh;
+    height: 10vh;
+    clear: both;
+    position: absolute;
+    margin-left: 30vh;
+    margin-top: 10px;
+    bottom: 50%;
+
+}
