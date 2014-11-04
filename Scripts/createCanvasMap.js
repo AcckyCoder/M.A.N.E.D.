@@ -7,6 +7,13 @@
  */
 
 var img = new Image();
+$(document).ready(function() {
+for (i=0; i<map.length; i++)
+{
+    img = new Image();
+    img.src='./icon_and_texute/'+map[i].texture;
+}
+});
 //img.src = './icon_and_texute/rocks.jpg';
 var selectColor = "rgba(0, 0, 0, 0.5)";
 var hexHeight,
@@ -123,7 +130,7 @@ function createHexGrid(){
             if(hexX >= 0 && hexX < boardWidth) {
                 if(hexY >= 0 && hexY < boardHeight) {
                     ctx.fillStyle = selectColor;//"#000000";
-                    drawHexagon(ctx, screenX, screenY, true);
+                    drawHexagon(ctx, 0, screenX, screenY, true);
                 }
             }
     };
@@ -249,11 +256,10 @@ function MouseMoveEventHandler(event) {
 }
 function drawBoard(canvasContext, width, height) {
 
-
-    for (var i = 0; i < width; ++i) {
-        for (var j = 0; j < height; ++j) {
+    for (var j = 0; j < height; ++j) {
+        for (var i = 0; i < width; ++i) {
             drawHexagon(
-                canvasContext,
+                canvasContext, j*width+i,
                     i * hexRectangleWidth + ((j % 2) * hexRadius),
                     j * (sideLength + hexHeight),
                 false
@@ -263,7 +269,7 @@ function drawBoard(canvasContext, width, height) {
 }
 
 
-function drawHexagon(canvasContext, x, y, fill) {
+function drawHexagon(canvasContext, id, x, y, fill) {
 
     canvasContext.save();
     canvasContext.beginPath();
@@ -276,7 +282,10 @@ function drawHexagon(canvasContext, x, y, fill) {
     canvasContext.closePath();
 
     canvasContext.clip();
-    img.src=randomTexture();
+    //img.src=
+    img = new Image();
+    img.src='./icon_and_texute/'+map[id].texture;
+    console.log(img.src);
     canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
 
     if (fill) {
