@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d89bb019-8e20-4cf8-b8f8-a8f8da624dde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/createCanvasMap.js" afterPath="$PROJECT_DIR$/Scripts/createCanvasMap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map_editor/index.html" afterPath="$PROJECT_DIR$/map_editor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map_editor/map_save.php" afterPath="$PROJECT_DIR$/map_editor/map_save.php" />
     </list>
     <ignored path="M.A.N.E.D.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,16 +30,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="70" selection-start="1426" selection-end="1426" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="3366">
+            <state line="30" column="57" selection-start="1413" selection-end="1413" vertical-scroll-proportion="-9.807693" vertical-offset="255" max-vertical-offset="3366">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/Polygons-gh-pages/index.html">
+      <file leaf-file-name="map_save.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map_editor/map_save.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="76" selection-start="675" selection-end="693" vertical-scroll-proportion="-10.461538" vertical-offset="51" max-vertical-offset="2975">
+            <state line="7" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -54,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map_editor/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="683" selection-end="738" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="833">
+            <state line="14" column="46" selection-start="725" selection-end="725" vertical-scroll-proportion="0.40753424" vertical-offset="0" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map_editor/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="37" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.55409837" vertical-offset="1634" max-vertical-offset="3213">
+            <state line="116" column="37" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="1634" max-vertical-offset="3213">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map_editor/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="16" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3111">
+            <state line="38" column="16" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3111">
               <folding />
             </state>
           </provider>
@@ -105,12 +105,13 @@
       <list>
         <option value="$PROJECT_DIR$/Styles/basicStyles.css" />
         <option value="$PROJECT_DIR$/map_editor/texture.json" />
-        <option value="$PROJECT_DIR$/map_editor/index.html" />
         <option value="$PROJECT_DIR$/Scripts/createCanvasMap.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$USER_HOME$/Desktop/Polygons-gh-pages/index.html" />
         <option value="$PROJECT_DIR$/map_editor/main.js" />
         <option value="$PROJECT_DIR$/map_editor/style.css" />
+        <option value="$PROJECT_DIR$/map_editor/map_save.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/map_editor/index.html" />
       </list>
     </option>
   </component>
@@ -427,6 +428,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/map_editor/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="37" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="1634" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Polygons-gh-pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="76" selection-start="675" selection-end="693" vertical-scroll-proportion="0.56567425" vertical-offset="0" max-vertical-offset="2975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map_editor/map_save.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/createCanvasMap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="3" selection-start="323" selection-end="323" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="5593">
@@ -436,21 +458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="70" selection-start="1426" selection-end="1426" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="3366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Polygons-gh-pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="675" selection-end="693" vertical-scroll-proportion="-10.461538" vertical-offset="51" max-vertical-offset="2975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map_editor/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="683" selection-end="738" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="833">
+        <state line="30" column="57" selection-start="1413" selection-end="1413" vertical-scroll-proportion="-9.807693" vertical-offset="255" max-vertical-offset="3366">
           <folding />
         </state>
       </provider>
@@ -462,9 +470,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map_editor/style.css">
+    <entry file="file://$PROJECT_DIR$/map_editor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="37" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.55409837" vertical-offset="1634" max-vertical-offset="3213">
+        <state line="14" column="46" selection-start="725" selection-end="725" vertical-scroll-proportion="0.40753424" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
