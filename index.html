@@ -3,7 +3,7 @@
 <head lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    
+
     <link rel="stylesheet" type="text/css" href="Styles/pauseMenuStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/aboutUsStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/basicStyles.css"/>
@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="Styles/cloud.css">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
-
-
-
 
 
     <script src="Scripts/JQ/jquery-1.11.1.min.js"></script>
@@ -42,20 +39,19 @@
             };
         });
 
-        function get_cookie ( cookie_name )
-        {
-            var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+        function get_cookie(cookie_name) {
+            var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
 
-            if ( results )
-                return ( unescape ( results[2] ) );
+            if (results)
+                return ( unescape(results[2]) );
             else
                 return null;
         }
 
-        window.onload = function(){
+        window.onload = function () {
             var cookie = get_cookie('music');
             console.log(cookie);
-            if(cookie === "false"){
+            if (cookie === "false") {
                 console.log(cookie);
                 document.getElementById('volume').id = 'noVolume';
             }
@@ -66,14 +62,12 @@
             var wingsSound = document.getElementById("my_audio");
             wingsSound.addEventListener('ended', function () {
                 this.currentTime = 0;
-                if(cookie==="true")
-                {
+                if (cookie === "true") {
                     this.play();
                 }
             }, false);
 
-            if(cookie==="true")
-            {
+            if (cookie === "true") {
                 wingsSound.play();
             }
 
@@ -84,7 +78,7 @@
 <body>
 
 <audio id="my_audio">
-    <source src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3" >
+    <source src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3">
 </audio>
 <audio id="button_click">
     <source src="Audio/bell_ring.mp3">
@@ -103,7 +97,8 @@
         <div class="button" id="playButton" onclick="ShowMenu('main','newGame');Sound();"></div>
         <div id="overlay" onclick="HideSettingsMenu()"></div>
         <div id="settingMenu">
-            <div class="button" id="volume" onclick="changeId();Sound();" alt="Вкл/Выкл звук" title="Вкл/Выкл звук"></div>
+            <div class="button" id="volume" onclick="changeId();Sound();" alt="Вкл/Выкл звук"
+                 title="Вкл/Выкл звук"></div>
             <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')" alt="Правила игры"
                  title="Правила игры">
             </div>
@@ -156,17 +151,14 @@
     <!--Игровое поле-->
     <div id="game">
 
-            <canvas id="hexMap"></canvas>
-            <canvas id='hexMap1'></canvas>
-
-        <!--<canvas id="hoverMap" width="2000px" height="2000px"></canvas>-->
-
+        <canvas id="hexMap"></canvas>
         <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
     </div>
 
     <!--Меню начала новой игры-->
     <div id="newGame">
         <h2>Введите имена игроков</h2>
+
         <form id="loginForm">
             <input type="text" class="label_better" id="firstPlayer" placeholder="Имя 1 игрока">
             <input type="text" class="label_better" id="secondPlayer" placeholder="Имя 2 игрока">
