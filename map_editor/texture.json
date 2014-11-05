@@ -4,7 +4,7 @@
     "3":{"img":"grass.jpg","name":"Трава"},
     "4":{"img":"rocks.jpg","name":"Камни"},
     "5":{"img":"trees.jpg","name":"Деревья"},
-    "6":{"img":"field.jpg","name":"Пшеница"},
+    "6":{"img":"wheat.jpg","name":"Пшеница"},
     "7":{"img":"gas.jpg","name":"Газ"}
 
 }

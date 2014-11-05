@@ -316,7 +316,7 @@ function randomTexture(){
                      srcPath='./icon_and_texute/City.png';
                 else srcPath='./icon_and_texute/grass.jpg';
             break;
-        case 6: srcPath='./icon_and_texute/field.jpg';
+        case 6: srcPath='./icon_and_texute/wheat.jpg';
                 break;
         default: srcPath='./icon_and_texute/grass.jpg';
     }
