@@ -130,7 +130,7 @@ function createHexGrid(){
             if(hexX >= 0 && hexX < boardWidth) {
                 if(hexY >= 0 && hexY < boardHeight) {
                     ctx.fillStyle = selectColor;//"#000000";
-                    drawHexagon(ctx, 0, screenX, screenY, true);
+                    drawHexagon(ctx, hexY*boardWidth+hexX, screenX, screenY, true);
                 }
             }
     };
