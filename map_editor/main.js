@@ -61,7 +61,7 @@ function create_map()
             span1.className =  "b-polygon-part";
             var span2=document.createElement("span");
             span2.className =  "b-polygon-part b-polygon-part_content";
-            span2.style.backgroundImage = "url(../icon_and_texute/" + map[id_cnt].texture+")";
+            span2.style.backgroundImage = "url(../icon_and_textures/" + map[id_cnt].texture+")";
             a.id = "cell_"+id_cnt.toString();
             span1.appendChild(span2);
             a.appendChild(span1);

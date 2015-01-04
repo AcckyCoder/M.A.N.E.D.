@@ -62,13 +62,11 @@
             var wingsSound = document.getElementById("my_audio");
             wingsSound.addEventListener('ended', function () {
                 this.currentTime = 0;
-                if (cookie === "true") {
-                    this.play();
-                }
+                this.play();
             }, false);
 
             if (cookie === "true") {
-                wingsSound.play();
+                //wingsSound.play();
             }
 
         });
@@ -77,9 +75,7 @@
 </head>
 <body>
 
-<audio>
-    <source id="my_audio" src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3">
-</audio>
+<audio id="my_audio" src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"></audio>
 <audio id="button_click">
     <source src="Audio/bell_ring.mp3">
 </audio>
@@ -150,9 +146,16 @@
 
     <!--Игровое поле-->
     <div id="game">
-
         <canvas id="hexMap"></canvas>
         <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
+        <div id="resourceStat">
+
+        </div>
+        <div id="popupMenu" onclick="popupMenuClose();">
+            <div id="cityImg">
+                <H1 id="cityTitle"></H1>
+            </div>
+        </div>
     </div>
 
     <!--Меню начала новой игры-->

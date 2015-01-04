@@ -70,6 +70,26 @@ h2 {
 
 }
 
+#popupMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#resourceStat {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    width: 50%;
+    background-color: rgba(0,0,0,0.75);
+}
+
 #game {
     width: 100%;
     height: 100%;
@@ -89,4 +109,18 @@ h2 {
 
 .resumeButton:active{
     background-image: url("../images/menuButtons/play_pressed.png");
+}
+
+#cityImg {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 150px;
+    min-height: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+#cityTitle {
+    color: #ffffff;
 }
