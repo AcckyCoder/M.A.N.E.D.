@@ -80,6 +80,12 @@ document.onkeyup = function (e) {
     scroll = false;
 }
 
+function showRecourceInfo(id) {
+    document.getElementById('resourceStat').style.display = 'block';
+    document.getElementById('resourceTitle').innerHTML = map[id].type;
+    document.getElementById('resourceCount').innerHTML = map[id].res_cnt;
+    document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
+}
 function createHexGrid() {
 
     var canvas = document.getElementById('hexMap');
@@ -124,6 +130,7 @@ function createHexGrid() {
         screenY = hexY * (hexHeight + sideLength);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawBoard(ctx, boardWidth, boardHeight);
+        document.getElementById('resourceStat').style.display = 'none';
         if (hexX >= 0 && hexX < boardWidth) {
             if (hexY >= 0 && hexY < boardHeight) {
                 ctx.fillStyle = selectColor;//"#000000";
@@ -132,7 +139,7 @@ function createHexGrid() {
                 if(map[id].type == "notResourse") {
                     drawPopupMenu(id);
                 }
-                else
+                else if(map[id].type != "grass")
                 {
                     showRecourceInfo(id);
                 }
@@ -149,7 +156,7 @@ function drawPopupMenu(cityid)
 {
     document.getElementById('cityTitle').innerHTML = getCityName(cityid);
     var path = "url(\"./icon_and_textures/city" + getCityLevel(cityid) + ".png\")";
-    document.getElementById('cityimg').style.backgroundImage = path;
+    document.getElementById('cityImg').style.backgroundImage = path;
     document.getElementById('popupMenu').style.display = 'block';
     console.log(cityid);
 

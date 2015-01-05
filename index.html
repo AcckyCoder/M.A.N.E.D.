@@ -148,8 +148,10 @@
     <div id="game">
         <canvas id="hexMap"></canvas>
         <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
-        <div id="resourceStat">
-
+        <div id="resourceStat" onclick="this.style.display = 'none'; ">
+            <div id="resourceTitle" ></div>
+            <span class="simpleText">Количество:<div id="resourceCount"></div></span>
+            <span class="simpleText">Скорость восстановления (ход):<div id="resourceRecovery"></div></span>
         </div>
         <div id="popupMenu" onclick="popupMenuClose();">
             <div id="cityImg">
