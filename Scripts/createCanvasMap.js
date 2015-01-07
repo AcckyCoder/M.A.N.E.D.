@@ -112,6 +112,8 @@ function createHexGrid() {
         map[first_city_id()].owner = "player";
     }
 
+    showResourse();
+    startstep();
     function CanvasClickEventHandler(e) {
         var x,
             y,

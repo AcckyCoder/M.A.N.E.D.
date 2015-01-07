@@ -28,9 +28,10 @@ function getCityNameById(id)
     return map[id].cityName;
 }
 
+function startstep(){
+  var firststep=1;
+  document.getElementById('step').innerText=firststep;
+}
 function showResourse(){
-
-
-
-
+    document.getElementById('coin_out').innerText= player.money;
 }
