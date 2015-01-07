@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <link rel="stylesheet" type="text/css" href="Styles/gameStyles.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
@@ -23,7 +24,6 @@
 
     <script src="Scripts/mainMenuScripts.js"></script>
     <script src="Scripts/aboutUsScripts.js"></script>
-    <script src="Scripts/dataOfPlayer.js"></script>
     <script src="Scripts/createCanvasMap.js" type="text/javascript"></script>
     <script src="Scripts/workingSound.js"></script>
     <script type="text/javascript" src="map_editor/map.js"></script>
@@ -168,19 +168,19 @@
             <span class="simpleText">Скорость восстановления (ход):<div id="resourceRecovery"></div></span>
         </div>
         <div id="popupMenu" alt="">
-            <div id="cityImg">
-                <H1 id="cityTitle"></H1>
-                <div class="cityMenu" id="rightMenu">
+            <div id="cityImg"></div>
+            <H1 id="cityTitle"></H1>
+            <div class="cityMenu" id="rightMenu">
 
-                </div>
-                <div class="cityMenu" id="leftMenu">
-                    <span class="simpleText">Выручка: <div id="cityProfit"></div></span>
-                </div>
-                <div class="cityMenu" id="bottomMenu" >
-                    <span class="simpleText">Уровень города:<div id="cityLevel"></div></span>
-                    <div class="button" id="updateButton" onclick="levelUp(document.getElementById('popupMenu').getAttribute('alt'));"></div>
-                </div>
             </div>
+            <div class="cityMenu" id="leftMenu">
+                <span class="simpleText">Выручка: <div id="cityProfit"></div></span>
+            </div>
+            <div class="cityMenu" id="bottomMenu" >
+                <span class="simpleText">Уровень города:<div id="cityLevel"></div></span>
+                <div class="button" id="updateButton" onclick="levelUp(document.getElementById('popupMenu').getAttribute('alt'));"></div>
+            </div>
+            <div id="closePopupMenuButton" class="button" onclick="popupMenuClose()"></div>
         </div>
     </div>
 
@@ -192,7 +192,7 @@
             <input type="text" class="label_better" id="firstPlayer" placeholder="Имя  игрока">
         </form>
         <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
-        <div class="button resumeButton" onclick="ShowMenu('newGame','game'); name_of_player();"></div>
+        <div class="button resumeButton" onclick="ShowMenu('newGame','game'); setPlayerName();"></div>
     </div>
 
     <!--Меню паузы-->

@@ -14,3 +14,9 @@ var player =
         "rock": 50000
     }
     ;
+
+function setPlayerName(){
+    player.name = document.getElementById("player_one");
+    createHexGrid();
+
+}
