@@ -103,11 +103,79 @@ function GetCityProfit(cityId)
 }
 
 
+function GameOver(reason) {
+    alert(reason);
+    ShowMenu('game', 'main');
+}
+
+function destroyCity(city) {
+
+    city = new {
+        "resourceCount": 0,
+        "recovery": 0,
+        "resourceType": 0,
+        "type": "grass",
+        "texture": "grass.jpg"
+    };
+}
+
+function isPalyerHasMoreCities() {
+    console.log("Ich brauche diese Funktion! " + arguments.callee.name)
+}
 function updateCityParameters(city) {
-    if(city.health > 50)
-    {
-        var born
+
+    //вычисляем вероятность возникновения события/
+    var possible = Math.random() * 100;
+
+    if(possible % 5 == 0) {
+        //если здоровье горожан в порядке, то рождаются новые горожане
+        if (city.health >= 50) {
+            var born = Math.random() * city.health;
+            city.popularity += born;
+        }
+        else {
+            //иначе они дохнут
+            var died = Math.random() * (50 - city.health);
+            city.popularity -= died;
+
+            //если подохли все
+            if (city.popularity <= 0)
+            {
+                if(!isPalyerHasMoreCities())
+                    GameOver(gameOverReason.everyBodyDie);
+                else
+                    destroyCity(city);
+            }
+        }
     }
+
+
+    possible = Math.random() * 100;
+    if(possible % 5 == 0)
+    {
+        if(city.crime > 50)
+        {
+            var died = Math.random() * (50 - city.crime);
+            city.popularity -= died;
+            if (city.popularity <= 0)
+            {
+                if(!isPalyerHasMoreCities())
+                    GameOver(gameOverReason.everyBodyDie);
+                else
+                    destroyCity(city);
+            }
+
+
+            if(city.happy > 0)
+                city.happy --;
+        }
+        else if(city.crime < 30)
+        {
+            if(city.happy < 80)
+                city.happy++;
+        }
+    }
+
 }
 
 
@@ -119,6 +187,22 @@ function updateResourceParameters(resource) {
 function updateProductionParameters(production) {
 
 }
+
+function isNoMoreFreeCities() {
+    for(var i = 0; i<map.length; i++)
+    {
+        if(map[i].type == resourceType.city.value)
+        {
+            if(map[i].owner == "undefined")
+            {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
 
 function NextGameStep()
 {
@@ -136,6 +220,18 @@ function NextGameStep()
             updateResourceParameters(map[i]);
         }
 
+    }
+
+
+
+    if(isNoMoreFreeCities())
+    {
+        GameOver(gameOverReason.winner);
+    }
+
+    if(player.money<=0)
+    {
+        GameOver(gameOverReason.bankrot);
     }
 
     player.step++;
