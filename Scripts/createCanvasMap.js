@@ -114,6 +114,8 @@ function createHexGrid() {
         drawBoard(ctx, boardWidth, boardHeight);
     }
 
+    first_city_id();
+
     function CanvasClickEventHandler(e) {
         var x,
             y,
@@ -154,7 +156,7 @@ function getCityLevel(cityid) {
 
 function drawPopupMenu(cityid)
 {
-    document.getElementById('cityTitle').innerHTML = getCityName(cityid);
+    document.getElementById('cityTitle').innerHTML = getCityNameById(cityid);
     var path = "url(\"./icon_and_textures/city" + getCityLevel(cityid) + ".png\")";
     document.getElementById('cityImg').style.backgroundImage = path;
     document.getElementById('popupMenu').style.display = 'block';
@@ -163,9 +165,6 @@ function drawPopupMenu(cityid)
 
 }
 
-function getCityName(id) {
-    return map[id].cityName;
-}
 
 function popupMenuClose() {
     document.getElementById('popupMenu').style.display = 'none';
@@ -235,6 +234,31 @@ $(window).mousemove(function (e) {
         }
     }
 });
+
+function first_city_id(){
+    var found_city=[];
+    var k = 0;
+    for(var i=0;i<map.length;i++){
+        if(map[i].type == "city") {
+            found_city[k] = i;
+            k++;
+
+        }
+    }
+    var first = Math.floor(Math.random() * found_city.length);
+    console.log(map[found_city[first]].cityName);
+    return found_city[first];
+}
+
+    function getCityIdByName(name)
+    {
+        return map[name].id;
+    }
+
+    function getCityNameById(id)
+    {
+        return map[id].cityName;
+    }
 
 function drawBoard(canvasContext, width, height) {
 

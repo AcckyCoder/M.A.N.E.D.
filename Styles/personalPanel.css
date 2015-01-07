@@ -1,0 +1,14 @@
+#privatepanel
+{
+height: 120px;
+width: 100%;
+position:static;
+margin-top: 2px;
+padding-top: 0;
+
+
+background: #a1ca38;
+background-image: url("../icon_and_textures/grass.jpg");
+box-shadow: inset 0 15px 15px  -15px #107522, inset 0 -15px 15px  -15px #7aac18;
+border-radius: 40px;
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/styleInputData.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/rulesGameStyles.css">
     <link rel="stylesheet" type="text/css" href="Styles/cloud.css">
+    <link rel="stylesheet" type="text/css" href="Styles/personalPanel.css">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
 
@@ -146,8 +147,14 @@
 
     <!--Игровое поле-->
     <div id="game">
+        <div id="privatepanel">
+        <span>Началный город</span>
+        <span>Количество ресурсов</span>
+        </div>
         <canvas id="hexMap"></canvas>
+
         <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
+
         <div id="resourceStat" onclick="this.style.display = 'none'; ">
             <div id="resourceTitle" ></div>
             <span class="simpleText">Количество:<div id="resourceCount"></div></span>
@@ -158,8 +165,6 @@
                 <H1 id="cityTitle"></H1>
             </div>
         </div>
-        <input type="text" id="send1" value="" onload="first_city()" />
-
     </div>
 
     <!--Меню начала новой игры-->
