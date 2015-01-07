@@ -169,20 +169,26 @@
 
         <div id="resourceStat" onclick="this.style.display = 'none'; ">
             <div id="resourceTitle" ></div>
-            <span class="simpleText">Количество:<div id="resourceCount"></div></span>
-            <span class="simpleText">Скорость восстановления (ход):<div id="resourceRecovery"></div></span>
+            <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
+            <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
         </div>
         <div id="popupMenu" alt="">
             <div id="cityImg"></div>
             <H1 id="cityTitle"></H1>
-            <div class="cityMenu" id="rightMenu">
-
-            </div>
             <div class="cityMenu" id="leftMenu">
-                <span class="simpleText">Выручка: <div id="cityProfit"></div></span>
+                <span class="simpleText">Население: <span id="cityPopularity"></span></span><br>
+                <span class="simpleText">Счастье: <span id="cityHappy"></span></span><br>
+                <span class="simpleText">Здоровье: <span id="cityHealth"></span></span><br>
+                <span class="simpleText">Преступность: <span id="cityCrime"></span></span><br>
+                <span class="simpleText">Безработица: <span id="cityUnemployment"></span></span><br>
+                <span class="simpleText">Зарплата: <span id="citySalary"></span></span><br>
+                <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
+            </div>
+            <div class="cityMenu" id="rightMenu">
+                <span class="simpleText">Выручка: <span id="cityProfit"></span></span>
             </div>
             <div class="cityMenu" id="bottomMenu" >
-                <span class="simpleText">Уровень города:<div id="cityLevel"></div></span>
+                <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
                 <div class="button" id="updateButton" onclick="levelUp(document.getElementById('popupMenu').getAttribute('alt'));"></div>
             </div>
             <div id="closePopupMenuButton" class="button" onclick="popupMenuClose()"></div>

@@ -39,23 +39,31 @@ function levelUp(cityID) {
     }
 }
 
-function UpdatePopupMenu(cityid){
-    var level = getCityLevel(cityid);
+function UpdatePopupMenu(cityid) {
+
+    var city = map[cityid];
+    var level = city.level;
     var path = "url(\"./icon_and_textures/city" + level + ".png\")";
     document.getElementById('cityImg').style.backgroundImage = path;
 
     document.getElementById('cityLevel').innerHTML = level;
-    if(level == 6)
-    {
+    if (level == 6) {
         document.getElementById('updateButton').style.display = 'none';
     }
-    else
-    {
+    else {
         document.getElementById('updateButton').style.display = 'block';
     }
     document.getElementById('popupMenu').style.display = 'block';
     document.getElementById('popupMenu').setAttribute("alt", cityid);
     document.getElementById('cityProfit').innerHTML = GetCityProfit(cityid);
+
+    document.getElementById('cityPopularity').innerHTML = city.popularity;
+    document.getElementById('cityHappy').innerHTML = city.happy;
+    document.getElementById('cityHealth').innerHTML = city.health;
+    document.getElementById('cityCrime').innerHTML = city.crime;
+    document.getElementById('cityUnemployment').innerHTML = city.unemployment;
+    document.getElementById('citySalary').innerHTML = city.salary;
+    document.getElementById('cityTaxes').innerHTML = city.taxes;
 }
 
 function getCityName(id) {
@@ -74,4 +82,10 @@ function GetCityProfit(cityId)
     var theirSalary = city.salary * (city.taxes/100.0);
     var cityProfit = workingPeople * theirSalary;
     return cityProfit;
+}
+
+
+function NextGameStep()
+{
+
 }

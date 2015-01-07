@@ -30,7 +30,7 @@ function getCityNameById(id)
 
 function startstep(){
   var firststep=1;
-  document.getElementById('step').innerText=firststep;
+  document.getElementById('step').innerText=player.step;
 }
 function showResourse(){
     document.getElementById('coin_out').innerText= player.money;
