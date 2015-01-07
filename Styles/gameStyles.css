@@ -111,3 +111,15 @@
     padding: 100px;
     background: url("../images/water.jpg") center repeat;
 }
+
+#AgitationButton {
+
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    border-radius: 35px;
+    background: rgb(255, 216, 61) url("../images/agitationButton.png") no-repeat center;
+    background-size: contain;
+}
