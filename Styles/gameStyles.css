@@ -27,7 +27,7 @@
     left: 35%;
     right: 35%;
     width: auto;
-    top: 15%;
+    top: 20%;
     margin: 0;
 }
 
@@ -55,7 +55,7 @@
 .cityMenu
 {
     position: fixed;
-    top: 15%;
+    top: 23%;
     width: 30%;
     height: 70%;
     background-color: rgba(0, 0, 0, 0.5);
