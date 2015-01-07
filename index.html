@@ -148,13 +148,17 @@
 
     <!--Игровое поле-->
     <div id="game">
-        <div id="privatepanel">
-        <span>Началный город</span>
-        <span>Количество ресурсов</span>
-        </div>
+
+
         <canvas id="hexMap"></canvas>
 
+        <div id="privatepanel">
+            <span>Началный город</span>
+            <span>Количество ресурсов</span>
+        </div>
         <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
+
+
 
         <div id="resourceStat" onclick="this.style.display = 'none'; ">
             <div id="resourceTitle" ></div>
