@@ -36,11 +36,11 @@
 }
 
 #rightMenu {
-    left: 2%;
+    right: 2%;
 }
 
 #leftMenu {
-    right: 2%;
+    left: 2%;
 }
 
 #bottomMenu
@@ -60,6 +60,7 @@
     height: 70%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 25px rgba(255,255,155,0.5);
+    padding-top: 1%;
 }
 
 

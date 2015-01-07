@@ -11,7 +11,8 @@ var player =
         "coal": 50000,
         "wheat": 50000,
         "gas": 50000,
-        "rock": 50000
+        "rock": 50000,
+        "step": 1
     }
     ;
 

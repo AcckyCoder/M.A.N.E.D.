@@ -28,7 +28,7 @@ function getCityNameById(id)
 function startstep()//установить значение иттерации
 {
   var firststep=1;
-  document.getElementById('step').innerText=firststep;
+  document.getElementById('step').innerText=player.step;
 }
 
 
