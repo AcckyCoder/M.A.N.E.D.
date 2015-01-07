@@ -48,13 +48,12 @@ function levelUp(cityID) {
         }
 
         UpdatePopupMenu(cityID);
+        NextGameStep();
     }
     else
     {
         alert("Недостаточно денег!");
     }
-
-    NextGameStep();
 }
 
 function UpdatePopupMenu(cityid) {
@@ -105,7 +104,10 @@ function GetCityProfit(cityId)
 
 
 function updateCityParameters(city) {
-
+    if(city.health > 50)
+    {
+        var born
+    }
 }
 
 
