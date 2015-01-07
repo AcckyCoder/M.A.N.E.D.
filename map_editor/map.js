@@ -1,5 +1,19 @@
 var map = [
     {
+        "cityName": "Львов",
+        "level": 1,
+        "health": 50,
+        "taxes": 12,
+        "crime": 50,
+        "unemployment": 50,
+        "happy": 50,
+        "popularity": 2000,
+        "salary": 100,
+        "type": "city",
+        "texture": "City.png"
+    },
+
+    {
         "resourceCount": 28539,
         "recovery": 55,
         "resourceType": 0,
@@ -2468,19 +2482,6 @@ var map = [
         "resourceType": 0,
         "type": "gas",
         "texture": "gas.jpg"
-    },
-    {
-        "cityName": "Львов",
-        "level": 1,
-        "health": 50,
-        "taxes": 12,
-        "crime": 50,
-        "unemployment": 50,
-        "happy": 50,
-        "popularity": 2000,
-        "salary": 100,
-        "type": "city",
-        "texture": "City.png"
     },
     {
         "resourceCount": 88609,
