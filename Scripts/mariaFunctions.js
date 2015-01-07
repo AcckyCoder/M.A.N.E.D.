@@ -29,6 +29,7 @@ function getCityNameById(id)
 }
 
 function startstep(){
+  var firststep=1;
   document.getElementById('step').innerText=player.step;
 }
 function showResourse(){
