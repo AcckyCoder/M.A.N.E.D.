@@ -136,10 +136,10 @@ function createHexGrid() {
                 ctx.fillStyle = selectColor;//"#000000";
                 var  id = hexY * boardWidth + hexX;
                 drawHexagon(ctx, id, screenX, screenY, true);
-                if(map[id].type == resourceType.city) {
+                if(map[id].type == resourceType.city.value) {
                     drawPopupMenu(id);
                 }
-                else if(map[id].type != resourceType.grass)
+                else if(map[id].type != resourceType.grass.value)
                 {
                     showRecourceInfo(id);
                 }
