@@ -3,7 +3,6 @@
  */
 var one_player;
 var  two_player;
-
 function name_of_player(){
 
 do {
