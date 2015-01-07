@@ -4,29 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="../../Styles/pauseMenuStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="../../Styles/aboutUsStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="../../Styles/basicStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="../../Styles/mainMenuStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="../../Styles/styleInputData.css"/>
-    <link rel="stylesheet" type="text/css" href="../../Styles/rulesGameStyles.css">
-    <link rel="stylesheet" type="text/css" href="../../Styles/cloud.css">
-    <link rel="stylesheet" type="text/css" href="../../Styles/personalPanel.css">
+    <link rel="stylesheet" type="text/css" href="Styles/pauseMenuStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/aboutUsStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/basicStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/mainMenuStyles.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/styleInputData.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/rulesGameStyles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/cloud.css">
+    <link rel="stylesheet" type="text/css" href="Styles/personalPanel.css">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
 
 
-    <script src="../JQ/jquery-1.11.1.min.js"></script>
-    <script src="jquery-ui.min.js"></script>
-    <script src="jquerry.ui.touch-punch.js"></script>
-    <script src="../JQ/jquery.spritely.js" type="text/javascript"></script>
+    <script src="Scripts/JQ/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.2.custom/jquerry.ui.touch-punch.js"></script>
+    <script src="Scripts/JQ/jquery.spritely.js" type="text/javascript"></script>
 
-    <script src="../mainMenuScripts.js"></script>
-    <script src="../aboutUsScripts.js"></script>
-    <script src="../dataOfPlayer.js"></script>
-    <script src="../createCanvasMap.js" type="text/javascript"></script>
-    <script src="../workingSound.js"></script>
-    <script type="text/javascript" src="../../map_editor/map.js"></script>
+    <script src="Scripts/mainMenuScripts.js"></script>
+    <script src="Scripts/aboutUsScripts.js"></script>
+    <script src="Scripts/dataOfPlayer.js"></script>
+    <script src="Scripts/createCanvasMap.js" type="text/javascript"></script>
+    <script src="Scripts/workingSound.js"></script>
+    <script type="text/javascript" src="map_editor/map.js"></script>
     <script src="Scripts/player.js" type="text/javascript"></script>
     <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
 
@@ -77,9 +77,9 @@
 </head>
 <body>
 
-<audio id="my_audio" src="../../Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"></audio>
+<audio id="my_audio" src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"></audio>
 <audio id="button_click">
-    <source src="../../Audio/bell_ring.mp3">
+    <source src="Audio/bell_ring.mp3">
 </audio>
 
 <div class="menu">
@@ -110,19 +110,19 @@
     <div id="aboutUsMenu">
 
         <div class="photo" id="jenya" onclick="ShowInfo(this.id);">
-            <img id="jenyaName" src="../../images/we/Женя.png">
+            <img id="jenyaName" src="images/we/Женя.png">
         </div>
         <div class="photo" id="dima" onclick="ShowInfo(this.id);">
-            <img id="dimaName" src="../../images/we/Дима.png">
+            <img id="dimaName" src="images/we/Дима.png">
         </div>
         <div class="photo" id="masha" onclick="ShowInfo(this.id);">
-            <img id="mashaName" src="../../images/we/Маша.png">
+            <img id="mashaName" src="images/we/Маша.png">
         </div>
         <div class="photo" id="natasha" onclick="ShowInfo(this.id);">
-            <img id="natashaName" src="../../images/we/Наташа.png">
+            <img id="natashaName" src="images/we/Наташа.png">
         </div>
         <div class="photo" id="lesha" onclick="ShowInfo(this.id);">
-            <img id="leshaName" src="../../images/we/Лёша%20Team%20Lead.png">
+            <img id="leshaName" src="images/we/Лёша%20Team%20Lead.png">
         </div>
 
         <div id="whiteOverlayAboutUs" onclick="ShowMenu('whiteOverlayAboutUs',null);">
@@ -191,7 +191,7 @@
 
     <!--Меню паузы-->
     <div id="pauseMenu">
-        <div id="blur"><img src="../../images/backPauseMenuImage.png" width="100%"
+        <div id="blur"><img src="images/backPauseMenuImage.png" width="100%"
                             height="100%"></div>
         <div class="logo" id="inPauseMenu"></div>
         <div id="pauseButtonsWrapper">
