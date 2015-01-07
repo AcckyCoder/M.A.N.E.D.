@@ -32,14 +32,12 @@ function startstep(){
   var firststep=1;
   document.getElementById('step').innerText=player.step;
 }
-function showResourse(){
-    document.getElementById('coin_out').innerText= player.money;
-}
 
 
 function showResourse(){
     document.getElementById('coin_out').innerText= player.money;
     document.getElementById('nameplayer').innerHTML= player.name;
+    document.getElementById('step').innerHTML = player.step;
 } //показать текущие ресурсы юзера
 
 function carryOutAgitation(money,index_city,type_number){ //на агитацию  нужны деньги и указать где проходит. Агитация 2х видов
@@ -64,4 +62,12 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
     }
     player.money=rest;
 
+}
+
+
+function StartAgitation()
+{
+    carryOutAgitation();
+
+    NextGameStep();
 }
