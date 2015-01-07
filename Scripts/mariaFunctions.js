@@ -68,6 +68,5 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
 function StartAgitation()
 {
     carryOutAgitation();
-
     NextGameStep();
 }

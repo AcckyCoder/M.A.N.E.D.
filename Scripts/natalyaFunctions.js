@@ -34,7 +34,7 @@ function drawPopupMenu(cityid)
     UpdatePopupMenu(cityid);
 }
 
-var levelUpPrice  = [100000,200000,300000,400000,500000,600000];
+var levelUpPrice  = [1000,2000,3000,4000,5000,6000];
 
 function levelUp(cityID) {
 
@@ -42,14 +42,19 @@ function levelUp(cityID) {
 
     if (player.money > levelUpPrice[level - 1]) {
         if (level < 6)
+        {
             map[cityID].level++;
+            player.money -= levelUpPrice[level-1];
+        }
 
-        UpdatePopupMenu();
+        UpdatePopupMenu(cityID);
     }
     else
     {
         alert("Недостаточно денег!");
     }
+
+    NextGameStep();
 }
 
 function UpdatePopupMenu(cityid) {
@@ -98,21 +103,44 @@ function GetCityProfit(cityId)
 }
 
 
+function updateCityParameters(city) {
+
+}
+
+
+function updateResourceParameters(resource) {
+    resource.resourceCount += resource.recovery;
+}
+
+
+function updateProductionParameters(production) {
+
+}
+
 function NextGameStep()
 {
     for(var i = 0; i<map.length; i++){
         if(map[i].type == resourceType.city)
         {
-
+            updateCityParameters(map[i]);
         }
         else if(map[i].type == resourceType.production)
         {
-
+            updateProductionParameters(map[i]);
         }
         else
         {
-
+            updateResourceParameters(map[i]);
         }
 
     }
+
+    player.step++;
+    showResourse();
+}
+
+
+function GetSelectedCityId()
+{
+    return document.getElementById('popupMenu').getAttribute('alt');
 }
