@@ -90,6 +90,7 @@ function getCityName(id) {
 
 function popupMenuClose() {
     document.getElementById('popupMenu').style.display = 'none';
+    document.getElementById('popupMenu').setAttribute('alt', "");
 }
 
 function GetCityProfit(cityId)
