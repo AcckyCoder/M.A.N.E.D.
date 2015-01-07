@@ -83,7 +83,7 @@ document.onkeyup = function (e) {
 function showRecourceInfo(id) {
     document.getElementById('resourceStat').style.display = 'block';
     document.getElementById('resourceTitle').innerHTML = map[id].type;
-    document.getElementById('resourceCount').innerHTML = map[id].res_cnt;
+    document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
     document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
 }
 function createHexGrid() {
@@ -136,7 +136,7 @@ function createHexGrid() {
                 ctx.fillStyle = selectColor;//"#000000";
                 var  id = hexY * boardWidth + hexX;
                 drawHexagon(ctx, id, screenX, screenY, true);
-                if(map[id].type == "notResourse") {
+                if(map[id].type == "city") {
                     drawPopupMenu(id);
                 }
                 else if(map[id].type != "grass")
@@ -164,7 +164,7 @@ function drawPopupMenu(cityid)
 }
 
 function getCityName(id) {
-    return map[id].cityname;
+    return map[id].cityName;
 }
 
 function popupMenuClose() {
