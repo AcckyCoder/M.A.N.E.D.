@@ -72,22 +72,6 @@ function create_map()
     }
 
 }
-        function first_city(){
-            var found_city=[{
-             "name":"" ,
-             "index":""
-            }]
-
-
-            for(var i=0;i<map.size();i++){
-
-             if(map.cityname!="undefined")
-             found_city[i]=map.cityname;
-            }
-
-        }
-
-
 
 $(document).ready(function() {
     $('body').append('<div id="blackout"></div>');
