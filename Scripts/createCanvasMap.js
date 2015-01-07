@@ -109,7 +109,7 @@ function createHexGrid() {
         ctx.lineWidth = 2;
         drawBoard(ctx, boardWidth, boardHeight);
 
-        map[first_city_id()].owner = "player";
+        map[first_city_id()].owner = player.name;
     }
 
     showResourse();
@@ -136,10 +136,10 @@ function createHexGrid() {
                 ctx.fillStyle = selectColor;//"#000000";
                 var  id = hexY * boardWidth + hexX;
                 drawHexagon(ctx, id, screenX, screenY, true);
-                if(map[id].type == "city") {
+                if(map[id].type == resourceType.city) {
                     drawPopupMenu(id);
                 }
-                else if(map[id].type != "grass")
+                else if(map[id].type != resourceType.grass)
                 {
                     showRecourceInfo(id);
                 }

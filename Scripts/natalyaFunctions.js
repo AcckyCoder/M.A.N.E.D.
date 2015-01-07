@@ -1,3 +1,16 @@
+function GetResourceRusTitle(type) {
+    switch (type)
+    {
+        case resourceType.city.value: return resourceType.city.rusText;
+        case resourceType.coal.value: return resourceType.coal.rusText;
+        case resourceType.gas.value: return resourceType.gas.rusText;
+        case resourceType.grass.value: return resourceType.grass.rusText;
+        case resourceType.production.value: return resourceType.production.rusText;
+        case resourceType.rock.value: return resourceType.rock.rusText;
+        case resourceType.tree.value: return resourceType.tree.rusText;
+        case resourceType.wheat.value: return resourceType.wheat.rusText;
+    }
+}
 /**
  * Created by Natalya on 07.01.2015.
  */
@@ -5,7 +18,7 @@
 
 function showRecourceInfo(id) {
     document.getElementById('resourceStat').style.display = 'block';
-    document.getElementById('resourceTitle').innerHTML = map[id].type;
+    document.getElementById('resourceTitle').innerHTML = GetResourceRusTitle(map[id].type);
     document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
     document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
 }
@@ -87,5 +100,19 @@ function GetCityProfit(cityId)
 
 function NextGameStep()
 {
+    for(var i = 0; i<map.length; i++){
+        if(map[i].type == resourceType.city)
+        {
 
+        }
+        else if(map[i].type == resourceType.production)
+        {
+
+        }
+        else
+        {
+
+        }
+
+    }
 }
