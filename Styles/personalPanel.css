@@ -2,10 +2,18 @@
 {
 
 position:fixed;
+
     top: 2vh;
     right: 2vh;
-    width: 50vh;
-    height: 50vh;
+    width: 190vh;
+    height: 15vh;
 background-color: rgba(0, 0, 0, 0.5);
 border-radius: 5px;
+z-index: 1000;
+}
+#coin{
+background-image: url("../icon_and_textures/coin.png");
+ width: 30%;
+ height: 30%;
+ background-repeat: no-repeat;
 }
