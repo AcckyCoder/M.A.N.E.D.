@@ -27,3 +27,10 @@ function getCityNameById(id)
 {
     return map[id].cityName;
 }
+
+function showResourse(){
+
+
+
+
+}
