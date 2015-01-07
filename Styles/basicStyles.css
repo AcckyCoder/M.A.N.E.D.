@@ -129,3 +129,44 @@ h2 {
 .simpleText {
     color: #ffffff;
 }
+
+#rightMenu {
+    left: 2%;
+}
+
+#leftMenu {
+    right: 2%;
+}
+
+#bottomMenu
+{
+    top: 75%;
+    height: 20%;
+    left: 35%;
+    right: 35%;
+    width: auto;
+}
+
+.cityMenu
+{
+    position: fixed;
+    top: 15%;
+    width: 30%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255,255,155,0.5);
+}
+
+
+#updateButton
+{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    border-radius: 35px;
+    background: rgb(255, 216, 61) url("../images/updatebkg.png") no-repeat center;
+    background-size: contain;
+
+}
