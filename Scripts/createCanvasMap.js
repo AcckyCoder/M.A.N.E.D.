@@ -155,12 +155,46 @@ function getCityLevel(cityid) {
 function drawPopupMenu(cityid)
 {
     document.getElementById('cityTitle').innerHTML = getCityName(cityid);
-    var path = "url(\"./icon_and_textures/city" + getCityLevel(cityid) + ".png\")";
+    var level = getCityLevel(cityid);
+    var path = "url(\"./icon_and_textures/city" + level + ".png\")";
     document.getElementById('cityImg').style.backgroundImage = path;
+
+    document.getElementById('cityLevel').innerHTML = level;
+    if(level == 6)
+    {
+        document.getElementById('updateButton').style.display = 'none';
+    }
+    else
+    {
+        document.getElementById('updateButton').style.display = 'block';
+    }
     document.getElementById('popupMenu').style.display = 'block';
-    console.log(cityid);
+    document.getElementById('popupMenu').setAttribute("alt", cityid);
+}
 
+var levelUpPrice  = [100000,200000,300000,400000,500000,600000];
 
+function levelUp(cityID) {
+
+    var level = map[cityID].level;
+
+    if (player.money > levelUpPrice[level - 1]) {
+        if (level < 6)
+            map[cityID].level++;
+
+        level = map[cityID].level;
+        document.getElementById('cityLevel').innerHTML = level;
+
+        var path = "url(\"./icon_and_textures/city" + level + ".png\")";
+        document.getElementById('cityImg').style.backgroundImage = path;
+
+        if (level == 6)
+            document.getElementById('updateButton').style.display = 'none';
+    }
+    else
+    {
+        alert("Недостаточно денег!");
+    }
 }
 
 function getCityName(id) {
