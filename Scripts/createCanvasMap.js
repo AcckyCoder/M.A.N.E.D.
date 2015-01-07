@@ -80,12 +80,8 @@ document.onkeyup = function (e) {
     scroll = false;
 }
 
-function showRecourceInfo(id) {
-    document.getElementById('resourceStat').style.display = 'block';
-    document.getElementById('resourceTitle').innerHTML = map[id].type;
-    document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
-    document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
-}
+
+
 function createHexGrid() {
 
     var canvas = document.getElementById('hexMap');
@@ -112,6 +108,8 @@ function createHexGrid() {
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
         drawBoard(ctx, boardWidth, boardHeight);
+
+        map[first_city_id()].owner = "player";
     }
 
     function CanvasClickEventHandler(e) {
@@ -148,62 +146,6 @@ function createHexGrid() {
     }
 }
 
-function getCityLevel(cityid) {
-    return map[cityid].level;
-}
-
-function drawPopupMenu(cityid)
-{
-    document.getElementById('cityTitle').innerHTML = getCityName(cityid);
-    var level = getCityLevel(cityid);
-    var path = "url(\"./icon_and_textures/city" + level + ".png\")";
-    document.getElementById('cityImg').style.backgroundImage = path;
-
-    document.getElementById('cityLevel').innerHTML = level;
-    if(level == 6)
-    {
-        document.getElementById('updateButton').style.display = 'none';
-    }
-    else
-    {
-        document.getElementById('updateButton').style.display = 'block';
-    }
-    document.getElementById('popupMenu').style.display = 'block';
-    document.getElementById('popupMenu').setAttribute("alt", cityid);
-}
-
-var levelUpPrice  = [100000,200000,300000,400000,500000,600000];
-
-function levelUp(cityID) {
-
-    var level = map[cityID].level;
-
-    if (player.money > levelUpPrice[level - 1]) {
-        if (level < 6)
-            map[cityID].level++;
-
-        level = map[cityID].level;
-        document.getElementById('cityLevel').innerHTML = level;
-
-        var path = "url(\"./icon_and_textures/city" + level + ".png\")";
-        document.getElementById('cityImg').style.backgroundImage = path;
-
-        if (level == 6)
-            document.getElementById('updateButton').style.display = 'none';
-    }
-    else
-    {
-        alert("Недостаточно денег!");
-    }
-}
-
-function getCityName(id) {
-    return map[id].cityName;
-}
-
-function popupMenuClose() {
-    document.getElementById('popupMenu').style.display = 'none';
-}
 
 
 $('#game').height();
@@ -283,6 +225,7 @@ function drawBoard(canvasContext, width, height) {
         }
     }
 }
+
 
 
 function drawHexagon(canvasContext, id, x, y, fill) {
