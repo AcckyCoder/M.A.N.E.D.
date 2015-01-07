@@ -58,17 +58,20 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
         map[index_city].salary+=money;
         map[index_city].popularity+=10;
         map[index_city].helth+=10;  //есть деньги, есть возможность купить лекарство
-
     }
     player.money=rest;
 
 }
 
-
-function StartAgitation()
+function StartAgitation(type)
 {
     var id=GetSelectedCityId();
-    carryOutAgitation(400,id,2);
+
+    if(type==2)
+        carryOutAgitation(500,id,2);
+    else
+        carryOutAgitation(200,id,1);
+
     NextGameStep();
     UpdatePopupMenu(id);
 }
