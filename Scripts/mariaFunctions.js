@@ -60,7 +60,6 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
     player.money=rest;
 
 }
-
 function StartAgitation(type)
 {
     var id=GetSelectedCityId();
@@ -72,4 +71,13 @@ function StartAgitation(type)
 
     NextGameStep();
     UpdatePopupMenu(id);
+}
+
+function augmentTax(){
+    var id=GetSelectedCityId();
+    map[id].taxes+=1;
+    map[id].happy-=5;//никому от этого не весело :(
+    NextGameStep();
+    UpdatePopupMenu(id);
+
 }
