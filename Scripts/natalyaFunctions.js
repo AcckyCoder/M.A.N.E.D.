@@ -180,19 +180,19 @@ function updateCityParameters(city) {
 
 
 
-    if (city.taxes > 12)
+    if (city.taxes > 15)
     {
         possible = Math.random() * 100;
         if(possible%5 == 0)
         {
             AddHappy(city, -1);
-            AddUnemployment(city.unemployment, 1);
+            city.popularity -= Math.random()*15;
         }
     }
-    else if(city.taxes <= 8)
+    else if(city.taxes <= 15)
     {
         AddHappy(city, 1);
-        AddUnemployment(city.unemployment, -1);
+        city.popularity += Math.random()*15;
     }
 
     if(city.happy > 50)
