@@ -5,10 +5,17 @@ function GetResourceRusTitle(type) {
         case resourceType.coal.value: return resourceType.coal.rusText;
         case resourceType.gas.value: return resourceType.gas.rusText;
         case resourceType.grass.value: return resourceType.grass.rusText;
+        case resourceType.wheat.value: return resourceType.wheat.rusText;
         case resourceType.production.value: return resourceType.production.rusText;
         case resourceType.rock.value: return resourceType.rock.rusText;
         case resourceType.tree.value: return resourceType.tree.rusText;
-        case resourceType.wheat.value: return resourceType.wheat.rusText;
+        case resourceType.sawMeal.value: return resourceType.sawMeal.rusText;
+        case resourceType.mine.value: return resourceType.mine.rusText;
+        case resourceType.gasRig.value: return resourceType.gasRig.rusText;
+        case resourceType.farm.value: return resourceType.farm.rusText;
+        case resourceType.quarry.value: return resourceType.quarry.rusText;
+
+
     }
 }
 /**
@@ -16,11 +23,21 @@ function GetResourceRusTitle(type) {
  */
 
 
-function showRecourceInfo(id) {
+function showResourceInfo(id) {
     document.getElementById('resourceStat').style.display = 'block';
     document.getElementById('resourceTitle').innerHTML = GetResourceRusTitle(map[id].type);
     document.getElementById('resourceCount').innerHTML = map[id].resourceCount.toString();
     document.getElementById('resourceRecovery').innerHTML = map[id].recovery.toString();
+    if(map[id].mining != 0)
+    {
+        document.getElementById('resourceMining').style.display = 'block';
+        document.getElementById('resourceMining').innerHTML = map[id].mining.toString();
+    }
+    else
+    {
+        document.getElementById('resourceMining').style.display = 'none';
+    }
+    document.getElementById('resourceStat').setAttribute('alt', id);
 }
 
 
@@ -92,6 +109,11 @@ function getCityName(id) {
 function popupMenuClose() {
     document.getElementById('popupMenu').style.display = 'none';
     document.getElementById('popupMenu').setAttribute('alt', "");
+}
+
+function resourceMenuClose() {
+    document.getElementById('resourceStat').style.display = 'none';
+    document.getElementById('resourceStat').setAttribute('alt', "");
 }
 
 function GetCityProfit(cityId)
@@ -342,4 +364,37 @@ function NextGameStep()
 function GetSelectedCityId()
 {
     return document.getElementById('popupMenu').getAttribute('alt');
+}
+
+function GetSelectedResourceId()
+{
+    return document.getElementById('resourceStat').getAttribute('alt');
+}
+
+
+function UpdateResource(resourceId) {
+
+    if(player.money > 10000) {
+        var resource = map[resourceId];
+
+        if (resource.type == resourceType.coal.value) {
+            resource.type = resourceType.mine.value;
+        }
+        if (resource.type == resourceType.wheat.value) {
+            resource.type = resourceType.farm.value;
+        }
+        if (resource.type == resourceType.rock.value) {
+            resource.type = resourceType.quarry.value;
+        }
+        if (resource.type == resourceType.gas.value) {
+            resource.type = resourceType.gasRig.value;
+        }
+        if (resource.type == resourceType.tree.value) {
+            resource.type = resourceType.sawMeal.value;
+        }
+
+        resource.owner = player.name;
+        resource.mining = Math.random()*1000;
+
+    }
 }

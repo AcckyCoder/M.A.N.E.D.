@@ -9,6 +9,16 @@
     right: 2%;
 }
 
+#closeResourceMenuButton {
+    background-image: url("../images/closeButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
 
 #cityImg {
 
@@ -65,11 +75,27 @@
 
 
 #updateButton
-{
+ {
+
     position: absolute;
     top: 50%;
     width: 50%;
     height: 40%;
+    left: 25%;
+    border-radius: 35px;
+    background: rgb(255, 216, 61) url("../images/updatebkg.png") no-repeat center;
+    background-size: contain;
+
+
+ }
+
+
+#updateResourceButton
+{
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    height: 25%;
     left: 25%;
     border-radius: 35px;
     background: rgb(255, 216, 61) url("../images/updatebkg.png") no-repeat center;
@@ -117,9 +143,9 @@
     position: relative;
     margin-bottom: 1%;
     top: 15%;
-    width: 50%;
+    width: 70%;
     height: 10%;
-    left: 25%;
+    left: 15%;
     border-radius: 35px;
     background: rgb(255, 216, 61) no-repeat center;
     background-size: contain;

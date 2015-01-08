@@ -170,10 +170,13 @@
 
 
 
-        <div id="resourceStat" onclick="this.style.display = 'none'; ">
+        <div id="resourceStat" alt="">
             <div id="resourceTitle" ></div>
             <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
             <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
+            <span class="simpleText">Скорость добычи (ход): <span id="resourceMinig"></span></span><br>
+            <div class="button" id="updateResourceButton" onclick="UpdateResource(GetSelectedResourceId());"></div>
+            <div id="closeResourceMenuButton" class="button" onclick="resourceMenuClose();"></div>
         </div>
         <div id="popupMenu" alt="">
             <div id="cityImg"></div>

@@ -12,5 +12,10 @@ var resourceType =
     tree: {value: "tree", rusText: "Дерево"},
     city: {value: "city", rusText: "Город"},
     production: {value: "production", rusText: "Производство"},
-    grass: {value: "grass", rusText: "Трава"}
+    grass: {value: "grass", rusText: "Трава"},
+    mine:{value: "mine", rusText: "Шахта"},
+    sawMeal:{value: "sawMeal", rusText: "Лесопилка"},
+    farm:{value: "farm", rusText: "Ферма"},
+    gasRig:{value: "gasRig", rusText: "Газовая вышка"},
+    quarry:{value: "quarry", rusText: "Карьер"}
 };

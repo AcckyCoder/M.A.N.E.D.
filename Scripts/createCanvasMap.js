@@ -143,7 +143,7 @@ function createHexGrid() {
                 }
                 else if(map[id].type != resourceType.grass.value)
                 {
-                    showRecourceInfo(id);
+                    showResourceInfo(id);
                 }
             }
         }
