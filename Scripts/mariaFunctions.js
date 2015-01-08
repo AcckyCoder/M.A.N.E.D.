@@ -74,10 +74,46 @@ function StartAgitation(type)
 }
 
 function augmentTax(){
+
     var id=GetSelectedCityId();
+    var start_tax=map[id].taxes;
+
+    if(start_tax<=15)
+    {
+        var min = 1;
+        var max = 5;
+    }
+   else
+    {
+        var min = 5;
+        var max = 8;
+    }
+
+
+    var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+    rand = Math.round(rand);
+
+    while (rand == min - 1 || rand == max + 1) {
+
+        var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+        rand = Math.round(rand);
+
+    }
+
     map[id].taxes+=1;
-    map[id].happy-=5;//никому от этого не весело :(
+
+    map[id].happy-=rand;//никому от этого не весело :(
+    if(map[id].happy<0)
+        map[id].happy=0;
+
+
+    if(map[id].taxes>100)
+        map[id].taxes=100;
+
     NextGameStep();
     UpdatePopupMenu(id);
+
 
 }
