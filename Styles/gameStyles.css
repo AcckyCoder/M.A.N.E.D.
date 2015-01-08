@@ -1,0 +1,126 @@
+#closePopupMenuButton {
+    background-image: url("../images/closeButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+}
+
+
+#cityImg {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 150px;
+    min-height: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+#cityTitle {
+    color: #ffffff;
+    position: fixed;
+    height: 20%;
+    left: 35%;
+    right: 35%;
+    width: auto;
+    top: 20%;
+    margin: 0;
+}
+
+.simpleText {
+    color: #ffffff;
+}
+
+#rightMenu {
+    right: 2%;
+}
+
+#leftMenu {
+    left: 2%;
+}
+
+#bottomMenu
+{
+    top: 75%;
+    height: 18%;
+    left: 35%;
+    right: 35%;
+    width: auto;
+}
+
+.cityMenu
+{
+    position: fixed;
+    top: 23%;
+    width: 30%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255,255,155,0.5);
+    padding-top: 1%;
+}
+
+
+#updateButton
+{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    border-radius: 35px;
+    background: rgb(255, 216, 61) url("../images/updatebkg.png") no-repeat center;
+    background-size: contain;
+
+}
+
+
+#hexMap {
+    display: block;
+    position: relative;
+
+
+}
+
+#popupMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#resourceStat {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 25%;
+    width: 50%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    background: url("../images/water.jpg") center repeat;
+}
+
+.AgitationButton {
+
+    position: relative;
+    margin-bottom: 1%;
+    top: 15%;
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    border-radius: 35px;
+    background: rgb(255, 216, 61) no-repeat center;
+    background-size: contain;
+}

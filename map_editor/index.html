@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="Wed, 26 Feb 1999 08:21:57 GMT">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <meta http-equiv="Cache-Control" content="max-age=10800, must-revalidate">
+    <meta http-equiv="Cache-Control" content="max-age=10800, proxy-revalidate">
+    <title>True CSS3 convex polygons</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+</head>
+<body>
+    <div class="map" ></div>
+    <div class="popup-box" id="popup-box-1"><div class="close">X</div><div class="top"><h2 id="tst">Параметры ячейки</h2></div>
+     <div class="bottom">
+         <form method="post" action="map_save.php" id="map_form">
+             <input type="hidden" name="id" id="form_id">
+             <label>Тип</label>
+             <select name="type" id="type">
+
+             </select><a href="types.php">Справочник</a><br><br>
+             <label>Текстура</label>
+             <select name="texture" id="texture">
+
+             </select><a href="texture.php">Справочник</a><br><br>
+             <label>Кол-во ресурсов</label>
+             <input type="text" name="res" id="res"><br><br>
+             <label>Город</label>
+             <input type="text" name="city" id="city"><br><br>
+             <input type="hidden" name="json" id="jsn"><br><br>
+             <button id="sub" type="button">Сохранить</button>
+             <input type="submit" value="Save" >
+         </form>
+     </div></div>
+    <script type="text/javascript">
+    document.body.onloadend = create_map();
+</script>
+</body>
+</html>

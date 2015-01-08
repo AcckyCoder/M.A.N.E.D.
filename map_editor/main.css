@@ -1,0 +1,464 @@
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+
+input:focus{
+    outline:1px dotted #CCC;
+}
+
+a:focus{
+	outline:0px;
+}
+
+td.header{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color: #003366;
+
+	font-weight : bold;
+
+	background-color : #D3DCE3;
+
+	text-align : center;
+
+}
+
+
+
+td.lite{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+}
+
+
+
+td.hard{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+}
+
+
+
+a{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+	color : #660000;
+
+	text-decoration : none;
+
+}
+
+
+
+a:hover{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+	color : #333333;
+
+	text-decoration : none;
+
+}
+
+
+
+
+
+.header1{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color: #999933;
+
+}
+
+
+
+.header2{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color: #660000;
+
+}
+
+
+
+.text{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+}
+
+
+
+.text_g{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 11px;
+
+	color : #666666;
+
+}
+
+
+
+.copyright{
+
+	font-family : Tahoma;
+
+	font-size : 11px;
+
+	color : #333333;
+
+}
+
+
+
+A.copyright{
+
+	font-family : Tahoma;
+
+	font-size : 11px;
+
+	color : #660000;
+
+	text-decoration : none;
+
+}
+
+
+
+A:HOVER.copyright{
+
+	font-family : Tahoma;
+
+	font-size : 11px;
+
+	color : #8D8D8D;
+
+	text-decoration : underline;
+
+}
+
+
+
+.menu{
+
+	font-family : Tahoma;
+
+	font-size : 12px;
+
+	color : #333333;
+
+}
+
+
+
+A.menu{
+
+	font-family : Tahoma;
+
+	font-size : 12px;
+
+	color : #660000;
+
+	text-decoration : none;
+
+}
+
+
+
+A:HOVER.menu{
+
+	font-family : Tahoma;
+
+	font-size : 12px;
+
+	color : #336699;
+
+	text-decoration : none;
+
+}
+
+
+
+.second_menu{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color : #333333;
+
+	font-weight : bold;
+
+}
+
+
+
+A.second_menu{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color : #660000;
+
+	text-decoration : none;
+
+	font-weight : bold;
+
+}
+
+
+
+A:HOVER.second_menu{
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-size : 12px;
+
+	color : #336699;
+
+	text-decoration : none;
+
+	font-weight : bold;
+
+}
+
+
+
+.header{
+
+	font-family : Tahoma;
+
+	font-size : 12px;
+
+	color: #602829;
+
+	font-weight : bold;
+
+}
+
+
+
+input.normal{
+
+	border-width: 1px;
+
+	border-color: #D2D2D2;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	height: 18px;
+
+	width: 200px;
+
+	color: #333333;
+
+}
+
+
+
+input.empty{
+
+	border-width: 1px;
+
+	border-color: red;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	height: 18px;
+
+	width: 200px;
+
+	color: #333333;
+
+}
+
+
+input{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+
+td.text input[type="text"],td.text select{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	width:200px;
+}
+
+input.button{
+
+	border-width: 1px;
+
+	border-color: #D2D2D2;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	height: 18px;
+
+	width: 100px;
+
+	color: #333333;
+
+	background-color: #EDEDED;
+}
+
+input#button_1701{
+
+margin-left:50px;
+
+}
+
+input#button_1700{
+
+margin-left:-30px;
+
+}
+
+
+select{
+
+	border-width: 1px;
+
+	border-color: #D2D2D2;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	height: 18px;
+
+	width: 200px;
+
+	color: #333333;
+
+}
+
+
+
+TEXTAREA {
+
+	border-width: 1px;
+
+	border-color: #D2D2D2;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	color: #333333;
+
+}
+
+
+
+TEXTAREA.normal {
+
+	border-width: 1px;
+
+	border-color: #D2D2D2;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	width:200px;
+
+	height:80px;
+
+	color: #333333;
+
+}
+
+
+
+TEXTAREA.empty {
+
+	border-width: 1px;
+
+	border-color: red;
+
+	border-style: solid;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	width:200px;
+
+	height:80px;
+
+	color: #333333;
+
+}
+
+
+
+INPUT.chk {
+
+	height: 15px;
+
+	width: 15px;
+
+}
+
+.o{
+
+	font-size : 3px;
+
+}
+
+.parser{
+
+	text-align : justify;
+
+}

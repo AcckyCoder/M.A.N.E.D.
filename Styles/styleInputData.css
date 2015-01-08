@@ -1,0 +1,25 @@
+
+.label_better {
+    padding-top: 15px;
+    background: rgba(255, 237, 58, 0.80);
+    box-shadow: 0 1px 4px rgba(0,0,0,1);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 10vh;
+    text-align: center;
+    outline: none;
+    position: relative;
+    width: 70%;
+    margin: 5px;
+}
+
+
+#loginForm {
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+}

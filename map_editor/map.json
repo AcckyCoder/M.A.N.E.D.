@@ -1,0 +1,3152 @@
+var map = [
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Херсон"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Чернигов"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Кировоград"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Хмельницкий"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Полтава"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Одесса"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Ужгород"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Винница"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Ровно"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "City.png",
+"res_cnt": 0,
+"city": 0,
+"cityname": "Луцк"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "gas.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "rocks.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "trees.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "coal.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "grass.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+},
+{
+"type": 0,
+"texture": "wheat.jpg",
+"res_cnt": 0,
+"city": 0,
+"cityname": "undefined"
+}
+]

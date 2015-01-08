@@ -1,146 +1,228 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <link rel="stylesheet" type="text/css" href="Styles/gameStyles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
     <link rel="stylesheet" type="text/css" href="Styles/pauseMenuStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/aboutUsStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/basicStyles.css"/>
     <link rel="stylesheet" type="text/css" href="Styles/mainMenuStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="style_input_data.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/RulesGameStyles.css">
-    <link rel="stylesheet" type="text/css" href="Styles/Сloud.css">
+    <link rel="stylesheet" type="text/css" href="Styles/styleInputData.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/rulesGameStyles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/cloud.css">
+    <link rel="stylesheet" type="text/css" href="Styles/personalPanel.css">
     <meta charset="UTF-8">
     <title>M.A.N.E.D.</title>
-    <script src="Scripts/MainMenuScripts.js"></script>
-    <script src="Scripts/AbutUsScripts.js"></script>
-    <script src="Scripts/data_of_player.js"></script>
-    <script src="Scripts/JQ/jquery-1.6.3.min.js" type="text/javascript"></script>
-    <script src="Scripts/JQ/jquery.spritely-0.6.js" type="text/javascript"></script>
-    <script src="Scripts/Working_sound.js"></script>
-    <script type="text/javascript">
 
 
+    <script src="Scripts/JQ/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.2.custom/jquerry.ui.touch-punch.js"></script>
+    <script src="Scripts/JQ/jquery.spritely.js" type="text/javascript"></script>
+
+    <script src="Scripts/mainMenuScripts.js"></script>
+    <script src="Scripts/aboutUsScripts.js"></script>
+    <script src="Scripts/createCanvasMap.js" type="text/javascript"></script>
+    <script src="Scripts/workingSound.js"></script>
+    <script type="text/javascript" src="map_editor/map.js"></script>
+    <script src="Scripts/player.js" type="text/javascript"></script>
+    <script src="Scripts/mariaFunctions.js" type="text/javascript"></script>
+    <script src="Scripts/natalyaFunctions.js" type="text/javascript"></script>
+    <script src="Scripts/resourceType.js" type="text/javascript"></script>
+    <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
+
+    <script>
         //код,отвечающий за движение облаков
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
             window.actions = {
                 walkingClouds: function () {
                     $('#far-clouds').spSpeed(2);
                 }
-                };
+            };
         });
-         //код,отвечающий за зацикливание трека
-        $(function(){
-            wingsSound = document.getElementById("my_audio");
-            wingsSound.addEventListener('ended', function() {
+
+        function get_cookie(cookie_name) {
+            var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+
+            if (results)
+                return ( unescape(results[2]) );
+            else
+                return null;
+        }
+
+        window.onload = function () {
+            var cookie = get_cookie('music');
+            console.log(cookie);
+            if (cookie === "false") {
+                console.log(cookie);
+                document.getElementById('volume').id = 'noVolume';
+            }
+        }
+        //код,отвечающий за зацикливание трека
+        $(function () {
+            var cookie = get_cookie('music');
+            var wingsSound = document.getElementById("my_audio");
+            wingsSound.addEventListener('ended', function () {
                 this.currentTime = 0;
                 this.play();
             }, false);
-           wingsSound.play();
+
+            if (cookie === "true") {
+                //wingsSound.play();
+            }
+
         });
+
     </script>
 </head>
 <body>
 
-<audio src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"  id="my_audio" > </audio>
+<audio id="my_audio" src="Audio/Hans%20Zimmer%20-%20Lost%20but%20Won.mp3"></audio>
 <audio id="button_click">
-    <source src="Audio/bell_ring.mp3" >
+    <source src="Audio/bell_ring.mp3">
 </audio>
 
-    <div class="menu">
+<div class="menu">
 
-        <!--Стартовое меню игры-->
-        <div id="main">
-            <div class="logo"></div>
+    <!--Стартовое меню игры-->
+    <div id="main">
+        <div class="logo"></div>
 
-            <div id="substrate" onload=action.walkingClouds()></div>
-            <div id="far-clouds"  onload=action.walkingClouds()></div>
-            <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu()" alt="Настройки" title="Настройки"></div>
-            <div class="button" id="playButton" onclick="ShowMenu('main','newGame')"></div>
-            <div id="overlay" onclick="HideSettingsMenu()"></div>
-            <div id="settingMenu">
-                <div class="button" id="volume" onclick="changeId()" alt="Вкл/Выкл звук" title="Вкл/Выкл звук"></div>
-                <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')" alt="Правила игры" title="Правила игры">
-                </div>
-                <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')" alt="О разработчиках" title="О разработчиках"></div>
-                <div class="settings button" id="settingsButton2" onclick="HideSettingsMenu()"></div>
+        <div id="substrate" onload=action.walkingClouds()></div>
+        <div id="far-clouds" onload=action.walkingClouds()></div>
+        <div class="settings button" id="settingsButton1" onclick="ShowSettingsMenu();Sound();" alt="Настройки"
+             title="Настройки"></div>
+        <div class="button" id="playButton" onclick="ShowMenu('main','newGame');Sound();"></div>
+        <div id="overlay" onclick="HideSettingsMenu()"></div>
+        <div id="settingMenu">
+            <div class="button" id="volume" onclick="changeId();Sound();" alt="Вкл/Выкл звук"
+                 title="Вкл/Выкл звук"></div>
+            <div class="button" id="help" onclick="HideSettingsMenu(); ShowMenu('main','helpMenu')" alt="Правила игры"
+                 title="Правила игры">
             </div>
-            <!--TODO: Удалить после добавлени меню паузы в игру-->
-            <a class="pauseLink" onclick="ShowMenu('main', 'pauseMenu');">Меню паузы</a>
-         </div>
+            <div class="button" id="aboutUs" onclick="HideSettingsMenu(); ShowMenu('main','aboutUsMenu')"
+                 alt="О разработчиках" title="О разработчиках"></div>
+            <div class="settings button" id="settingsButton2" onclick="HideSettingsMenu()"></div>
+        </div>
+    </div>
 
-        <!--Меню "О разработчиках"-->
-        <div id="aboutUsMenu">
+    <!--Меню "О разработчиках"-->
+    <div id="aboutUsMenu">
 
-            <div class="photo" id="jenya" onclick="ShowInfo(this.id);">
-                <img id="jenyaName" src="images/we/Женя.png" >
-            </div>
-            <div class="photo" id="dima" onclick="ShowInfo(this.id);">
-                <img id="dimaName" src="images/we/Дима.png">
-            </div>
-            <div class="photo" id="masha" onclick="ShowInfo(this.id);">
-                <img id="mashaName" src="images/we/Маша.png">
-            </div>
-            <div class="photo" id="natasha" onclick="ShowInfo(this.id);">
-                <img id="natashaName" src="images/we/Наташа.png">
-            </div>
-            <div class="photo" id="lesha" onclick="ShowInfo(this.id);">
-                <img id="leshaName" src="images/we/Лёша%20Team%20Lead.png">
-            </div>
-
-            <div id="whiteOverlayAboutUs" onclick="ShowMenu('whiteOverlayAboutUs',null);">
-            <div id="textHere">
-                    <h1 id="name"></h1>
-                    <span id="description"></span>
-                </div>
-            </div>
-            <div class="button backButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
+        <div class="photo" id="jenya" onclick="ShowInfo(this.id);">
+            <img id="jenyaName" src="images/we/Женя.png">
+        </div>
+        <div class="photo" id="dima" onclick="ShowInfo(this.id);">
+            <img id="dimaName" src="images/we/Дима.png">
+        </div>
+        <div class="photo" id="masha" onclick="ShowInfo(this.id);">
+            <img id="mashaName" src="images/we/Маша.png">
+        </div>
+        <div class="photo" id="natasha" onclick="ShowInfo(this.id);">
+            <img id="natashaName" src="images/we/Наташа.png">
+        </div>
+        <div class="photo" id="lesha" onclick="ShowInfo(this.id);">
+            <img id="leshaName" src="images/we/Лёша%20Team%20Lead.png">
         </div>
 
-        <!--Меню "Правила игры"-->
-        <div id="helpMenu" onclick="ShowMenu('helpMenu','main')">
-            <div id="rules">
-                <h1>Правила игры</h1>
+        <div id="whiteOverlayAboutUs" onclick="ShowMenu('whiteOverlayAboutUs',null);">
+            <div id="textHere">
+                <h1 id="name"></h1>
+                <span id="description"></span>
+            </div>
+        </div>
+        <div class="button backButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
+    </div>
+
+    <!--Меню "Правила игры"-->
+    <div id="helpMenu" onclick="ShowMenu('helpMenu','main')">
+        <div id="rules">
+            <h1>Правила игры</h1>
                 <span>
                     На начальном этапе игроку полностью подконтролен один город. Города подразделяются на морские,вливаний и обеспечения города нужными ресурсами) либо силовым путём (в подконтрольных городах можно проводить мобилизацию населения, мобилизовать армию можно только если герой находится в городе, она перемещается только вместе с героем, на содержание мобилизованной армии постоянно расходуются деньги и растёт недовольство горожан,для захвата города требуется разный размер армии в зависимости от размеров города, после захвата в городе будет негативное отношение горожан, вплоть до восстания и утраты контроля над городом, расположение горожан необходимо заслужить).<br>
                     Города развиваются, растут и производят ресурсы в зависимости от расположения горожан. Для обмена ресурсами между городами их необходимо соединить дорогой. В городе можно управлять налогами, строить здания (фабрики, рынки, школы, больницы, университеты) проводить мероприятия (праздники). По мере роста города горожан необходимо обеспечивать продуктами, ресурсами, рабочими местами. Безработица приводит к росту недовольства и преступности. Подконтрольные города оказывают влияние друг на друга, чрезмерное недовольство вызывает опасения в других городах, или же наоборот чрезмерное внимание одному городу вызывает зависть и снижение расположения в других.
                 </span>
-            </div>
-            <div class="button backButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
         </div>
+        <div class="button backButton" onclick="ShowMenu('aboutUsMenu','main')"></div>
+    </div>
 
-        <!--Игровое поле-->
-        <div id="game" onclick="ShowMenu('game','main')">
+    <!--Игровое поле-->
+    <div id="game">
+
+
+        <canvas id="hexMap"></canvas>
+
+        <div id="privatepanel">
+            <div id="coin">
+                <span class="gamer">
+                Игрок: <output id="nameplayer" class="panelText"></output>
+                количество монет:<output id="coin_out" class="panelText"></output>
+                шаг:<output id="step" class="panelText"></output>
+                </span>
+
+            </div>
 
         </div>
+        <div class="button" id="pauseButton" onclick="ShowMenu('game','pauseMenu')"></div>
 
-        <!--Меню начала новой игры-->
-        <div id="newGame">
-            <h2>Введите имена игроков</h2>
-            <form name="input_name" id="input_form" action="" method="post">
-                <input type="text" name="player_one" id="player_one" id="name_player">
-                <input type="text" name="player_two" id="player_two" id="name_player_two">
-                <button type="submit" id="ok" onclick="name_of_player"> OK </button>
-            </form>
-            <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
+
+
+        <div id="resourceStat" onclick="this.style.display = 'none'; ">
+            <div id="resourceTitle" ></div>
+            <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
+            <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
+        </div>
+        <div id="popupMenu" alt="">
+            <div id="cityImg"></div>
+            <H1 id="cityTitle"></H1>
+            <div class="cityMenu" id="leftMenu">
+                <span class="simpleText">Население: <span id="cityPopularity"></span></span><br>
+                <span class="simpleText">Счастье: <span id="cityHappy"></span> % </span><br>
+                <span class="simpleText">Здоровье: <span id="cityHealth"></span> % </span><br>
+                <span class="simpleText">Преступность: <span id="cityCrime"></span> % </span><br>
+                <span class="simpleText">Безработица: <span id="cityUnemployment"> % </span></span><br>
+                <span class="simpleText">Зарплата: <span id="citySalary"></span></span><br>
+                <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
             </div>
-
-
-
-
-
-        <!--Игровое поле-->
-        <div id="pauseMenu">
-            <div id="blur"><img src="http://thefusejoplin.com/wp-content/uploads/2014/08/Clash-of-Clans.png" width="100%" height="100%"></div>
-            <div class="logo" id="inPauseMenu"></div>
-            <div id="pauseButtonsWrapper">
-                <div class="button" id="resume"></div>
-                <div class="button" id="save"></div>
-                <div class="button" id="exit"></div>
+            <div class="cityMenu" id="rightMenu">
+                <span class="simpleText">Выручка: <span id="cityProfit"></span></span>
+                <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
+                <div class="button AgitationButton" onclick="StartAgitation(1);">Концерт+1000</div>
             </div>
-            <!--TODO: Удалить после добавлени меню паузы в игру-->
-            <a class="pauseLink" onclick="ShowMenu('pauseMenu', 'main');">Главное меню</a>
+            <div class="cityMenu" id="bottomMenu" >
+                <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
+                <div class="button" id="updateButton" onclick="levelUp(GetSelectedCityId());"></div>
+            </div>
+            <div id="closePopupMenuButton" class="button" onclick="popupMenuClose();"></div>
         </div>
     </div>
+
+    <!--Меню начала новой игры-->
+    <div id="newGame">
+        <h2>Введите именя игрока</h2>
+
+        <form id="loginForm">
+            <input type="text" class="label_better" id="firstPlayer" placeholder="Имя  игрока">
+        </form>
+        <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
+        <div class="button resumeButton" onclick="ShowMenu('newGame','game'); setPlayerName();"></div>
+    </div>
+
+    <!--Меню паузы-->
+    <div id="pauseMenu">
+        <div id="blur"><img src="images/backPauseMenuImage.png" width="100%"
+                            height="100%"></div>
+        <div class="logo" id="inPauseMenu"></div>
+        <div id="pauseButtonsWrapper">
+            <div class="button" id="resume" onclick="ShowMenu('pauseMenu', 'game');"></div>
+            <div class="button" id="save"></div>
+            <div class="button" id="exit" onclick="ShowMenu('pauseMenu','main')"></div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
