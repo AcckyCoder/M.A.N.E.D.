@@ -23,19 +23,21 @@ function GetResourceRusTitle(type) {
  */
 
 
-function showResourceInfo(id) {
+function UpdateResourceInfo(id) {
     document.getElementById('resourceStat').style.display = 'block';
     document.getElementById('resourceTitle').innerHTML = GetResourceRusTitle(map[id].type);
-    document.getElementById('resourceCount').innerHTML = map[id].resourceCount.toString();
-    document.getElementById('resourceRecovery').innerHTML = map[id].recovery.toString();
+    document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
+    document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
     if(map[id].mining != 0)
     {
-        document.getElementById('resourceMining').style.display = 'block';
-        document.getElementById('resourceMining').innerHTML = map[id].mining.toString();
+        document.getElementById('resMine').style.display = 'block';
+        document.getElementById('resourceMining').innerHTML = map[id].mining;
+        document.getElementById('updateResourceButton').style.display = 'none';
     }
     else
     {
-        document.getElementById('resourceMining').style.display = 'none';
+        document.getElementById('resMine').style.display = 'none';
+        document.getElementById('updateResourceButton').style.display = 'block';
     }
     document.getElementById('resourceStat').setAttribute('alt', id);
 }
@@ -287,15 +289,16 @@ function AddCrime (city, count) {
     if (city.crime + count < 100 && city.crime + count > 0) {
         city.crime += count;
     }
-    else if (city.crime + count > 100)
-    {
-        city.crime = 100;
-    }
-    else
-    {
-        city.crime = 0;
+    else {
+        if (city.crime + count > 100) {
+            city.crime = 100;
+        }
+        else {
+            city.crime = 0;
+        }
     }
 }
+
 function updateResourceParameters(resource) {
     resource.resourceCount += resource.recovery;
 }
@@ -306,12 +309,9 @@ function updateProductionParameters(production) {
 }
 
 function isNoMoreFreeCities() {
-    for(var i = 0; i<map.length; i++)
-    {
-        if(map[i].type == resourceType.city.value)
-        {
-            if(map[i].owner == "undefined")
-            {
+    for (var i = 0; i < map.length; i++) {
+        if (map[i].type == resourceType.city.value) {
+            if (map[i].owner == "undefined") {
                 return false;
             }
         }
@@ -321,37 +321,32 @@ function isNoMoreFreeCities() {
 }
 
 
-function NextGameStep()
-{
-    for(var i = 0; i<map.length; i++){
-        if(map[i].type == resourceType.city.value)
-        {
-            if(map[i].owner == player.name) {
+function NextGameStep() {
+    for (var i = 0; i < map.length; i++) {
+        if (map[i].type == resourceType.city.value) {
+            if (map[i].owner == player.name) {
                 updateCityParameters(map[i]);
-                player.money += GetCityProfit(i);
+                var profit = GetCityProfit(i);
+                console.log(map[i].cityName + ": " + profit);
+                player.money += profit;
             }
         }
-        else if(map[i].type == resourceType.production.value)
-        {
+        else if (map[i].type == resourceType.production.value) {
             updateProductionParameters(map[i]);
 
         }
-        else
-        {
+        else {
             updateResourceParameters(map[i]);
         }
 
     }
 
 
-
-    if(isNoMoreFreeCities())
-    {
+    if (isNoMoreFreeCities()) {
         GameOver(gameOverReason.winner);
     }
 
-    if(player.money<=0)
-    {
+    if (player.money <= 0) {
         GameOver(gameOverReason.bankrot);
     }
 
@@ -361,20 +356,19 @@ function NextGameStep()
 }
 
 
-function GetSelectedCityId()
-{
+function GetSelectedCityId() {
     return document.getElementById('popupMenu').getAttribute('alt');
 }
 
-function GetSelectedResourceId()
-{
+function GetSelectedResourceId() {
     return document.getElementById('resourceStat').getAttribute('alt');
 }
 
 
 function UpdateResource(resourceId) {
 
-    if(player.money > 10000) {
+    if (player.money > 10000) {
+
         var resource = map[resourceId];
 
         if (resource.type == resourceType.coal.value) {
@@ -391,10 +385,20 @@ function UpdateResource(resourceId) {
         }
         if (resource.type == resourceType.tree.value) {
             resource.type = resourceType.sawMeal.value;
+
         }
 
-        resource.owner = player.name;
-        resource.mining = Math.random()*1000;
 
+        resource.texture = resource.type.toString() + ".jpg";
+        resource.owner = player.name;
+        resource.mining = Math.round(Math.random() * 100);
+
+        UpdateResourceInfo(resourceId);
+        NextGameStep();
+        createHexGrid();
+    }
+    else
+    {
+        alert(gameOverReason.bankrot);
     }
 }

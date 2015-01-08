@@ -107,14 +107,14 @@ function createHexGrid() {
         ctx.fillStyle = selectColor;
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
-        map[first_city_id()].owner = player.name;
+
         drawBoard(ctx, boardWidth, boardHeight);
 
 
     }
 
     showResourse();
-    startstep();
+
     function CanvasClickEventHandler(e) {
         var x,
             y,
@@ -144,7 +144,7 @@ function createHexGrid() {
                 }
                 else if(map[id].type != resourceType.grass.value)
                 {
-                    showResourceInfo(id);
+                    UpdateResourceInfo(id);
                 }
             }
         }

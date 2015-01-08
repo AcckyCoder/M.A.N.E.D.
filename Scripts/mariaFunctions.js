@@ -29,7 +29,6 @@ function getCityNameById(id)
 }
 
 function startstep(){
-  var firststep=1;
   document.getElementById('step').innerText=player.step;
 }
 
@@ -130,9 +129,8 @@ function setCityPlayer(){ //присвоить игроку город
     map[id].owner=player.name;
     }
 
-    isPlayerCell(id);
     UpdatePopupMenu(id);
-
+    console.log(isPlayerCell(id));
 }
 
 
