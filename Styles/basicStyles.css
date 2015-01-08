@@ -80,3 +80,10 @@ h2 {
 .resumeButton:active{
     background-image: url("../images/menuButtons/play_pressed.png");
 }
+
+#logoplayer{
+
+   background-image: url("../images/logo_player/img1.jpg");
+
+
+}

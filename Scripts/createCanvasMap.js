@@ -107,13 +107,14 @@ function createHexGrid() {
         ctx.fillStyle = selectColor;
         ctx.strokeStyle = "#CCCCCC";
         ctx.lineWidth = 2;
+
         drawBoard(ctx, boardWidth, boardHeight);
 
-        map[first_city_id()].owner = player.name;
+
     }
 
     showResourse();
-    startstep();
+
     function CanvasClickEventHandler(e) {
         var x,
             y,
@@ -135,13 +136,15 @@ function createHexGrid() {
             if (hexY >= 0 && hexY < boardHeight) {
                 ctx.fillStyle = selectColor;//"#000000";
                 var  id = hexY * boardWidth + hexX;
+
                 drawHexagon(ctx, id, screenX, screenY, true);
                 if(map[id].type == resourceType.city.value) {
+
                     drawPopupMenu(id);
                 }
                 else if(map[id].type != resourceType.grass.value)
                 {
-                    showRecourceInfo(id);
+                    UpdateResourceInfo(id);
                 }
             }
         }
@@ -214,6 +217,16 @@ $(window).mousemove(function (e) {
     }
 });
 
+function isPlayerCell(number) {
+    if(map[number].type == resourceType.city.value) {
+        if (map[number].owner == player.name)
+            return true;
+    }
+
+    return false;
+}
+
+
 function drawBoard(canvasContext, width, height) {
 
     for (var j = 0; j < height; ++j) {
@@ -222,7 +235,7 @@ function drawBoard(canvasContext, width, height) {
                 canvasContext, j * width + i,
                     i * hexRectangleWidth + ((j % 2) * hexRadius),
                     j * (sideLength + hexHeight),
-                false
+                false, isPlayerCell(j * width + i)
             );
         }
     }
@@ -230,7 +243,7 @@ function drawBoard(canvasContext, width, height) {
 
 
 
-function drawHexagon(canvasContext, id, x, y, fill) {
+function drawHexagon(canvasContext, id, x, y, fill, isPlayerCell) {
 
     canvasContext.save();
     canvasContext.beginPath();
@@ -247,6 +260,20 @@ function drawHexagon(canvasContext, id, x, y, fill) {
     img = new Image();
     img.src = './icon_and_textures/' + map[id].texture;
     canvasContext.drawImage(img, x, y, hexRectangleWidth, hexRectangleHeight);
+
+    if(isPlayerCell)
+    {
+        canvasContext.strokeStyle = "#FF0000";
+    canvasContext.lineWidth = 5;
+
+    }
+    else
+    {
+            canvasContext.fillStyle = selectColor;
+            canvasContext.strokeStyle = "#CCCCCC";
+            canvasContext.lineWidth = 2;
+    }
+
 
     if (fill) {
         canvasContext.fill();

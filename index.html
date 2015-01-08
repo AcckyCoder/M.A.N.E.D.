@@ -170,27 +170,36 @@
 
 
 
-        <div id="resourceStat" onclick="this.style.display = 'none'; ">
+        <div id="resourceStat" alt="">
             <div id="resourceTitle" ></div>
             <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
             <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
+            <span class="simpleText" id="resMine">Скорость добычи (ход): <span id="resourceMining"></span></span><br>
+            <div class="button" id="updateResourceButton" onclick="UpdateResource(GetSelectedResourceId());"></div>
+            <div id="closeResourceMenuButton" class="button" onclick="resourceMenuClose();"></div>
         </div>
         <div id="popupMenu" alt="">
             <div id="cityImg"></div>
             <H1 id="cityTitle"></H1>
             <div class="cityMenu" id="leftMenu">
-                <span class="simpleText">Население: <span id="cityPopularity"></span></span><br>
+                <span class="simpleText">Население: <span id="cityPopularity"> чел.</span></span><br>
                 <span class="simpleText">Счастье: <span id="cityHappy"></span> % </span><br>
                 <span class="simpleText">Здоровье: <span id="cityHealth"></span> % </span><br>
                 <span class="simpleText">Преступность: <span id="cityCrime"></span> % </span><br>
-                <span class="simpleText">Безработица: <span id="cityUnemployment"> % </span></span><br>
-                <span class="simpleText">Зарплата: <span id="citySalary"></span></span><br>
+                <span class="simpleText">Безработица: <span id="cityUnemployment"></span> % </span><br>
+                <span class="simpleText">Зарплата: <span id="citySalary"></span> грн/чел</span><br>
                 <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
             </div>
             <div class="cityMenu" id="rightMenu">
                 <span class="simpleText">Выручка: <span id="cityProfit"></span></span>
-                <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
+
                 <div class="button AgitationButton" onclick="StartAgitation(1);">Концерт+1000</div>
+                <div class="button AgitationButton" onclick="StartAgitation(1);">Гуманитарная помощь+2000</div>
+                <div class="button AgitationButton" onclick="StartAgitation(1);">Благотворительность+2500</div>
+
+                <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
+                <div class="button AgitationButton" onclick="augmentTax();">Увеличить налог+1</div>
+                <div class="button AgitationButton" onclick="setCityPlayer();">Захватить город</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
@@ -206,6 +215,7 @@
 
         <form id="loginForm">
             <input type="text" class="label_better" id="firstPlayer" placeholder="Имя  игрока">
+
         </form>
         <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
         <div class="button resumeButton" onclick="ShowMenu('newGame','game'); setPlayerName();"></div>

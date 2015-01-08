@@ -29,7 +29,6 @@ function getCityNameById(id)
 }
 
 function startstep(){
-  var firststep=1;
   document.getElementById('step').innerText=player.step;
 }
 
@@ -46,7 +45,7 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
     //концерт
     if (type_number == 1) {
         rest = player.money - money;
-        map[index_city].happy+=50;
+        AddHappy(map[index_city],2);
         map[index_city].popularity+=10;
 
 
@@ -60,7 +59,6 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
     player.money=rest;
 
 }
-
 function StartAgitation(type)
 {
     var id=GetSelectedCityId();
@@ -73,3 +71,68 @@ function StartAgitation(type)
     NextGameStep();
     UpdatePopupMenu(id);
 }
+
+function augmentTax(){
+
+    var id=GetSelectedCityId();
+    var start_tax=map[id].taxes;
+
+    if(start_tax<=15)  //больше налог, больше недовольства !
+    {
+        var min = 1;
+        var max = 5;
+    }
+   else
+    {
+        var min = 5;
+        var max = 8;
+
+    }
+
+
+    var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+    rand = Math.round(rand);
+
+    while (rand == min - 1 || rand == max + 1) {
+
+        var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+        rand = Math.round(rand);
+
+    }
+
+    map[id].taxes+=1;
+
+    map[id].happy-=rand;//никому от этого не весело :(
+    if(map[id].happy<0){
+        map[id].happy=0;
+        map[id].owner="undefined";
+    }
+
+
+
+    if(map[id].taxes>100)
+        map[id].taxes=100;
+
+    NextGameStep();
+    UpdatePopupMenu(id);
+
+
+}
+
+function setCityPlayer(){ //присвоить игроку город
+
+    var id=GetSelectedCityId();
+
+    if(map[id].happy=100){
+    map[id].owner=player.name;
+    }
+
+    UpdatePopupMenu(id);
+    console.log(isPlayerCell(id));
+}
+
+
+
+
