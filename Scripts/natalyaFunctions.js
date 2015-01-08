@@ -85,7 +85,7 @@ function UpdatePopupMenu(cityid) {
     document.getElementById('cityImg').style.backgroundImage = "url(\"./icon_and_textures/city" + level + ".png\")";
 
     document.getElementById('cityLevel').innerHTML = level;
-
+    document.getElementById('captureTheCityButton').style.display = 'block';
 
 
     if(city.owner == player.name) {
@@ -109,11 +109,14 @@ function UpdatePopupMenu(cityid) {
         if (city.happy == 100) {
             document.getElementById('captureTheCityButton').style.display = 'block';
         }
+        else
+        {
+            document.getElementById('captureTheCityButton').style.display = 'none';
+        }
 
         document.getElementById('updateButton').style.display = 'none';
         document.getElementById('salaryAddButton').style.display = 'none';
         document.getElementById('taxesAddButton').style.display = 'none';
-        document.getElementById('captureTheCityButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'none';
     }
 

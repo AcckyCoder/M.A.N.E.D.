@@ -125,13 +125,12 @@ function augmentTax(){
 
 }
 
-function setCityPlayer(){ //присвоить игроку город
+function setCityPlayer() { //присвоить игроку город
 
-    var id=GetSelectedCityId();
+    var id = GetSelectedCityId();
 
-    if(map[id].happy==100){
-    map[id].owner=player.name;
-    }
+    map[id].owner = player.name;
+
 
     UpdatePopupMenu(id);
     console.log(isPlayerCell(id));
