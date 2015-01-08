@@ -108,6 +108,10 @@ function augmentTax(){
     if(map[id].happy<0){
         map[id].happy=0;
         map[id].owner="undefined";
+        if(!isPlayerHasMoreCities())
+        {
+            GameOver(gameOverReason.youHaveNoMoreCities);
+        }
     }
 
 

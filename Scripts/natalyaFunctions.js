@@ -85,15 +85,42 @@ function UpdatePopupMenu(cityid) {
     document.getElementById('cityImg').style.backgroundImage = "url(\"./icon_and_textures/city" + level + ".png\")";
 
     document.getElementById('cityLevel').innerHTML = level;
-    if (level == 6) {
-        document.getElementById('updateButton').style.display = 'none';
+
+
+
+    if(city.owner == player.name) {
+        if (level == 6) {
+            document.getElementById('updateButton').style.display = 'none';
+        }
+        else {
+            document.getElementById('updateButton').style.display = 'block';
+        }
+
+        document.getElementById('salaryAddButton').style.display = 'block';
+        document.getElementById('taxesAddButton').style.display = 'block';
+        document.getElementById('captureTheCityButton').style.display = 'none';
+        document.getElementById('ownerText').style.display = 'block';
+        document.getElementById('cityOwner').innerHTML = player.name;
+        document.getElementById('salaryProfitText').style.display = 'block';
+        document.getElementById('cityProfit').innerHTML = GetCityProfit(cityid);
     }
     else {
-        document.getElementById('updateButton').style.display = 'block';
+
+        if (city.happy == 100) {
+            document.getElementById('captureTheCityButton').style.display = 'block';
+        }
+
+        document.getElementById('updateButton').style.display = 'none';
+        document.getElementById('salaryAddButton').style.display = 'none';
+        document.getElementById('taxesAddButton').style.display = 'none';
+        document.getElementById('captureTheCityButton').style.display = 'none';
+        document.getElementById('ownerText').style.display = 'none';
     }
+
+
     document.getElementById('popupMenu').style.display = 'block';
     document.getElementById('popupMenu').setAttribute("alt", cityid);
-    document.getElementById('cityProfit').innerHTML = GetCityProfit(cityid);
+
 
     document.getElementById('cityPopularity').innerHTML = city.popularity;
     document.getElementById('cityHappy').innerHTML = city.happy;
@@ -146,7 +173,17 @@ function destroyCity() {
 }
 
 function isPlayerHasMoreCities() {
-    console.log("Ich brauche diese Funktion! " + arguments.callee.name)
+    for(var i = 0; i<map.length;i++) {
+        if (map[i].type == resourceType.city)
+        {
+            if(map[i].owner == player.name)
+            {
+                return true;
+            }
+        }
+    }
+
+        return false;
 }
 function updateCityParameters(city) {
 
@@ -349,7 +386,7 @@ function NextGameStep() {
     }
 
     if (player.money <= 0) {
-        GameOver(gameOverReason.bankrot);
+        GameOver(gameOverReason.bankrupt);
     }
 
     player.step++;
@@ -401,6 +438,6 @@ function UpdateResource(resourceId) {
     }
     else
     {
-        alert(gameOverReason.bankrot);
+        alert(gameOverReason.bankrupt);
     }
 }

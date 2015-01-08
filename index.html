@@ -27,10 +27,11 @@
     <script src="Scripts/createCanvasMap.js" type="text/javascript"></script>
     <script src="Scripts/workingSound.js"></script>
     <script type="text/javascript" src="map_editor/map.js"></script>
-    <script src="Scripts/player.js" type="text/javascript"></script>
+    <script src="Scripts/playerData.js" type="text/javascript"></script>
     <script src="Scripts/mariaFunctions.js" type="text/javascript"></script>
     <script src="Scripts/natalyaFunctions.js" type="text/javascript"></script>
     <script src="Scripts/resourceType.js" type="text/javascript"></script>
+    <script src="Scripts/gameOverReason.js" type="text/javascript"></script>
     <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
 
     <script>
@@ -191,15 +192,15 @@
                 <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
             </div>
             <div class="cityMenu" id="rightMenu">
-                <span class="simpleText">Выручка: <span id="cityProfit"></span></span>
+                <span class="simpleText" id="ownerText">Владелец: <span id="cityOwner"></span></span><br>
+                <span class="simpleText" id="salaryProfitText">Выручка: <span id="cityProfit"></span></span><br>
+                <div class="button AgitationButton" id="concertButton" onclick="StartAgitation(1);">Концерт+1000</div>
+                <div class="button AgitationButton" id="humanitarianReliefButton" onclick="StartAgitation(1);">Гуманитарная помощь+2000</div>
+                <div class="button AgitationButton" id="charityButton" onclick="StartAgitation(1);">Благотворительность+2500</div>
 
-                <div class="button AgitationButton" onclick="StartAgitation(1);">Концерт+1000</div>
-                <div class="button AgitationButton" onclick="StartAgitation(1);">Гуманитарная помощь+2000</div>
-                <div class="button AgitationButton" onclick="StartAgitation(1);">Благотворительность+2500</div>
-
-                <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
-                <div class="button AgitationButton" onclick="augmentTax();">Увеличить налог+1</div>
-                <div class="button AgitationButton" onclick="setCityPlayer();">Захватить город</div>
+                <div class="button AgitationButton" id="salaryAddButton" onclick="StartAgitation(2);">Зарплата+500</div>
+                <div class="button AgitationButton" id="taxesAddButton" onclick="augmentTax();">Увеличить налог+1</div>
+                <div class="button AgitationButton" id="captureTheCityButton" onclick="setCityPlayer();">Захватить город</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>

@@ -6,5 +6,6 @@ var gameOverReason =
 {
     winner: "Herzlichen Glückwunsch! Sie haben gewonnen!",
     everyBodyDie: "Deine Stadt ausgestorben ist!",
-    bankrot: "Oops! Sie haben kein Geld mehr!"
-}
+    bankrupt: "Oops! Sie haben kein Geld mehr!",
+    youHaveNoMoreCities: "Du bist ein schlechter Bürgermeister! Sie haben Städte verlassen!"
+};
