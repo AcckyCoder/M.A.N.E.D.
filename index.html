@@ -180,22 +180,23 @@
             <H1 id="cityTitle"></H1>
             <div class="cityMenu" id="leftMenu">
                 <span class="simpleText">Население: <span id="cityPopularity"></span></span><br>
-                <span class="simpleText">Счастье: <span id="cityHappy"></span></span><br>
-                <span class="simpleText">Здоровье: <span id="cityHealth"></span></span><br>
-                <span class="simpleText">Преступность: <span id="cityCrime"></span></span><br>
-                <span class="simpleText">Безработица: <span id="cityUnemployment"></span></span><br>
+                <span class="simpleText">Счастье: <span id="cityHappy"></span> % </span><br>
+                <span class="simpleText">Здоровье: <span id="cityHealth"></span> % </span><br>
+                <span class="simpleText">Преступность: <span id="cityCrime"></span> % </span><br>
+                <span class="simpleText">Безработица: <span id="cityUnemployment"> % </span></span><br>
                 <span class="simpleText">Зарплата: <span id="citySalary"></span></span><br>
                 <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
             </div>
             <div class="cityMenu" id="rightMenu">
                 <span class="simpleText">Выручка: <span id="cityProfit"></span></span>
-                <div class="button" id="AgitationButton" onclick="StartAgitation();"></div>
+                <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
+                <div class="button AgitationButton" onclick="StartAgitation(1);">Концерт+1000</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
                 <div class="button" id="updateButton" onclick="levelUp(GetSelectedCityId());"></div>
             </div>
-            <div id="closePopupMenuButton" class="button" onclick="popupMenuClose()"></div>
+            <div id="closePopupMenuButton" class="button" onclick="popupMenuClose();"></div>
         </div>
     </div>
 

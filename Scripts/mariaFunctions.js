@@ -43,30 +43,33 @@ function showResourse(){
 function carryOutAgitation(money,index_city,type_number){ //на агитацию  нужны деньги и указать где проходит. Агитация 2х видов
     //либо 1-организовать концерт,либо 2-повысить всем зарплаты
  var rest;//остаток
- var current_balance;//текущий баланс юзера
- current_balance=player.money;
-
-    if (type_number != 1) {
-        rest = current_balance - money;
-        map[index_city].happy=+50;
-        map[index_city].popularity=+10;
+    //концерт
+    if (type_number == 1) {
+        rest = player.money - money;
+        map[index_city].happy+=50;
+        map[index_city].popularity+=10;
 
 
     } else {
-        rest = current_balance - money;
-        map[index_city].happy=+50;
-        map[index_city].salary=+money;
-        map[index_city].popularity=+10;
-        map[index_city].helth=+10;  //есть деньги, есть возможность купить лекарство
-
+        rest = player.money - money;
+        map[index_city].happy+=50;
+        map[index_city].salary+=money;
+        map[index_city].popularity += 10;
+        map[index_city].health+=10;  //есть деньги, есть возможность купить лекарство
     }
     player.money=rest;
 
 }
 
-
-function StartAgitation()
+function StartAgitation(type)
 {
-    carryOutAgitation();
+    var id=GetSelectedCityId();
+
+    if(type==2)
+        carryOutAgitation(500,id,2);
+    else
+        carryOutAgitation(200,id,1);
+
     NextGameStep();
+    UpdatePopupMenu(id);
 }
