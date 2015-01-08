@@ -51,10 +51,10 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
 
     } else {
         rest = player.money - money;
-        map[index_city].happy+=50;
+        AddHappy(map[index_city],5);
         map[index_city].salary+=money;
         map[index_city].popularity += 10;
-        map[index_city].health+=10;  //есть деньги, есть возможность купить лекарство
+        AddHealth(map[index_city],2);  //есть деньги, есть возможность купить лекарство
     }
     player.money=rest;
 
@@ -125,7 +125,7 @@ function setCityPlayer(){ //присвоить игроку город
 
     var id=GetSelectedCityId();
 
-    if(map[id].happy=100){
+    if(map[id].happy==100){
     map[id].owner=player.name;
     }
 
