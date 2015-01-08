@@ -1,4 +1,4 @@
-function GetResourceRusTitle(type) {
+function getResourceRusTitle(type) {
     switch (type)
     {
         case resourceType.city.value: return resourceType.city.rusText;
@@ -23,9 +23,9 @@ function GetResourceRusTitle(type) {
  */
 
 
-function UpdateResourceInfo(id) {
+function updateResourceInfoPanel(id) {
     document.getElementById('resourceStat').style.display = 'block';
-    document.getElementById('resourceTitle').innerHTML = GetResourceRusTitle(map[id].type);
+    document.getElementById('resourceTitle').innerHTML = getResourceRusTitle(map[id].type);
     document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
     document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
     if(map[id].mining != 0)
@@ -47,10 +47,10 @@ function getCityLevel(cityid) {
     return map[cityid].level;
 }
 
-function drawPopupMenu(cityid)
+function drawCityInfoPanel(cityid)
 {
     document.getElementById('cityTitle').innerHTML = getCityName(cityid);
-    UpdatePopupMenu(cityid);
+    updateCityInfoPanel(cityid);
 }
 
 var levelUpPrice  = [1000,20000,300000,4000000,50000000,6000000000];
@@ -67,10 +67,16 @@ function levelUp(cityID) {
             map[cityID].popularity *= Math.round(map[cityID].level);
             map[cityID].taxes += 1;
             map[cityID].salary += Math.round((map[cityID].salary*map[cityID].level)*0.2);
+            map[cityID].treeNeeds += map[cityID].level * Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            map[cityID].coalNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            map[cityID].wheatNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            map[cityID].rockNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            map[cityID].gasNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+
         }
 
-        UpdatePopupMenu(cityID);
-        NextGameStep();
+        updateCityInfoPanel(cityID);
+        nextGameStep();
     }
     else
     {
@@ -78,7 +84,7 @@ function levelUp(cityID) {
     }
 }
 
-function UpdatePopupMenu(cityid) {
+function updateCityInfoPanel(cityid) {
 
     var city = map[cityid];
     var level = city.level;
@@ -102,7 +108,7 @@ function UpdatePopupMenu(cityid) {
         document.getElementById('ownerText').style.display = 'block';
         document.getElementById('cityOwner').innerHTML = player.name;
         document.getElementById('salaryProfitText').style.display = 'block';
-        document.getElementById('cityProfit').innerHTML = GetCityProfit(cityid);
+        document.getElementById('cityProfit').innerHTML = getCityProfit(cityid);
     }
     else {
 
@@ -148,7 +154,7 @@ function resourceMenuClose() {
     document.getElementById('resourceStat').setAttribute('alt', "");
 }
 
-function GetCityProfit(cityId)
+function getCityProfit(cityId)
 {
     var city = map[cityId];
 
@@ -159,7 +165,7 @@ function GetCityProfit(cityId)
 }
 
 
-function GameOver(reason) {
+function gameOver(reason) {
     alert(reason);
     ShowMenu('game', 'main');
 }
@@ -188,7 +194,7 @@ function isPlayerHasMoreCities() {
 
         return false;
 }
-function updateCityParameters(city) {
+function updateCityGameStep(city) {
 
     //вычисляем вероятность возникновения события/
     var possible = Math.round(Math.random() * 100);
@@ -198,19 +204,19 @@ function updateCityParameters(city) {
         if (city.health >= 50) {
             var born = Math.round(Math.random() * city.health);
             city.popularity+=born;
-            AddHappy(city, 1);
+            addHappy(city, 1);
         }
         else {
             //иначе они дохнут
             var died = Math.round(Math.random() * (50 - city.health));
             city.popularity-= died;
-            AddHappy(city, -1);
+            addHappy(city, -1);
 
             //если подохли все
             if (city.popularity <= 0) {
                 //и у игрока не осталось городов
                 if (!isPlayerHasMoreCities())
-                    GameOver(gameOverReason.everyBodyDie);
+                    gameOver(gameOverReason.everyBodyDie);
                 else
                 //или просто стираем город с лица земли
                     city = destroyCity();
@@ -228,18 +234,18 @@ function updateCityParameters(city) {
             city.popularity-= died;
             if (city.popularity <= 0) {
                 if (!isPlayerHasMoreCities())
-                    GameOver(gameOverReason.everyBodyDie);
+                    gameOver(gameOverReason.everyBodyDie);
                 else
                     city = destroyCity();
             }
 
             //и люди от этого становятся несчастнее
-                AddHappy(city, -1);
+                addHappy(city, -1);
         }
     }
     //а если креминогенная обстановка хороша
     else if (city.crime < 30) {
-            AddHappy(city, 1);
+            addHappy(city, 1);
         }
 
 
@@ -249,39 +255,60 @@ function updateCityParameters(city) {
         Math.round(Math.random() * 100);
         if(possible%5 == 0)
         {
-            AddHappy(city, -1);
+            addHappy(city, -1);
             city.popularity -= Math.round(Math.random()*15);
         }
     }
     else if(city.taxes <= 15)
     {
-        AddHappy(city, 1);
+        addHappy(city, 1);
         city.popularity += Math.round(Math.random()*15);
     }
 
     if(city.happy > 50)
     {
-        AddUnemployment(city, -1);
+        addUnemployment(city, -1);
     }
     else
     {
-        AddUnemployment(city, 1);
+        addUnemployment(city, 1);
     }
 
     if(city.unemployment < 50)
     {
-        AddCrime(city, -1);
-        AddHealth(city, 1);
+        addCrime(city, -1);
+        addHealth(city, 1);
     }
     else
     {
-        AddCrime(city, 1);
-        AddHealth(city, -1);
+        addCrime(city, 1);
+        addHealth(city, -1);
     }
+
+
+    player.coal -= city.coalNeeds;
+    if(player.coal <0)
+        player.coal = 0;
+
+    player.wheat -= city.wheatNeeds;
+    if(player.coal <0)
+        player.coal = 0;
+
+    player.gas -= city.gasNeeds;
+    if(player.coal <0)
+        player.coal = 0;
+
+    player.rock -= city.rockNeeds;
+    if(player.coal <0)
+        player.coal = 0;
+
+    player.tree -= city.treeNeeds;
+    if(player.coal <0)
+        player.coal = 0;
 
 }
 
-function AddHappy(city, count) {
+function addHappy(city, count) {
 
     city.happy += count;
 
@@ -297,7 +324,7 @@ function AddHappy(city, count) {
     }
 }
 
-function AddUnemployment(city, count) {
+function addUnemployment(city, count) {
 
         city.unemployment += count;
 
@@ -312,7 +339,7 @@ function AddUnemployment(city, count) {
 }
 
 
-function AddHealth (city, count) {
+function addHealth (city, count) {
 
         city.health += count;
 
@@ -327,7 +354,7 @@ function AddHealth (city, count) {
 }
 
 
-function AddCrime (city, count) {
+function addCrime (city, count) {
 
     city.crime += count;
 
@@ -341,13 +368,33 @@ function AddCrime (city, count) {
 
 }
 
-function updateResourceParameters(resource) {
+function updateResourceGameStep(resource) {
     resource.resourceCount += resource.recovery;
 }
 
 
-function updateProductionParameters(production) {
+function updateProductionGameStep(production) {
+    production.resourceCount += production.recovery;
+    production.resourceCount -= production.mining;
 
+    if(production.resourceCount < 0)
+    {
+        production.resourceCount = 0;
+    }
+
+    switch (production.type)
+    {
+        case resourceType.farm.value: player.wheat += production.mining;
+            break;
+        case resourceType.mine.value: player.coal += production.mining;
+            break;
+        case resourceType.quarry.value: player.rock += production.mining;
+            break;
+        case resourceType.sawMeal.value: player.tree += production.mining;
+            break;
+        case resourceType.gasRig.value: player.gas += production.mining;
+            break;
+    }
 }
 
 function isNoMoreFreeCities() {
@@ -363,51 +410,51 @@ function isNoMoreFreeCities() {
 }
 
 
-function NextGameStep() {
+function nextGameStep() {
     for (var i = 0; i < map.length; i++) {
         if (map[i].type == resourceType.city.value) {
             if (map[i].owner == player.name) {
-                updateCityParameters(map[i]);
-                var profit = GetCityProfit(i);
+                updateCityGameStep(map[i]);
+                var profit = getCityProfit(i);
                 console.log(map[i].cityName + ": " + profit);
                 player.money += profit;
             }
         }
         else if (map[i].type == resourceType.production.value) {
-            updateProductionParameters(map[i]);
+            updateProductionGameStep(map[i]);
 
         }
         else {
-            updateResourceParameters(map[i]);
+            updateResourceGameStep(map[i]);
         }
 
     }
 
 
     if (isNoMoreFreeCities()) {
-        GameOver(gameOverReason.winner);
+        gameOver(gameOverReason.winner);
     }
 
     if (player.money <= 0) {
-        GameOver(gameOverReason.bankrupt);
+        gameOver(gameOverReason.bankrupt);
     }
 
     player.step++;
     showResourse();
-    UpdatePopupMenu(GetSelectedCityId());
+    updateCityInfoPanel(getSelectedCityId());
 }
 
 
-function GetSelectedCityId() {
+function getSelectedCityId() {
     return document.getElementById('popupMenu').getAttribute('alt');
 }
 
-function GetSelectedResourceId() {
+function getSelectedResourceId() {
     return document.getElementById('resourceStat').getAttribute('alt');
 }
 
 
-function UpdateResource(resourceId) {
+function updateResourceToProduction(resourceId) {
 
     if (player.money > 10000) {
 
@@ -435,8 +482,8 @@ function UpdateResource(resourceId) {
         resource.owner = player.name;
         resource.mining = Math.round(Math.random() * 100);
 
-        UpdateResourceInfo(resourceId);
-        NextGameStep();
+        updateResourceInfoPanel(resourceId);
+        nextGameStep();
         createHexGrid();
     }
     else

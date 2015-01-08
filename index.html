@@ -176,7 +176,7 @@
             <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
             <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
             <span class="simpleText" id="resMine">Скорость добычи (ход): <span id="resourceMining"></span></span><br>
-            <div class="button" id="updateResourceButton" onclick="UpdateResource(GetSelectedResourceId());"></div>
+            <div class="button" id="updateResourceButton" onclick="updateResourceToProduction(getSelectedResourceId());"></div>
             <div id="closeResourceMenuButton" class="button" onclick="resourceMenuClose();"></div>
         </div>
         <div id="popupMenu" alt="">
@@ -204,7 +204,7 @@
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
-                <div class="button" id="updateButton" onclick="levelUp(GetSelectedCityId());"></div>
+                <div class="button" id="updateButton" onclick="levelUp(getSelectedCityId());"></div>
             </div>
             <div id="closePopupMenuButton" class="button" onclick="popupMenuClose();"></div>
         </div>
