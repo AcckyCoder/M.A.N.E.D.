@@ -192,6 +192,7 @@
                 <div class="button AgitationButton" onclick="StartAgitation(2);">Зарплата+500</div>
                 <div class="button AgitationButton" onclick="StartAgitation(1);">Концерт+1000</div>
                 <div class="button AgitationButton" onclick="augmentTax();">Увеличить налог+1</div>
+                <div class="button AgitationButton" onclick="setCityPlayer();">Захватить город</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
@@ -207,6 +208,7 @@
 
         <form id="loginForm">
             <input type="text" class="label_better" id="firstPlayer" placeholder="Имя  игрока">
+
         </form>
         <div class="button backButton" onclick="ShowMenu('newGame','main')"></div>
         <div class="button resumeButton" onclick="ShowMenu('newGame','game'); setPlayerName();"></div>

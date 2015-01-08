@@ -46,7 +46,7 @@ function carryOutAgitation(money,index_city,type_number){ //на агитаци�
     //концерт
     if (type_number == 1) {
         rest = player.money - money;
-        map[index_city].happy+=50;
+        AddHappy(map[index_city],2);
         map[index_city].popularity+=10;
 
 
@@ -78,7 +78,7 @@ function augmentTax(){
     var id=GetSelectedCityId();
     var start_tax=map[id].taxes;
 
-    if(start_tax<=15)
+    if(start_tax<=15)  //больше налог, больше недовольства !
     {
         var min = 1;
         var max = 5;
@@ -87,6 +87,7 @@ function augmentTax(){
     {
         var min = 5;
         var max = 8;
+
     }
 
 
@@ -105,8 +106,11 @@ function augmentTax(){
     map[id].taxes+=1;
 
     map[id].happy-=rand;//никому от этого не весело :(
-    if(map[id].happy<0)
+    if(map[id].happy<0){
         map[id].happy=0;
+        map[id].owner="undefined";
+    }
+
 
 
     if(map[id].taxes>100)
@@ -117,3 +121,20 @@ function augmentTax(){
 
 
 }
+
+function setCityPlayer(){ //присвоить игроку город
+
+    var id=GetSelectedCityId();
+
+    if(map[id].happy=100){
+    map[id].owner=player.name;
+    }
+
+    isPlayerCell(id);
+    UpdatePopupMenu(id);
+
+}
+
+
+
+

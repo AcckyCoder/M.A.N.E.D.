@@ -136,6 +136,7 @@ function createHexGrid() {
             if (hexY >= 0 && hexY < boardHeight) {
                 ctx.fillStyle = selectColor;//"#000000";
                 var  id = hexY * boardWidth + hexX;
+
                 drawHexagon(ctx, id, screenX, screenY, true);
                 if(map[id].type == resourceType.city.value) {
 
