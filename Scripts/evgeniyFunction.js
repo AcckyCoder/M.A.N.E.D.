@@ -52,7 +52,7 @@ function randomUserCityes(){
 }
 
 function economiCrizes(){
-    var pos=20;//Math.round(Math.random()*100);
+    var pos=Math.round(Math.random()*100);
     var money = player.money;
     var coal = player.coal;
     var trees = player.tree;
