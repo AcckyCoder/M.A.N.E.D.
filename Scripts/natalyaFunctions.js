@@ -440,6 +440,10 @@ function nextGameStep() {
     }
 
     player.step++;
+    showResInPanel();
+    economiCrizes();
+    banding();
+    gumKonvoy();
     showResourse();
     updateCityInfoPanel(getSelectedCityId());
 }

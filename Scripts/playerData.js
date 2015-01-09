@@ -19,6 +19,7 @@ var player =
 function setPlayerName(){
     player.name = document.getElementById("player_one");
     map[first_city_id()].owner = player.name;
+    showResInPanel();
     startstep();
     createHexGrid();
 
