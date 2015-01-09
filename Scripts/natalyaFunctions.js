@@ -438,7 +438,7 @@ function nextGameStep() {
     if (player.money <= 0) {
         gameOver(gameOverReason.bankrupt);
     }
-
+    addLogText('Das ist ' + player.step + ' Schritt')
     player.step++;
     showResInPanel();
     economiCrizes();
@@ -494,4 +494,52 @@ function updateResourceToProduction(resourceId) {
     {
         alert(gameOverReason.bankrupt);
     }
+}
+
+
+function changeLogPanelState()
+{
+    if(document.getElementById('logPanel').getAttribute('alt') == 'open')
+    {
+        if(document.getElementById('logPanel').classList.contains('showUpPanel'))
+        {
+            document.getElementById('logPanel').classList.remove('showUpPanel');
+        }
+        document.getElementById('logPanel').classList.add('closeUpPanel');
+        document.getElementById('logPanel').setAttribute('alt','close');
+        document.getElementById('closeLogPanelButton').style.backgroundImage = 'url("./images/openlogbutton.png")';
+    }
+    else
+    {
+        if(document.getElementById('logPanel').classList.contains('closeUpPanel'))
+        {
+            document.getElementById('logPanel').classList.remove('closeUpPanel');
+        }
+        document.getElementById('logPanel').classList.add('showUpPanel');
+        document.getElementById('logPanel').setAttribute('alt', 'open');
+        document.getElementById('closeLogPanelButton').style.backgroundImage = 'url("./images/closelogbutton.png")';
+    }
+}
+
+
+function addLogText(text) {
+    var x = document.getElementById("logText");
+    var option = document.createElement("option");
+    option.text = text;
+
+    var length = x.options.length;
+
+    //подчщаем лог
+    if(length == 30)
+    {
+        x.options[29] = null;
+    }
+
+    x.add(option, x[0]);
+
+
+
+
+
+
 }
