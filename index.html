@@ -34,6 +34,7 @@
     <script src="Scripts/resourceType.js" type="text/javascript"></script>
     <script src="Scripts/gameOverReason.js" type="text/javascript"></script>
     <script src="Scripts/eventType.js" type="text/javascript"></script>
+    <script src="Scripts/agitationType.js" type="text/javascript"></script>
     <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
 
     <script>
@@ -160,15 +161,14 @@
 
         <div id="privatepanel">
             <div id="coin">
-                <span class="gamer">
-                Игрок: <output id="nameplayer" class="panelText"></output>
-                количество монет:<output id="coin_out" class="panelText"></output>
-                дерево:<output id="trees" class="panelText"></output>
-                уголь:<output id="coal" class="panelText"></output>
-                пшеница:<output id="wheat" class="panelText"></output>
-                газ:<output id="gas" class="panelText"></output>
-                камень:<output id="rock" class="panelText"></output>
-                шаг:<output id="step" class="panelText"></output>
+                <!--<span class="gamer">Игрок<output id="nameplayer" class="panelText"></output>-->
+                <img src="images/gold.png" title="Монеты">:<output id="coin_out" class="panelText"></output>
+                <img src="images/firewood.png" title="Дрова">:<output id="trees" class="panelText"></output>
+                <img src="images/coal2.png" title="Уголь">:<output id="coal" class="panelText"></output>
+                <img src="images/wheat.png" title="Пшеница">:<output id="wheat" class="panelText"></output>
+                <img src="images/gas.png" title="Газ">:<output id="gas" class="panelText"></output>
+                <img src="images/stone.png"title="Камень">:<output id="rock" class="panelText"></output>
+                <img src="images/boots.png" title="Шаг">:<output id="step" class="panelText"></output>
                 </span>
 
             </div>
@@ -188,7 +188,7 @@
             <span class="simpleText">Количество: <span id="resourceCount"></span></span><br>
             <span class="simpleText">Скорость восстановления (ход): <span id="resourceRecovery"></span></span><br>
             <span class="simpleText" id="resMine">Скорость добычи (ход): <span id="resourceMining"></span></span><br>
-            <div class="button" id="updateResourceButton" onclick="updateResourceToProduction(getSelectedResourceId());"></div>
+            <div class="button" id="updateResourceButton" onclick="updateResource();"></div>
             <div id="closeResourceMenuButton" class="button" onclick="resourceMenuClose();"></div>
         </div>
         <div id="popupMenu" alt="">
@@ -202,26 +202,23 @@
                 <span class="simpleText">Безработица: <span id="cityUnemployment"></span> % </span><br>
                 <span class="simpleText">Зарплата: <span id="citySalary"></span> грн/чел</span><br>
                 <span class="simpleText">Налоги: <span id="cityTaxes"></span> % </span><br>
-                <span class="simpleText">Потребляемое дерево: <span id="cityTrees"></span>  </span><br>
-                <span class="simpleText">Потребляемый уголь: <span id="cityCoals"></span>  </span><br>
-                <span class="simpleText">Потребляемая пшеница: <span id="cityWheats"></span>  </span><br>
-                <span class="simpleText">Потребляемый газ: <span id="cityGas"></span>  </span><br>
-                <span class="simpleText">Потребляемый камень: <span id="cityRocks"></span>  </span><br>
+                <span class="simpleText">Gnjht,yjcnb </span><br>
+                <span class="simpleText">дерево: <span id="cityTaxes"></span> % </span><br>
             </div>
             <div class="cityMenu" id="rightMenu">
                 <span class="simpleText" id="ownerText">Владелец: <span id="cityOwner"></span></span><br>
                 <span class="simpleText" id="salaryProfitText">Выручка: <span id="cityProfit"></span></span><br>
-                <div class="button AgitationButton" id="concertButton" onclick="StartAgitation(1);">Концерт+1000</div>
-                <div class="button AgitationButton" id="humanitarianReliefButton" onclick="StartAgitation(1);">Гуманитарная помощь+2000</div>
-                <div class="button AgitationButton" id="charityButton" onclick="StartAgitation(1);">Благотворительность+2500</div>
+                <div class="button AgitationButton" id="concertButton" onclick="StartAgitation(agitatonType.concert);">Концерт+1000</div>
+                <div class="button AgitationButton" id="humanitarianReliefButton" onclick="StartAgitation(agitatonType.humanitarianRelief);">Гуманитарная помощь+2000</div>
+                <div class="button AgitationButton" id="charityButton" onclick="StartAgitation(agitatonType.charity);">Благотворительность+2500</div>
 
-                <div class="button AgitationButton" id="salaryAddButton" onclick="StartAgitation(2);">Зарплата+500</div>
+                <div class="button AgitationButton" id="salaryAddButton" onclick="StartAgitation(agitatonType.addSalary);">Зарплата+500</div>
                 <div class="button AgitationButton" id="taxesAddButton" onclick="augmentTax();">Увеличить налог+1</div>
                 <div class="button AgitationButton" id="captureTheCityButton" onclick="setCityPlayer();">Захватить город</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >
                 <span class="simpleText">Уровень города:<span id="cityLevel"></span></span>
-                <div class="button" id="updateButton" onclick="levelUp(getSelectedCityId());"></div>
+                <div class="button" id="updateButton" onclick="updateCity();"></div>
             </div>
             <div id="closePopupMenuButton" class="button" onclick="popupMenuClose();"></div>
         </div>

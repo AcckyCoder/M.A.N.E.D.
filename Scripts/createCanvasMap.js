@@ -144,7 +144,7 @@ function createHexGrid() {
                 }
                 else if(map[id].type != resourceType.grass.value)
                 {
-                    updateResourceInfoPanel(id);
+                    updateResourceInfoPanel(map[id], id);
                 }
             }
         }

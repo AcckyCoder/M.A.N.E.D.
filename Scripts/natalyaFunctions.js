@@ -1,37 +1,73 @@
 function getResourceRusTitle(type) {
-    switch (type)
-    {
-        case resourceType.city.value: return resourceType.city.rusText;
-        case resourceType.coal.value: return resourceType.coal.rusText;
-        case resourceType.gas.value: return resourceType.gas.rusText;
-        case resourceType.grass.value: return resourceType.grass.rusText;
-        case resourceType.wheat.value: return resourceType.wheat.rusText;
-        case resourceType.production.value: return resourceType.production.rusText;
-        case resourceType.rock.value: return resourceType.rock.rusText;
-        case resourceType.tree.value: return resourceType.tree.rusText;
-        case resourceType.sawMeal.value: return resourceType.sawMeal.rusText;
-        case resourceType.mine.value: return resourceType.mine.rusText;
-        case resourceType.gasRig.value: return resourceType.gasRig.rusText;
-        case resourceType.farm.value: return resourceType.farm.rusText;
-        case resourceType.quarry.value: return resourceType.quarry.rusText;
-
-
+    switch (type) {
+        case resourceType.city.value:
+        {
+            return resourceType.city.rusText;
+        }
+        case resourceType.coal.value:
+        {
+            return resourceType.coal.rusText;
+        }
+        case resourceType.gas.value:
+        {
+            return resourceType.gas.rusText;
+        }
+        case resourceType.grass.value:
+        {
+            return resourceType.grass.rusText;
+        }
+        case resourceType.wheat.value:
+        {
+            return resourceType.wheat.rusText;
+            break;
+        }
+        case resourceType.rock.value:
+        {
+            return resourceType.rock.rusText;
+        }
+        case resourceType.tree.value:
+        {
+            return resourceType.tree.rusText;
+        }
+        case resourceType.sawMeal.value:
+        {
+            return resourceType.sawMeal.rusText;
+        }
+        case resourceType.mine.value:
+        {
+            return resourceType.mine.rusText;
+        }
+        case resourceType.gasRig.value:
+        {
+            return resourceType.gasRig.rusText;
+        }
+        case resourceType.farm.value:
+        {
+            return resourceType.farm.rusText;
+        }
+        case resourceType.quarry.value:
+        {
+            return resourceType.quarry.rusText;
+        }
+        default :
+        {
+            return "Неизвестный ресурс";
+        }
     }
 }
 /**
  * Created by Natalya on 07.01.2015.
  */
 
-
-function updateResourceInfoPanel(id) {
+function updateResourceInfoPanel(resource, id) {
     document.getElementById('resourceStat').style.display = 'block';
-    document.getElementById('resourceTitle').innerHTML = getResourceRusTitle(map[id].type);
-    document.getElementById('resourceCount').innerHTML = map[id].resourceCount;
-    document.getElementById('resourceRecovery').innerHTML = map[id].recovery;
-    if(map[id].mining != 0)
+    document.getElementById('resourceTitle').innerHTML = getResourceRusTitle(resource.type);
+    document.getElementById('resourceCount').innerHTML = resource.resourceCount;
+    document.getElementById('resourceRecovery').innerHTML = resource.recovery;
+    if(resource.mining != 0)
     {
         document.getElementById('resMine').style.display = 'block';
-        document.getElementById('resourceMining').innerHTML = map[id].mining;
+        document.getElementById('resourceMining').innerHTML = resource.mining;
         document.getElementById('updateResourceButton').style.display = 'none';
     }
     else
@@ -42,45 +78,51 @@ function updateResourceInfoPanel(id) {
     document.getElementById('resourceStat').setAttribute('alt', id);
 }
 
-
-function getCityLevel(cityid) {
-    return map[cityid].level;
-}
-
-function drawCityInfoPanel(cityid)
-{
+function drawCityInfoPanel(cityid){
     document.getElementById('cityTitle').innerHTML = getCityName(cityid);
     updateCityInfoPanel(cityid);
 }
 
 var levelUpPrice  = [1000,20000,300000,4000000,50000000,6000000000];
 
-function levelUp(cityID) {
-
-    var level = map[cityID].level;
-
-    if (player.money > levelUpPrice[level - 1]) {
-        if (level < 6)
-        {
-            map[cityID].level++;
-            player.money -= levelUpPrice[level-1];
-            map[cityID].popularity *= Math.round(map[cityID].level);
-            map[cityID].taxes += 1;
-            map[cityID].salary += Math.round((map[cityID].salary*map[cityID].level)*0.2);
-            map[cityID].treeNeeds += map[cityID].level * Math.round(Math.abs(Math.random()*100 - Math.random()*50));
-            map[cityID].coalNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
-            map[cityID].wheatNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
-            map[cityID].rockNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
-            map[cityID].gasNeeds += map[cityID].level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
-
-        }
-
-        updateCityInfoPanel(cityID);
+function updateCity(){
+    var id = getSelectedCityId();
+    var city = map[id];
+    if(levelUp(city))
+    {
+        updateCityInfoPanel(id);
         nextGameStep();
     }
     else
     {
         alert("Недостаточно денег!");
+    }
+}
+
+function levelUp(city) {
+
+    var level = city.level;
+    if (player.money > levelUpPrice[level - 1]) {
+        if (level < 6)
+        {
+            city.level++;
+            player.money -= levelUpPrice[level-1];
+            city.popularity *= Math.round(level);
+            city.taxes += 1;
+            city.salary += Math.round((city.salary*level)*0.2);
+            city.treeNeeds += level * Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            city.coalNeeds += level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            city.wheatNeeds += level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            city.rockNeeds += level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+            city.gasNeeds += level* Math.round(Math.abs(Math.random()*100 - Math.random()*50));
+
+        }
+
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
 
@@ -138,7 +180,7 @@ function updateCityInfoPanel(cityid) {
     document.getElementById('cityUnemployment').innerHTML = city.unemployment;
     document.getElementById('citySalary').innerHTML = city.salary;
     document.getElementById('cityTaxes').innerHTML = city.taxes;
-    cityResourcesNeeds();
+
 }
 
 function getCityName(id) {
@@ -155,16 +197,18 @@ function resourceMenuClose() {
     document.getElementById('resourceStat').setAttribute('alt', "");
 }
 
-function getCityProfit(cityId)
-{
+function getCityProfit(cityId){
     var city = map[cityId];
 
-    var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    if(city.unemployment != 0)
+        var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    else
+        var workingPeople = city.popularity * 0.4;
+
     var theirSalary = city.salary * (city.taxes/100.0);
     var cityProfit = Math.round(workingPeople) * theirSalary;
     return Math.round(cityProfit);
 }
-
 
 function gameOver(reason) {
     alert(reason);
@@ -195,6 +239,7 @@ function isPlayerHasMoreCities() {
 
         return false;
 }
+
 function updateCityGameStep(city) {
 
     //вычисляем вероятность возникновения события/
@@ -289,23 +334,39 @@ function updateCityGameStep(city) {
 
     player.coal -= city.coalNeeds;
     if(player.coal <0)
+    {
+        player.money += (0+player.coal)*2;
         player.coal = 0;
+
+    }
 
     player.wheat -= city.wheatNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.wheat <0)
+    {
+        player.money += (0+player.wheat)*2;
+        player.wheat = 0;
+    }
 
     player.gas -= city.gasNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.gas <0)
+    {
+        player.money += (0+player.gas)*2;
+        player.gas = 0;
+    }
 
     player.rock -= city.rockNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.rock <0)
+    {
+        player.money += (0+player.rock)*2;
+        player.rock = 0;
+    }
 
     player.tree -= city.treeNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.tree <0)
+    {
+        player.money += (0+player.tree)*2;
+        player.tree = 0;
+    }
 
 }
 
@@ -339,7 +400,6 @@ function addUnemployment(city, count) {
     }
 }
 
-
 function addHealth (city, count) {
 
         city.health += count;
@@ -353,7 +413,6 @@ function addHealth (city, count) {
         city.health = 0;
     }
 }
-
 
 function addCrime (city, count) {
 
@@ -372,7 +431,6 @@ function addCrime (city, count) {
 function updateResourceGameStep(resource) {
     resource.resourceCount += resource.recovery;
 }
-
 
 function updateProductionGameStep(production) {
     production.resourceCount += production.recovery;
@@ -410,26 +468,33 @@ function isNoMoreFreeCities() {
     return true;
 }
 
+function isProductionType(type){
+    if(type == resourceType.farm.value || type == resourceType.gasRig.value || type == resourceType.mine.value || type == resourceType.quarry.value ||type == resourceType.sawMeal.value)
+        return true;
+
+    return false;
+}
 
 function nextGameStep() {
 
     addLogText('Das ist ' + player.step + ' Schritt');
 
     for (var i = 0; i < map.length; i++) {
-        if (map[i].type == resourceType.city.value) {
-            if (map[i].owner == player.name) {
-                updateCityGameStep(map[i]);
+        var city = map[i];
+        if (city.type == resourceType.city.value) {
+            if (city.owner == player.name) {
+                updateCityGameStep(city);
                 var profit = getCityProfit(i);
-                console.log(map[i].cityName + ": " + profit);
+                console.log(city.cityName + ": " + profit);
                 player.money += profit;
             }
         }
-        else if (map[i].type == resourceType.production.value) {
-            updateProductionGameStep(map[i]);
+        else if (isProductionType(city.type)) {
+            updateProductionGameStep(city);
 
         }
         else {
-            updateResourceGameStep(map[i]);
+            updateResourceGameStep(city);
         }
 
     }
@@ -444,7 +509,6 @@ function nextGameStep() {
     }
 
     player.step++;
-    cityResourcesNeeds();
     showResInPanel();
     economiCrizes();
     banding();
@@ -453,21 +517,18 @@ function nextGameStep() {
     updateCityInfoPanel(getSelectedCityId());
 }
 
-
 function getSelectedCityId() {
     return document.getElementById('popupMenu').getAttribute('alt');
 }
 
-function getSelectedResourceId() {
-    return document.getElementById('resourceStat').getAttribute('alt');
+function getSelectedResource() {
+    var id = document.getElementById('resourceStat').getAttribute('alt');
+    return map[id];
 }
 
-
-function updateResourceToProduction(resourceId) {
+function updateResourceToProduction(resource) {
 
     if (player.money > 10000) {
-
-        var resource = map[resourceId];
 
         if (resource.type == resourceType.coal.value) {
             resource.type = resourceType.mine.value;
@@ -486,17 +547,25 @@ function updateResourceToProduction(resourceId) {
 
         }
 
+        if(resource.type != resourceType.grass.value) {
+            resource.texture = resource.type.toString() + ".jpg";
+            resource.owner = player.name;
+            resource.mining = Math.round(Math.random() * 100);
+            player.money -= 10000;
+        }
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
-        resource.texture = resource.type.toString() + ".jpg";
-        resource.owner = player.name;
-        resource.mining = Math.round(Math.random() * 100);
-
-
-        player.money -= 10000;
-
-
-
-        updateResourceInfoPanel(resourceId);
+function updateResource(){
+    var resource = getSelectedResource();
+    if(updateResourceToProduction(resource))
+    {
+        updateResourceInfoPanel(resource);
         nextGameStep();
         createHexGrid();
     }
@@ -506,9 +575,7 @@ function updateResourceToProduction(resourceId) {
     }
 }
 
-
-function changeLogPanelState()
-{
+function changeLogPanelState(){
     if(document.getElementById('logPanel').getAttribute('alt') == 'open')
     {
         if(document.getElementById('logPanel').classList.contains('showUpPanel'))
@@ -531,7 +598,6 @@ function changeLogPanelState()
     }
 }
 
-
 function addLogText(text) {
     var x = document.getElementById("logText");
     var option = document.createElement("option");
@@ -546,13 +612,9 @@ function addLogText(text) {
     }
 
     x.add(option, x[0]);
-
 }
 
-
-
-function hideEventPopup()
-{
+function hideEventPopup(){
     document.getElementById('eventPopup').style.display = 'none';
 }
 
@@ -579,7 +641,5 @@ function showEventPopup(text, event) {
     {
         popup.backgroundColor = 'rgba(0, 0, 0, 0.75)';
     }
-
-
     addLogText(text);
 }
