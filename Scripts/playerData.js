@@ -16,10 +16,14 @@ var player =
     }
     ;
 
-function setPlayerName(){
-    player.name = document.getElementById("player_one");
+function setPlayerName() {
+    player.name = document.getElementById("firstPlayer").value;
+    if (!document.getElementById("firstPlayer").value)
+        player.name = 'player';
     map[first_city_id()].owner = player.name;
-    startstep();
-    createHexGrid();
 
+    showResInPanel();
+    startstep();
+    addLogText('Добро пожаловать, ' + player.name + '!');
+    createHexGrid();
 }

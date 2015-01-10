@@ -11,7 +11,6 @@ var resourceType =
     wheat: {value: "wheat", rusText: "Пшеница"},
     tree: {value: "tree", rusText: "Дерево"},
     city: {value: "city", rusText: "Город"},
-    production: {value: "production", rusText: "Производство"},
     grass: {value: "grass", rusText: "Трава"},
     mine:{value: "mine", rusText: "Шахта"},
     sawMeal:{value: "sawMeal", rusText: "Лесопилка"},

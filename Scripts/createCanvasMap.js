@@ -113,7 +113,6 @@ function createHexGrid() {
 
     }
 
-    showResourse();
 
     function CanvasClickEventHandler(e) {
         var x,
@@ -140,11 +139,11 @@ function createHexGrid() {
                 drawHexagon(ctx, id, screenX, screenY, true);
                 if(map[id].type == resourceType.city.value) {
 
-                    drawPopupMenu(id);
+                    drawCityInfoPanel(id);
                 }
                 else if(map[id].type != resourceType.grass.value)
                 {
-                    UpdateResourceInfo(id);
+                    updateResourceInfoPanel(map[id], id);
                 }
             }
         }
