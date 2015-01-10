@@ -158,7 +158,7 @@ function getCityProfit(cityId)
 {
     var city = map[cityId];
 
-    var workingPeople =  city.popularity * (city.unemployment/100.0);
+    var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
     var theirSalary = city.salary * (city.taxes/100.0);
     var cityProfit = Math.round(workingPeople) * theirSalary;
     return Math.round(cityProfit);
@@ -411,6 +411,9 @@ function isNoMoreFreeCities() {
 
 
 function nextGameStep() {
+
+    addLogText('Das ist ' + player.step + ' Schritt');
+
     for (var i = 0; i < map.length; i++) {
         if (map[i].type == resourceType.city.value) {
             if (map[i].owner == player.name) {
@@ -438,7 +441,7 @@ function nextGameStep() {
     if (player.money <= 0) {
         gameOver(gameOverReason.bankrupt);
     }
-    addLogText('Das ist ' + player.step + ' Schritt')
+
     player.step++;
     showResInPanel();
     economiCrizes();
@@ -485,6 +488,11 @@ function updateResourceToProduction(resourceId) {
         resource.texture = resource.type.toString() + ".jpg";
         resource.owner = player.name;
         resource.mining = Math.round(Math.random() * 100);
+
+
+        player.money -= 10000;
+
+
 
         updateResourceInfoPanel(resourceId);
         nextGameStep();
@@ -537,9 +545,39 @@ function addLogText(text) {
 
     x.add(option, x[0]);
 
+}
 
 
 
+function hideEventPopup()
+{
+    document.getElementById('eventPopup').style.display = 'none';
+}
+
+function showEventPopup(text, event) {
+    var popup = document.getElementById('eventPopup');
+
+    popup.style.display = 'block';
+
+    document.getElementById('eventText').innerHTML = text;
+
+    if(event == eventType.negative)
+    {
+        popup.style.backgroundColor = 'rgba(227, 10, 0, 0.75)';
+    }
+    else if(event == eventType.neutral)
+    {
+        popup.style.backgroundColor = 'rgba(255, 216, 61, 0.75)';
+    }
+    else if(event == eventType.positive)
+    {
+        popup.style.backgroundColor = 'rgba(16, 151, 0, 0.75)';
+    }
+    else
+    {
+        popup.backgroundColor = 'rgba(0, 0, 0, 0.75)';
+    }
 
 
+    addLogText(text);
 }
