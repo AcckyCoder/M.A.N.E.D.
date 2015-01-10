@@ -15,41 +15,32 @@ function showResInPanel(){
     document.getElementById('coin_out').innerHTML=player.money;
 }
 
-function Cityes(){
-    var cityes=[];
+function randomNotUserCities(){
+    var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
-        if(map[i].type == "city") {
-            cityes[k] = i;
+        if(map[i].owner=='undefined'){
+            cities[k] = i;
             k++;
-
         }
     }
-    return cityes;
+    var retCity = Math.round(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
+    return cities[retCity];
 }
-function randomUserCityes(){
-    var cityes=[];
+function randomUserCities(){
+    var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
         if(map[i].owner==player.name){
-            cityes[k] = i;
+            console.log(map[i].owner);
+            cities[k] = i;
             k++;
         }
-
     }
-   // var retCity = Math.floor(Math.random() * cityes.length);
-    console.log(map[cityes[0]].cityName);
-    return cityes[0];
-
-    /*var cities = Cityes();
-    var usertown = [];
-    var count = 0;
-    for(var i=0;i<cities.length;i++){
-        if(map[cities[i]].owner==player.name)
-            usertown[count]=cities[i];
-        count++;
-    }
-    return usertown;*/
+    var retCity = Math.round(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
+    return cities[retCity];
 }
 
 function economiCrizes(){
@@ -75,14 +66,14 @@ function economiCrizes(){
     //else alert("Кризисс минул вас стороной");
 }
 function banding(){
-    var id =getSelectedCityId();
+    var id =randomUserCities();
     var crime =map[id].crime;
     var c;
     if(crime<50){
        c= Math.round(crime*Math.random());
     }
     else c =Math.round((100-crime)*Math.random());
-    var pos=Math.round(Math.random()*100);
+    var pos=30;//Math.round(Math.random()*100);
     var pop=Math.round(Math.random()*c*100);
     var heal =Math.round(Math.random()*c);
     if(pos%30==0)
@@ -96,7 +87,7 @@ function banding(){
     }
 }
 function gumKonvoy(){
-    var id =getSelectedCityId();
+    var id =randomUserCities();
     var type =Math.random();
     var pos=Math.round(Math.random()*100);
     var crime = Math.round(Math.random()*20);

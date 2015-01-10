@@ -17,11 +17,12 @@ var player =
     ;
 
 function setPlayerName(){
-    player.name = document.getElementById("player_one");
+    player.name = document.getElementById("firstPlayer").value;
+    if(!document.getElementById("firstPlayer").value)
+    player.name='player_1';
     map[first_city_id()].owner = player.name;
     showResInPanel();
     startstep();
     addLogText('Gegrüßet seist du , ' + player.name + '!');
     createHexGrid();
-
 }
