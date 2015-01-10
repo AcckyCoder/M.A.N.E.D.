@@ -113,7 +113,6 @@ function createHexGrid() {
 
     }
 
-    showResourse();
 
     function CanvasClickEventHandler(e) {
         var x,

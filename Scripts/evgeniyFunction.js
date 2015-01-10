@@ -19,13 +19,12 @@ function randomNotUserCities(){
     var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
-        if(map[i].owner=='undefined'){
+        if(map[i].owner!=player.name){
             cities[k] = i;
             k++;
         }
     }
-    var retCity = Math.round(Math.random() * cities.length);
-    console.log(map[cities[retCity]].cityName);
+    var retCity = Math.floor(Math.random() * cities.length);
     return cities[retCity];
 }
 function randomUserCities(){
@@ -38,8 +37,7 @@ function randomUserCities(){
             k++;
         }
     }
-    var retCity = Math.round(Math.random() * cities.length);
-    console.log(map[cities[retCity]].cityName);
+    var retCity = Math.floor(Math.random() * cities.length);
     return cities[retCity];
 }
 
