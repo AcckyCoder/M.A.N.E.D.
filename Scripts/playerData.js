@@ -21,6 +21,7 @@ function setPlayerName(){
     map[first_city_id()].owner = player.name;
     showResInPanel();
     startstep();
+    addLogText('Gegrüßet seist du , ' + player.name + '!');
     createHexGrid();
 
 }

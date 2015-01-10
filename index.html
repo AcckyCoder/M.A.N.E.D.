@@ -33,6 +33,7 @@
     <script src="Scripts/evgeniyFunction.js" type="text/javascript"></script>
     <script src="Scripts/resourceType.js" type="text/javascript"></script>
     <script src="Scripts/gameOverReason.js" type="text/javascript"></script>
+    <script src="Scripts/eventType.js" type="text/javascript"></script>
     <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
 
     <script>
@@ -218,6 +219,11 @@
                 <div class="button" id="updateButton" onclick="levelUp(getSelectedCityId());"></div>
             </div>
             <div id="closePopupMenuButton" class="button" onclick="popupMenuClose();"></div>
+        </div>
+
+
+        <div id="eventPopup">
+            <div class="button" id="eventText" onclick="hideEventPopup();"/></div>
         </div>
     </div>
 

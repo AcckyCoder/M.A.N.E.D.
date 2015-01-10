@@ -537,9 +537,39 @@ function addLogText(text) {
 
     x.add(option, x[0]);
 
+}
 
 
 
+function hideEventPopup()
+{
+    document.getElementById('eventPopup').style.display = 'none';
+}
+
+function showEventPopup(text, event) {
+    var popup = document.getElementById('eventPopup');
+
+    popup.style.display = 'block';
+
+    document.getElementById('eventText').innerHTML = text;
+
+    if(event == eventType.negative)
+    {
+        popup.style.backgroundColor = 'rgba(227, 10, 0, 0.75)';
+    }
+    else if(event == eventType.neutral)
+    {
+        popup.style.backgroundColor = 'rgba(255, 216, 61, 0.75)';
+    }
+    else if(event == eventType.positive)
+    {
+        popup.style.backgroundColor = 'rgba(16, 151, 0, 0.75)';
+    }
+    else
+    {
+        popup.backgroundColor = 'rgba(0, 0, 0, 0.75)';
+    }
 
 
+    addLogText(text);
 }
