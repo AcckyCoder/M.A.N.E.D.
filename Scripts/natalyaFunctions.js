@@ -181,6 +181,14 @@ function updateCityInfoPanel(cityid) {
     document.getElementById('citySalary').innerHTML = city.salary;
     document.getElementById('cityTaxes').innerHTML = city.taxes;
 
+    document.getElementById('treeNeeds').innerHTML = city.treeNeeds;
+    document.getElementById('wheatNeeds').innerHTML = city.wheatNeeds;
+    document.getElementById('coalNeeds').innerHTML = city.coalNeeds;
+    document.getElementById('gasNeeds').innerHTML = city.gasNeeds;
+    document.getElementById('rockNeeds').innerHTML = city.rockNeeds;
+
+
+
 }
 
 function getCityName(id) {
@@ -200,7 +208,11 @@ function resourceMenuClose() {
 function getCityProfit(cityId){
     var city = map[cityId];
 
-    var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    if(city.unemployment != 0)
+        var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    else
+        var workingPeople = city.popularity * 0.4;
+
     var theirSalary = city.salary * (city.taxes/100.0);
     var cityProfit = Math.round(workingPeople) * theirSalary;
     return Math.round(cityProfit);
@@ -509,7 +521,6 @@ function nextGameStep() {
     economiCrizes();
     banding();
     gumKonvoy();
-    showResourse();
     updateCityInfoPanel(getSelectedCityId());
 }
 
