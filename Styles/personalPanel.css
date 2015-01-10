@@ -4,9 +4,10 @@
     top: 2vh;
     right: 25vh;
     left: 25vh;
-    height: 15%;
+    height: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    padding: 1%;
 }
 
 .panelText{

@@ -67,7 +67,7 @@
     position: fixed;
     top: 23%;
     width: 30%;
-    height: 70%;
+    height: 73%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 25px rgba(255,255,155,0.5);
     padding-top: 1%;
@@ -241,3 +241,10 @@
     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
 }
 
+.iconImage {
+    height: 40%;
+}
+
+.iconImage2 {
+    height: 5%;
+}

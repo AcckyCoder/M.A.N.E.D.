@@ -16,13 +16,11 @@ var player =
     }
     ;
 
-function setPlayerName(){
+function setPlayerName() {
     player.name = document.getElementById("firstPlayer").value;
-    if(!document.getElementById("firstPlayer").value)
-    player.name='player_1';
+    if (!document.getElementById("firstPlayer").value)
+        player.name = 'player_1';
     map[first_city_id()].owner = player.name;
-    map[first_city_id()].owner = player.name;
-   randomUserCities();
 
     showResInPanel();
     startstep();
