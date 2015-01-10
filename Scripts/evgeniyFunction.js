@@ -58,7 +58,7 @@ function economiCrizes(){
         player.gas-=Math.round(Math.random()*gas);
         player.rock-=Math.round(Math.random()*rock);
         //alert("THERA AA CRIZESSS");
-        showEventPopup("THERA AA CRIZESSS", eventType.negative);
+        showEventPopup("КРИЗИС", eventType.negative);
     }
     showResInPanel();
     //else alert("Кризисс минул вас стороной");
@@ -79,7 +79,6 @@ function banding(){
         addCrime(map[id],c);
         map[id].popularity-=pop;
         addHealth(map[id],-heal);
-        updateCityInfoPanel(id);
         //alert("Напала банда");
         showEventPopup("Напала банда", eventType.neutral);
     }
@@ -99,17 +98,13 @@ function gumKonvoy(){
             map[id].popularity-=pop;
             addHealth(map[id],-heal);
             addHappy(map[id],happy);
-            updateCityInfoPanel(id);
-
         }
         else{
             addHealth(map[id],heal);
             addHappy(map[id],happy);
-            updateCityInfoPanel(id);
         }
     //alert("Пришол гуманитарный конвой");
-    showEventPopup("Пришол гуманитарный конвой", eventType.positive);
+    showEventPopup("Пришел гуманитарный конвой", eventType.positive);
     }
-
 }
 
