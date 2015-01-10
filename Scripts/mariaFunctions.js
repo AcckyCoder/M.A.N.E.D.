@@ -41,7 +41,7 @@ function StartAgitation(type) {
             break;
         case agitatonType.charity: makeCharity(2500,city);
             break;
-        case agitatonType.addSalary: makeAddSalary(20, city);
+        case agitatonType.addSalary: makeAddSalary(500, city);
             break;
         case agitatonType.humanitarianRelief:makeHumanitarian(2000, city);
             break;
@@ -85,6 +85,7 @@ function makeCharity(money, city){
     var newHealth;
     newHealth=Randomfactors(4,6);
     newHappy=Randomfactors(5,10);
+
     rest = player.money - money;
     addHappy(city,newHappy);
     addHealth(city,newHealth);
@@ -95,6 +96,8 @@ function makeCharity(money, city){
 function makeAddSalary(money, city){ //добавить зарплату
 
     var rest = player.money - money;
+    city.salary+=money;
+
     var newPopul;
     var newHappy;
     var newHealth;
@@ -103,8 +106,7 @@ function makeAddSalary(money, city){ //добавить зарплату
     newHealth=Randomfactors(4,6);
 
     addHappy(city,newHappy);
-    city.salary+=money;
-    city.popularity += newPopul;
+  //  city.popularity += newPopul;
     addHealth(city,newHealth);  //есть деньги, есть возможность купить лекарство
     player.money=rest;
 }
