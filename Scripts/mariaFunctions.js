@@ -148,7 +148,7 @@ function augmentTax(){
     map[id].taxes+=1;
 
     map[id].happy-=rand;
-    addHappy(map[index_city],-rand);//никому от этого не весело :(
+  //  addHappy(map[index_city],-rand);//никому от этого не весело :(
     if(map[id].happy<0){
         map[id].happy=0;
         map[id].owner="undefined";
@@ -170,12 +170,11 @@ function augmentTax(){
 function setCityPlayer() { //присвоить игроку город
 
     var id = getSelectedCityId();
-
     map[id].owner = player.name;
-
-
     updateCityInfoPanel(id);
     console.log(isPlayerCell(id));
+
+
 }
 
 
