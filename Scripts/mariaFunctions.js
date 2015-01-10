@@ -18,13 +18,11 @@ function first_city_id(){
     return found_city[first];
 }
 
-function getCityIdByName(name)
-{
+function getCityIdByName(name){
     return map[name].id;
 }
 
-function getCityNameById(id)
-{
+function getCityNameById(id){
     return map[id].cityName;
 }
 
@@ -32,44 +30,44 @@ function startstep(){
   document.getElementById('step').innerText=player.step;
 }
 
-
 function showResourse(){
     document.getElementById('coin_out').innerText= player.money;
     document.getElementById('nameplayer').innerHTML= player.name;
     document.getElementById('step').innerHTML = player.step;
 } //показать текущие ресурсы юзера
 
-function carryOutAgitation(money,index_city,type_number){ //на агитацию  нужны деньги и указать где проходит. Агитация 2х видов
-    //либо 1-организовать концерт,либо 2-повысить всем зарплаты
- var rest;//остаток
-    //концерт
-    if (type_number == 1) {
-        rest = player.money - money;
-        addHappy(map[index_city],2);
-        map[index_city].popularity+=10;
-
-
-    } else {
-        rest = player.money - money;
-        addHappy(map[index_city],5);
-        map[index_city].salary+=money;
-        map[index_city].popularity += 10;
-        addHealth(map[index_city],2);  //есть деньги, есть возможность купить лекарство
+function StartAgitation(type) {
+    var id = getSelectedCityId();
+    switch (type) {
+        case agitatonType.concert: makeConcert(500, id);
+            break;
+        case agitatonType.charity: //TODO:Добавить функцию благотворительности
+            break;
+        case agitatonType.addSalary: makeAddSalary(20, id);
+            break;
+        case agitatonType.humanitarianRelief: //TODO:Добавить функцию гуманитарной помощи
+            break;
     }
-    player.money=rest;
-
-}
-function StartAgitation(type)
-{
-    var id=getSelectedCityId();
-
-    if(type==2)
-        carryOutAgitation(500,id,2);
-    else
-        carryOutAgitation(200,id,1);
 
     nextGameStep();
     updateCityInfoPanel(id);
+}
+
+function makeConcert(money, index_city){
+    var rest;
+    rest = player.money - money;
+    addHappy(map[index_city],2);
+    map[index_city].popularity+=10;
+    player.money=rest;
+}
+
+function makeAddSalary(money, index_city){
+    var rest = player.money - money;
+    addHappy(map[index_city],5);
+    map[index_city].salary+=money;
+    map[index_city].popularity += 10;
+    addHealth(map[index_city],2);  //есть деньги, есть возможность купить лекарство
+    player.money=rest;
 }
 
 function augmentTax(){

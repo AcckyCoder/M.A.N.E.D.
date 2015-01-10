@@ -73,7 +73,7 @@ function banding(){
        c= Math.round(crime*Math.random());
     }
     else c =Math.round((100-crime)*Math.random());
-    var pos=30;//Math.round(Math.random()*100);
+    var pos= Math.round(Math.random()*100);
     var pop=Math.round(Math.random()*c*100);
     var heal =Math.round(Math.random()*c);
     if(pos%30==0)
