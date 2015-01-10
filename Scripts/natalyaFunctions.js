@@ -329,23 +329,39 @@ function updateCityGameStep(city) {
 
     player.coal -= city.coalNeeds;
     if(player.coal <0)
+    {
+        player.money += (0+player.coal)*2;
         player.coal = 0;
+
+    }
 
     player.wheat -= city.wheatNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.wheat <0)
+    {
+        player.money += (0+player.wheat)*2;
+        player.wheat = 0;
+    }
 
     player.gas -= city.gasNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.gas <0)
+    {
+        player.money += (0+player.gas)*2;
+        player.gas = 0;
+    }
 
     player.rock -= city.rockNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.rock <0)
+    {
+        player.money += (0+player.rock)*2;
+        player.rock = 0;
+    }
 
     player.tree -= city.treeNeeds;
-    if(player.coal <0)
-        player.coal = 0;
+    if(player.tree <0)
+    {
+        player.money += (0+player.tree)*2;
+        player.tree = 0;
+    }
 
 }
 
