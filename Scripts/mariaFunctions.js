@@ -1,5 +1,5 @@
 /**
- * Created by Natalya on 07.01.2015.
+ * Created by Marry on 07.01.2015.
  */
 
 
@@ -36,20 +36,35 @@ function showResourse(){
     document.getElementById('step').innerHTML = player.step;
 } //показать текущие ресурсы юзера
 
+
 function StartAgitation(type) {
     var id = getSelectedCityId();
     switch (type) {
         case agitatonType.concert: makeConcert(500, id);
             break;
-        case agitatonType.charity: //TODO:Добавить функцию благотворительности
+        case agitatonType.charity: makeCharity(2500,id);
             break;
         case agitatonType.addSalary: makeAddSalary(20, id);
             break;
-        case agitatonType.humanitarianRelief: //TODO:Добавить функцию гуманитарной помощи
+        case agitatonType.humanitarianRelief:makeHumanitarian(2000,id) //TODO:Добавить функцию гуманитарной помощи
             break;
     }
 
     nextGameStep();
+}
+
+
+function makeHumanitarian(money, index_city){
+
+    var rest;
+    var newHappy;
+    var newHealth;
+
+    newHealth=Randomfactors(4,6);
+    newHappy=Randomfactors(3,9);
+    rest = player.money - money;
+    addHappy(map[index_city],newHappy);
+    addHealth(map[index_city],newHealth);
 }
 
 function makeConcert(money, index_city){
@@ -69,7 +84,7 @@ function makeCharity(money, index_city){
     var newHappy;
     var newHealth;
     newHealth=Randomfactors(4,6);
-    newHappy=Randomfactors(3,9);
+    newHappy=Randomfactors(5,10);
     rest = player.money - money;
     addHappy(map[index_city],newHappy);
     addHealth(map[index_city],newHealth);
