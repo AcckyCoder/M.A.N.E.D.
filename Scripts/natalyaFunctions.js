@@ -181,6 +181,14 @@ function updateCityInfoPanel(cityid) {
     document.getElementById('citySalary').innerHTML = city.salary;
     document.getElementById('cityTaxes').innerHTML = city.taxes;
 
+    document.getElementById('treeNeeds').innerHTML = city.treeNeeds;
+    document.getElementById('wheatNeeds').innerHTML = city.wheatNeeds;
+    document.getElementById('coalNeeds').innerHTML = city.coalNeeds;
+    document.getElementById('gasNeeds').innerHTML = city.gasNeeds;
+    document.getElementById('rockNeeds').innerHTML = city.rockNeeds;
+
+
+
 }
 
 function getCityName(id) {
