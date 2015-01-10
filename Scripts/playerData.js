@@ -19,11 +19,11 @@ var player =
 function setPlayerName() {
     player.name = document.getElementById("firstPlayer").value;
     if (!document.getElementById("firstPlayer").value)
-        player.name = 'player_1';
+        player.name = 'player';
     map[first_city_id()].owner = player.name;
 
     showResInPanel();
     startstep();
-    addLogText('Gegrüßet seist du , ' + player.name + '!');
+    addLogText('Добро пожаловать, ' + player.name + '!');
     createHexGrid();
 }
