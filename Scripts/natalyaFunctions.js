@@ -91,10 +91,12 @@ function updateCity(){
     if(levelUp(city))
     {
         updateCityInfoPanel(id);
+        addLogText("Уровень города " + city.cityName + " увеличен до " + city.level);
         nextGameStep();
     }
     else
     {
+        addLogText("Недостаточно денег для увеличения уровня");
         alert("Недостаточно денег!");
     }
 }
@@ -166,6 +168,7 @@ function updateCityInfoPanel(cityid) {
         document.getElementById('salaryAddButton').style.display = 'none';
         document.getElementById('taxesAddButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'none';
+        document.getElementById('salaryProfitText').style.display = 'none';
     }
 
 
@@ -219,6 +222,7 @@ function getCityProfit(cityId){
 }
 
 function gameOver(reason) {
+    addLogText(reason);
     alert(reason);
     ShowMenu('game', 'main');
 }
@@ -270,10 +274,15 @@ function updateCityGameStep(city) {
             if (city.popularity <= 0) {
                 //и у игрока не осталось городов
                 if (!isPlayerHasMoreCities())
+                {
                     gameOver(gameOverReason.everyBodyDie);
+                }
                 else
                 //или просто стираем город с лица земли
+                {
+                    addLogText(city.cityName + " уничтожен. Жителей не осталось");
                     city = destroyCity();
+                }
             }
         }
     }
@@ -288,9 +297,14 @@ function updateCityGameStep(city) {
             city.popularity-= died;
             if (city.popularity <= 0) {
                 if (!isPlayerHasMoreCities())
+                {
                     gameOver(gameOverReason.everyBodyDie);
+                }
                 else
+                {
+                    addLogText(city.cityName + " уничтожен. Жителей не осталось");
                     city = destroyCity();
+                }
             }
 
             //и люди от этого становятся несчастнее
@@ -484,9 +498,6 @@ function isProductionType(type){
 }
 
 function nextGameStep() {
-
-    addLogText('Das ist ' + player.step + ' Schritt');
-
     for (var i = 0; i < map.length; i++) {
         var city = map[i];
         if (city.type == resourceType.city.value) {
@@ -570,14 +581,17 @@ function updateResourceToProduction(resource) {
 
 function updateResource(){
     var resource = getSelectedResource();
+    var text = getResourceRusTitle(resource.type);
     if(updateResourceToProduction(resource))
     {
+        addLogText(text + " успешно улучшено до " + getResourceRusTitle(resource.type));
         updateResourceInfoPanel(resource);
         nextGameStep();
         createHexGrid();
     }
     else
     {
+        addLogText(gameOverReason.bankrupt);
         alert(gameOverReason.bankrupt);
     }
 }
