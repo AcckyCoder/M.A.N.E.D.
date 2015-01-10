@@ -180,6 +180,7 @@ function updateCityInfoPanel(cityid) {
     document.getElementById('cityUnemployment').innerHTML = city.unemployment;
     document.getElementById('citySalary').innerHTML = city.salary;
     document.getElementById('cityTaxes').innerHTML = city.taxes;
+
 }
 
 function getCityName(id) {
