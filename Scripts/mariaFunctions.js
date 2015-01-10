@@ -18,9 +18,6 @@ function first_city_id(){
     return found_city[first];
 }
 
-function getCityIdByName(name){
-    return map[name].id;
-}
 
 function getCityNameById(id){
     return map[id].cityName;
@@ -38,15 +35,15 @@ function showResourse(){
 
 
 function StartAgitation(type) {
-    var id = getSelectedCityId();
+    var city = getSelectedCity();
     switch (type) {
-        case agitatonType.concert: makeConcert(500, id);
+        case agitatonType.concert: makeConcert(500, city);
             break;
-        case agitatonType.charity: makeCharity(2500,id);
+        case agitatonType.charity: makeCharity(2500,city);
             break;
-        case agitatonType.addSalary: makeAddSalary(20, id);
+        case agitatonType.addSalary: makeAddSalary(20, city);
             break;
-        case agitatonType.humanitarianRelief:makeHumanitarian(2000,id) //TODO:Добавить функцию гуманитарной помощи
+        case agitatonType.humanitarianRelief:makeHumanitarian(2000, city);
             break;
     }
 
@@ -54,7 +51,7 @@ function StartAgitation(type) {
 }
 
 
-function makeHumanitarian(money, index_city){
+function makeHumanitarian(money, city){
 
     var rest;
     var newHappy;
@@ -63,36 +60,39 @@ function makeHumanitarian(money, index_city){
     newHealth=Randomfactors(4,6);
     newHappy=Randomfactors(3,9);
     rest = player.money - money;
-    addHappy(map[index_city],newHappy);
-    addHealth(map[index_city],newHealth);
+    addHappy(city,newHappy);
+    addHealth(city,newHealth);
+    return "humanitarian";
 }
 
-function makeConcert(money, index_city){
+function makeConcert(money, city){
     var rest;
     var newHappy;
 
     newHappy=Randomfactors(3,9);
 
     rest = player.money - money;
-    addHappy(map[index_city],newHappy);
+    addHappy(city,newHappy);
    // map[index_city].popularity+=10;
     player.money=rest;
+    return "concert";
+
 }
 
-function makeCharity(money, index_city){
+function makeCharity(money, city){
     var rest;
     var newHappy;
     var newHealth;
     newHealth=Randomfactors(4,6);
     newHappy=Randomfactors(5,10);
     rest = player.money - money;
-    addHappy(map[index_city],newHappy);
-    addHealth(map[index_city],newHealth);
+    addHappy(city,newHappy);
+    addHealth(city,newHealth);
 
 
 }
 
-function makeAddSalary(money, index_city){ //добавить зарплату
+function makeAddSalary(money, city){ //добавить зарплату
 
     var rest = player.money - money;
     var newPopul;
@@ -102,10 +102,10 @@ function makeAddSalary(money, index_city){ //добавить зарплату
     newPopul =Randomfactors(10,20);
     newHealth=Randomfactors(4,6);
 
-    addHappy(map[index_city],newHappy);
-    map[index_city].salary+=money;
-    map[index_city].popularity += newPopul;
-    addHealth(map[index_city],newHealth);  //есть деньги, есть возможность купить лекарство
+    addHappy(city,newHappy);
+    city.salary+=money;
+    city.popularity += newPopul;
+    addHealth(city,newHealth);  //есть деньги, есть возможность купить лекарство
     player.money=rest;
 }
 
@@ -126,9 +126,8 @@ function Randomfactors(min,max){ //генерация числа в заданн
 }
 
 function augmentTax(){
-
-    var id=getSelectedCityId();
-    var start_tax=map[id].taxes;
+    var city = getSelectedCity();
+    var start_tax=city.taxes;
 
     if(start_tax<=15)  //больше налог, больше недовольства !
     {
@@ -145,36 +144,32 @@ function augmentTax(){
     var rand=Randomfactors(min,max);
 
 
-    map[id].taxes+=1;
+    city.taxes+=1;
 
-    map[id].happy-=rand;
+    city.happy-=rand;
   //  addHappy(map[index_city],-rand);//никому от этого не весело :(
-    if(map[id].happy<0){
-        map[id].happy=0;
-        map[id].owner="undefined";
+    if(city.happy<0){
+        city.happy=0;
+        city.owner="undefined";
         if(!isPlayerHasMoreCities())
         {
             gameOver(gameOverReason.youHaveNoMoreCities);
         }
     }
 
-    if(map[id].taxes>100)
-        map[id].taxes=100;
+    if(city.taxes>100)
+        city.taxes=100;
 
     nextGameStep();
-    updateCityInfoPanel(id);
-
+    updateCityInfoPanel(getSelectedCityId());
 
 }
 
 function setCityPlayer() { //присвоить игроку город
-
-    var id = getSelectedCityId();
-    map[id].owner = player.name;
-    updateCityInfoPanel(id);
-    console.log(isPlayerCell(id));
-
-
+    var city = getSelectedCity();
+    city.owner = player.name;
+    updateCityInfoPanel(getSelectedCityId());
+    console.log(isPlayerCell(getSelectedCityId()));
 }
 
 
