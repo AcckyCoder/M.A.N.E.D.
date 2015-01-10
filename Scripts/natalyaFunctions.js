@@ -199,7 +199,11 @@ function resourceMenuClose() {
 function getCityProfit(cityId){
     var city = map[cityId];
 
-    var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    if(city.unemployment != 0)
+        var workingPeople =  (city.popularity * (city.unemployment/100.0))*0.4;
+    else
+        var workingPeople = city.popularity * 0.4;
+
     var theirSalary = city.salary * (city.taxes/100.0);
     var cityProfit = Math.round(workingPeople) * theirSalary;
     return Math.round(cityProfit);
