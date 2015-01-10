@@ -114,6 +114,7 @@ function createHexGrid() {
     }
 
     showResourse();
+    randomUserCityes();
 
     function CanvasClickEventHandler(e) {
         var x,

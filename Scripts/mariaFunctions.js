@@ -55,19 +55,60 @@ function StartAgitation(type) {
 
 function makeConcert(money, index_city){
     var rest;
+    var newHappy;
+
+    newHappy=Randomfactors(3,9);
+
     rest = player.money - money;
-    addHappy(map[index_city],2);
-    map[index_city].popularity+=10;
+    addHappy(map[index_city],newHappy);
+   // map[index_city].popularity+=10;
     player.money=rest;
 }
 
-function makeAddSalary(money, index_city){
+function makeCharity(money, index_city){
+    var rest;
+    var newHappy;
+    var newHealth;
+    newHealth=Randomfactors(4,6);
+    newHappy=Randomfactors(3,9);
+    rest = player.money - money;
+    addHappy(map[index_city],newHappy);
+    addHealth(map[index_city],newHealth);
+
+
+}
+
+function makeAddSalary(money, index_city){ //добавить зарплату
+
     var rest = player.money - money;
-    addHappy(map[index_city],5);
+    var newPopul;
+    var newHappy;
+    var newHealth;
+    newHappy=Randomfactors(5,8);
+    newPopul =Randomfactors(10,20);
+    newHealth=Randomfactors(4,6);
+
+    addHappy(map[index_city],newHappy);
     map[index_city].salary+=money;
-    map[index_city].popularity += 10;
-    addHealth(map[index_city],2);  //есть деньги, есть возможность купить лекарство
+    map[index_city].popularity += newPopul;
+    addHealth(map[index_city],newHealth);  //есть деньги, есть возможность купить лекарство
     player.money=rest;
+}
+
+function Randomfactors(min,max){ //генерация числа в заданном диапазоне
+
+    var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+    rand = Math.round(rand);
+
+    while (rand == min - 1 || rand == max + 1) {
+
+        var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
+
+        rand = Math.round(rand);
+
+    }
+    return rand;
 }
 
 function augmentTax(){
@@ -87,22 +128,13 @@ function augmentTax(){
 
     }
 
+    var rand=Randomfactors(min,max);
 
-    var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
-
-    rand = Math.round(rand);
-
-    while (rand == min - 1 || rand == max + 1) {
-
-        var rand = (min - 1) + Math.random() * ((max + 1) - (min - 1));
-
-        rand = Math.round(rand);
-
-    }
 
     map[id].taxes+=1;
 
-    map[id].happy-=rand;//никому от этого не весело :(
+    map[id].happy-=rand;
+    addHappy(map[index_city],-rand);//никому от этого не весело :(
     if(map[id].happy<0){
         map[id].happy=0;
         map[id].owner="undefined";
@@ -111,8 +143,6 @@ function augmentTax(){
             gameOver(gameOverReason.youHaveNoMoreCities);
         }
     }
-
-
 
     if(map[id].taxes>100)
         map[id].taxes=100;
