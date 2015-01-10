@@ -138,6 +138,7 @@ function updateCityInfoPanel(cityid) {
     document.getElementById('cityUnemployment').innerHTML = city.unemployment;
     document.getElementById('citySalary').innerHTML = city.salary;
     document.getElementById('cityTaxes').innerHTML = city.taxes;
+    cityResourcesNeeds();
 }
 
 function getCityName(id) {
@@ -443,6 +444,7 @@ function nextGameStep() {
     }
 
     player.step++;
+    cityResourcesNeeds();
     showResInPanel();
     economiCrizes();
     banding();

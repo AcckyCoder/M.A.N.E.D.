@@ -21,6 +21,9 @@ function setPlayerName(){
     if(!document.getElementById("firstPlayer").value)
     player.name='player_1';
     map[first_city_id()].owner = player.name;
+    map[first_city_id()].owner = player.name;
+   randomUserCities();
+
     showResInPanel();
     startstep();
     addLogText('Gegrüßet seist du , ' + player.name + '!');

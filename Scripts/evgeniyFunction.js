@@ -16,21 +16,31 @@ function showResInPanel(){
 }
 
 function randomNotUserCities(){
-    var cities=[];
+    var ncities=[];
+    var retCity;
     var k = 0;
     for(var i=0;i<map.length;i++){
         if(map[i].owner=='undefined'){
-            cities[k] = i;
+            ncities[k] = i;
             k++;
         }
     }
-    var retCity = Math.round(Math.random() * cities.length);
-    console.log(map[cities[retCity]].cityName);
-    return cities[retCity];
+    if(ncities.length==1){
+        retCity =0;
+    }else retCity = Math.round(Math.random() * ncities.length);
+    while(!map[ncities[retCity]].cityName)
+    {
+        randomNotUserCities();
+    }
+    console.log(!map[ncities[retCity]].cityName);
+    return ncities[retCity];
 }
 function randomUserCities(){
     var cities=[];
+    //cities.length=0;
     var k = 0;
+    var retCity=0;
+    do{
     for(var i=0;i<map.length;i++){
         if(map[i].owner==player.name){
             console.log(map[i].owner);
@@ -38,8 +48,14 @@ function randomUserCities(){
             k++;
         }
     }
-    var retCity = Math.round(Math.random() * cities.length);
+    console.log(cities.length);
+    console.log(k);
+        if(cities.length==1){
+            retCity =0;
+        }else retCity = Math.round(Math.random() * cities.length);
     console.log(map[cities[retCity]].cityName);
+    }while(!map[cities[retCity]].cityName);
+
     return cities[retCity];
 }
 
@@ -51,7 +67,7 @@ function economiCrizes(){
     var wheat = player.wheat;
     var gas = player.gas;
     var rock = player.rock;
-    if(pos%20==0)
+    if(pos%25==0)
     {
         player.money -= Math.round(Math.random()*money);
         player.coal -= Math.round(Math.random()*coal);
@@ -73,18 +89,19 @@ function banding(){
        c= Math.round(crime*Math.random());
     }
     else c =Math.round((100-crime)*Math.random());
-    var pos=30;//Math.round(Math.random()*100);
+    var pos=Math.round(Math.random()*100);
     var pop=Math.round(Math.random()*c*100);
     var heal =Math.round(Math.random()*c);
-    if(pos%30==0)
+    if(pos%35==0)
     {
         addCrime(map[id],c);
         map[id].popularity-=pop;
         addHealth(map[id],-heal);
-        updateCityInfoPanel(id);
+      // updateCityInfoPanel(id);
         //alert("Напала банда");
-        showEventPopup("Напала банда", eventType.neutral);
+        showEventPopup("На город "+map[id].cityName +" напала банда из города "+map[randomNotUserCities()].cityName, eventType.neutral);
     }
+   // updateCityInfoPanel(id);
 }
 function gumKonvoy(){
     var id =randomUserCities();
@@ -101,17 +118,24 @@ function gumKonvoy(){
             map[id].popularity-=pop;
             addHealth(map[id],-heal);
             addHappy(map[id],happy);
-            updateCityInfoPanel(id);
+            //updateCityInfoPanel(id);
 
         }
         else{
             addHealth(map[id],heal);
             addHappy(map[id],happy);
-            updateCityInfoPanel(id);
+           //updateCityInfoPanel(id);
         }
     //alert("Пришол гуманитарный конвой");
-    showEventPopup("Пришол гуманитарный конвой", eventType.positive);
+    showEventPopup("В город "+map[id].cityName+ " пришол гуманитарный конвой из города "+map[randomNotUserCities()].cityName, eventType.positive);
     }
-
+}
+function cityResourcesNeeds(){
+    var id = getSelectedCityId();
+    document.getElementById('cityTrees').innerHTML = map[id].treeNeeds;
+    document.getElementById('cityCoals').innerHTML=map[id].coalNeeds;
+    document.getElementById('cityWheats').innerHTML=map[id].wheatNeeds;
+    document.getElementById('cityGas').innerHTML=map[id].gasNeeds;
+    document.getElementById('cityRocks').innerHTML=map[id].rockNeeds;
 }
 
