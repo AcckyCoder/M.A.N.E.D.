@@ -513,7 +513,6 @@ function nextGameStep() {
     economiCrizes();
     banding();
     gumKonvoy();
-    showResourse();
     updateCityInfoPanel(getSelectedCityId());
 }
 

@@ -50,7 +50,6 @@ function StartAgitation(type) {
     }
 
     nextGameStep();
-    updateCityInfoPanel(id);
 }
 
 function makeConcert(money, index_city){
