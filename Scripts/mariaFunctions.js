@@ -18,9 +18,7 @@ function first_city_id(){
     return found_city[first];
 }
 
-function getCityIdByName(name){
-    return map[name].id;
-}
+
 
 function getCityNameById(id){
     return map[id].cityName;
