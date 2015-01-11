@@ -172,7 +172,7 @@ describe ("Функция makeConcert()",function(){
 });
 
 describe ("Функция makeHumanitarian()",function(){
-    it( "Тип агитации-концерт", function(){
+    it( "Тип агитации-гумманитарная помощь", function(){
 
 
         var city = {
@@ -284,6 +284,7 @@ describe ("Проигрывать звук()",function(){
     });
 
 });
+
 
 
 

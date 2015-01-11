@@ -1,6 +1,16 @@
 /**
  * Created by Marry on 07.01.2015.
  */
+    //код,отвечающий за движение облаков
+$(document).ready(function () {
+    $('#far-clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 30});
+    window.actions = {
+        walkingClouds: function () {
+            $('#far-clouds').spSpeed(2);
+            return $('#far-clouds').backgroundPosition();
+        }
+    };
+});
 
 
 function first_city_id(){
