@@ -187,3 +187,4 @@ function setCityPlayer() { //присвоить игроку город
 
 
 
+

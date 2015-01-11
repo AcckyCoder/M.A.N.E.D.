@@ -1,5 +1,5 @@
 /**
- * Created by Merry on 10.01.2015.
+ * Created by Marry on 10.01.2015.
  */
 
 describe("Присвоить начальный город", function() {
@@ -284,8 +284,6 @@ describe ("Проигрывать звук()",function(){
     });
 
 });
-
-
 
 
 
