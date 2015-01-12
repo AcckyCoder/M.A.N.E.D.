@@ -62,20 +62,24 @@ describe("Русское название ячейки: ", function() {
 describe("Обновление ресурсов", function() {
     var res = {
         "resourceCount": 70000,
-        "recovery": 55,
-        "mining": 80
+        "recovery": 55
     }
 
-    beforeEach(function(){
-        res.resourceCount = 70000;
-    });
-
-   it("в ячейке ресурса", function(){
+   it("без производства", function(){
        updateResourceGameStep(res);
        expect(res.resourceCount).toBe(70055);
    });
 
-    it("в ячейке производства", function(){
+});
+
+describe("Обновление ячейки", function() {
+    var res = {
+        "resourceCount": 70000,
+        "recovery": 55,
+        "mining": 80
+    }
+
+    it("производства", function(){
         updateProductionGameStep(res);
         expect(res.resourceCount).toBe(69975);
     });
@@ -196,34 +200,6 @@ describe("Изменение параметров безработицы", funct
 
 });
 
-
-describe("Изменение параметров безработицы", function(){
-    var city = {
-        "unemployment": 50
-    };
-
-    beforeEach(function(){
-        city.unemployment = 50;
-    });
-
-    it("Добавить 20 безработицы", function(){
-        addUnemployment(city, 20);
-        expect(city.unemployment).toBe(70);
-    });
-    it("Убавить 20 безработицы", function(){
-        addUnemployment(city, -20);
-        expect(city.unemployment).toBe(30);
-    });
-    it("Добавить 60 безработицы (граничное условие)", function(){
-        addUnemployment(city, 60);
-        expect(city.unemployment).toBe(100);
-    });
-    it("Убавить 60 безработицы (граничное условие)", function(){
-        addUnemployment(city, -60);
-        expect(city.unemployment).toBe(0);
-    });
-
-});
 
 
 describe("Является ли ячейка производством", function(){

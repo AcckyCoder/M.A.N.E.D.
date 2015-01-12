@@ -1,4 +1,43 @@
 var map = [
+    {
+        "cityName": "Ивано-Франковск",
+        "level": 1,
+        "health": 50,
+        "taxes": 12,
+        "crime": 50,
+        "unemployment": 50,
+        "happy": 50,
+        "popularity": 2000,
+        "salary": 100,
+        "owner": "undefined",
+        "treeNeeds": 100,
+        "wheatNeeds": 100,
+        "coalNeeds": 100,
+        "gasNeeds": 100,
+        "rockNeeds": 100,
+        "type": "city",
+        "texture": "City.png"
+    },
+
+    {
+        "cityName": "Ужгород",
+        "level": 1,
+        "health": 50,
+        "taxes": 12,
+        "crime": 50,
+        "unemployment": 50,
+        "happy": 50,
+        "popularity": 2000,
+        "salary": 100,
+        "owner": "undefined",
+        "treeNeeds": 100,
+        "wheatNeeds": 100,
+        "coalNeeds": 100,
+        "gasNeeds": 100,
+        "rockNeeds": 100,
+        "type": "city",
+        "texture": "City.png"
+    },
 {
 	"resourceCount": 86494,
 	"recovery": 48,
@@ -1579,25 +1618,7 @@ var map = [
 	"type": "gas",
 	"texture": "gas.jpg"
 },
-{
-	"cityName": "Ивано-Франковск",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
+
 {
 	"resourceCount": 97068,
 	"recovery": 68,
@@ -3624,25 +3645,7 @@ var map = [
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
-{
-	"cityName": "Ужгород",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
+
 {
 	"resourceCount": 44511,
 	"recovery": 31,

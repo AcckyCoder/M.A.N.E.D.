@@ -86,7 +86,7 @@ function drawCityInfoPanel(cityid){
 var levelUpPrice  = [1000,20000,300000,4000000,50000000,6000000000];
 
 function updateCity(){
-    var id = getSelectedCityId();
+    var id = getSelectedCity();
     var city = map[id];
     if(levelUp(city))
     {
@@ -532,10 +532,16 @@ function nextGameStep() {
     economiCrizes();
     banding();
     gumKonvoy();
-    updateCityInfoPanel(getSelectedCityId());
+    updateCityInfoPanel(getSelectedCity());
+}
+
+function getSelectedCity() {
+    var cityId = document.getElementById('popupMenu').getAttribute('alt');
+    return map[cityId];
 }
 
 function getSelectedCityId() {
+
     return document.getElementById('popupMenu').getAttribute('alt');
 }
 
