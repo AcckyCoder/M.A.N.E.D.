@@ -86,7 +86,7 @@ function drawCityInfoPanel(cityid){
 var levelUpPrice  = [1000,20000,300000,4000000,50000000,6000000000];
 
 function updateCity(){
-    var id = getSelectedCity();
+    var id = getSelectedCityId();
     var city = map[id];
     if(levelUp(city))
     {
@@ -532,7 +532,7 @@ function nextGameStep() {
     economiCrizes();
     banding();
     gumKonvoy();
-    updateCityInfoPanel(getSelectedCity());
+    updateCityInfoPanel(getSelectedCityId());
 }
 
 function getSelectedCity() {
