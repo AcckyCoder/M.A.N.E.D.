@@ -19,12 +19,13 @@ function randomNotUserCities(){
     var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
-        if(map[i].owner!=player.name){
+        if(map[i].owner=='undefined'){
             cities[k] = i;
             k++;
         }
     }
     var retCity = Math.floor(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
     return cities[retCity];
 }
 function randomUserCities(){
@@ -38,6 +39,7 @@ function randomUserCities(){
         }
     }
     var retCity = Math.floor(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
     return cities[retCity];
 }
 
@@ -105,6 +107,14 @@ function gumKonvoy(){
         }
     //alert("Пришол гуманитарный конвой");
     showEventPopup("Пришел гуманитарный конвой", eventType.positive);
+    }
+}
+function allCitiesAreUser()
+{
+    for(var i=0; i<map.length;i++)
+    {
+        if(map[i].type==resourceType.city.value)
+        map[i].owner=player.name;
     }
 }
 
