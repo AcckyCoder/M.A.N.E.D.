@@ -149,6 +149,19 @@
     border-radius: 35px;
     background: rgb(255, 216, 61) no-repeat center;
     background-size: contain;
+    font-size: 1.8vw;
+    padding-top: 5%;
+}
+
+#ownerText {
+    position: absolute;
+    left: 5%;
+}
+
+#salaryProfitText {
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }
 
 #closeLogPanelButton {
