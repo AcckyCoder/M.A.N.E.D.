@@ -121,7 +121,7 @@ function createHexGrid() {
             hexY,
             screenX,
             screenY;
-
+        Play('click');
         x = e.offsetX || e.layerX;
         y = e.offsetY || e.layerY;
         hexY = Math.floor(y / (hexHeight + sideLength));
