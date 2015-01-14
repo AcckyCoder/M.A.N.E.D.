@@ -1,182 +1,7 @@
 var map = [
-    {
-        "cityName": "Ивано-Франковск",
-        "level": 1,
-        "health": 50,
-        "taxes": 12,
-        "crime": 50,
-        "unemployment": 50,
-        "happy": 50,
-        "popularity": 2000,
-        "salary": 100,
-        "owner": "undefined",
-        "treeNeeds": 100,
-        "wheatNeeds": 100,
-        "coalNeeds": 100,
-        "gasNeeds": 100,
-        "rockNeeds": 100,
-        "type": "city",
-        "texture": "City.png"
-    },
-
-    {
-        "cityName": "Ужгород",
-        "level": 1,
-        "health": 50,
-        "taxes": 12,
-        "crime": 50,
-        "unemployment": 50,
-        "happy": 50,
-        "popularity": 2000,
-        "salary": 100,
-        "owner": "undefined",
-        "treeNeeds": 100,
-        "wheatNeeds": 100,
-        "coalNeeds": 100,
-        "gasNeeds": 100,
-        "rockNeeds": 100,
-        "type": "city",
-        "texture": "City.png"
-    },
 {
-	"resourceCount": 86494,
-	"recovery": 48,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 60772,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 79330,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 68968,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 91253,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 68804,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 37036,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 85565,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 91935,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 38545,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 89695,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 88603,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 68858,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 74632,
+	"resourceCount": 82566,
 	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 44343,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 42906,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 85179,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 91799,
-	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
@@ -191,7 +16,231 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 25563,
+	"resourceCount": 34603,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 65038,
+	"recovery": 65,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 79231,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 26155,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 95762,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 84121,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 36768,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 73737,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 35113,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 90184,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 94281,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 26155,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 41347,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 57741,
+	"recovery": 44,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 30774,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 83394,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 76638,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 81682,
+	"recovery": 46,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 75597,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 82082,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 29872,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 33790,
+	"recovery": 67,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 33397,
+	"recovery": 49,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 74488,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 33734,
 	"recovery": 64,
 	"resourceType": 0,
 	"mining": 0,
@@ -199,64 +248,139 @@ var map = [
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 95949,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 55479,
-	"recovery": 57,
+	"resourceCount": 26819,
+	"recovery": 34,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 26588,
-	"recovery": 38,
+	"resourceCount": 50755,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 71397,
+	"recovery": 62,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 86670,
-	"recovery": 42,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 53678,
+	"resourceCount": 35455,
+	"recovery": 69,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 57614,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 65941,
 	"recovery": 51,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
+	"type": "tree",
+	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 72279,
-	"recovery": 33,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 27958,
+	"recovery": 55,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 67620,
-	"recovery": 59,
+	"cityName": "Хмельницкий",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 45347,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 71142,
+	"recovery": 33,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 36172,
-	"recovery": 63,
+	"resourceCount": 69689,
+	"recovery": 40,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
@@ -282,445 +406,23 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 92013,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 41312,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 96480,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 58162,
-	"recovery": 62,
+	"resourceCount": 29732,
+	"recovery": 37,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 92978,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 48444,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 72788,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 53470,
-	"recovery": 52,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 64051,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 58519,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 75701,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 36241,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 86013,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"cityName": "Львов",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 55700,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 82630,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 38908,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 82020,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 51829,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 76881,
+	"resourceCount": 38966,
 	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 45078,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 61867,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 80411,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 75102,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 65771,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 32760,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 42900,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 78085,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 65482,
-	"recovery": 52,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 64661,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 49430,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 32298,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 37052,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 50836,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 59005,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 79948,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 92067,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 71452,
-	"recovery": 54,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 44298,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"cityName": "Винница",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 32407,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 62422,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 57680,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 77312,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 31195,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 87356,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 73078,
+	"resourceCount": 56612,
 	"recovery": 36,
 	"resourceType": 0,
 	"mining": 0,
@@ -728,494 +430,7 @@ var map = [
 	"texture": "wheat.jpg"
 },
 {
-	"cityName": "Тернополь",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 32364,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 75429,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 48212,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 49198,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 54521,
-	"recovery": 33,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 92337,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 46568,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 94701,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 70617,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 80340,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 79439,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 43201,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Луцк",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 26963,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 93355,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 88197,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Хмельницкий",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 67276,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 64788,
-	"recovery": 40,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 76049,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 97049,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 36423,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 32328,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 49641,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 89380,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 71127,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 88005,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 83643,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 27900,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 57943,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 58394,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 95823,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 30567,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Луганск",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 33828,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 28617,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 75425,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 61614,
-	"recovery": 52,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 28234,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 58855,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 95642,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 36713,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 49830,
-	"recovery": 44,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 66841,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"cityName": "Днепропетровск",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 72767,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 44399,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 84921,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 71628,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 83784,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 40330,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 98096,
+	"resourceCount": 41122,
 	"recovery": 33,
 	"resourceType": 0,
 	"mining": 0,
@@ -1229,156 +444,6 @@ var map = [
 	"mining": 0,
 	"type": "grass",
 	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 60183,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 52183,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 62158,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 32252,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 37934,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 26142,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 93733,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"cityName": "Киев",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 88643,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 76633,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 44870,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 46490,
-	"recovery": 56,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Ровно",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 39970,
-	"recovery": 33,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 76456,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
 },
 {
 	"cityName": "Житомир",
@@ -1400,756 +465,32 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 87521,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Сумы",
-	"level": 1,
-	"health": 50,
-	"taxes": 12,
-	"crime": 50,
-	"unemployment": 50,
-	"happy": 50,
-	"popularity": 2000,
-	"salary": 100,
-	"owner": "undefined",
-	"treeNeeds": 100,
-	"wheatNeeds": 100,
-	"coalNeeds": 100,
-	"gasNeeds": 100,
-	"rockNeeds": 100,
-	"type": "city",
-	"texture": "City.png"
-},
-{
-	"resourceCount": 98349,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 85353,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 85441,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 86070,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 48799,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 39855,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 68975,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 95888,
-	"recovery": 52,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 69015,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 35293,
-	"recovery": 48,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 98654,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 57347,
+	"resourceCount": 44636,
 	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 96804,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 88491,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 80927,
-	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 81402,
-	"recovery": 33,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "coal",
 	"texture": "coal.jpg"
 },
 {
-	"resourceCount": 75901,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 35886,
+	"resourceCount": 74493,
 	"recovery": 55,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 83738,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-
-{
-	"resourceCount": 97068,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 34541,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 42647,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "coal",
 	"texture": "coal.jpg"
 },
 {
-	"resourceCount": 25956,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 83583,
-	"recovery": 56,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 47230,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 45975,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 33761,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 53001,
-	"recovery": 33,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 82231,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 51385,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 63691,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 83828,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 68535,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 87147,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 68124,
-	"recovery": 48,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 73065,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 27852,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 65673,
-	"recovery": 56,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 49164,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 26896,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 32908,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 72903,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 49384,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 97128,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 76814,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 43875,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 60057,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 98014,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 64220,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 31878,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 63215,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 70113,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 53466,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 89249,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 97816,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 90813,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 52225,
-	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 72174,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 54234,
-	"recovery": 54,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 43572,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 44110,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 96926,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 97713,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 90609,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 71154,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 39892,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 29355,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 29649,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 95511,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 66957,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 67144,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 26496,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 82896,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 60501,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 81789,
+	"resourceCount": 53672,
 	"recovery": 35,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 36178,
-	"recovery": 33,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 81315,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 44509,
-	"recovery": 55,
+	"resourceCount": 74184,
+	"recovery": 53,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
@@ -2164,167 +505,15 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 95556,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 51874,
-	"recovery": 57,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 71183,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 38605,
-	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 76893,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 82304,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 88392,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 49289,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 98543,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 94480,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 59803,
-	"recovery": 39,
+	"resourceCount": 88236,
+	"recovery": 45,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 58920,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 42873,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 41816,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 38967,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 93206,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 34832,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 98066,
+	"resourceCount": 41724,
 	"recovery": 47,
 	"resourceType": 0,
 	"mining": 0,
@@ -2332,20 +521,12 @@ var map = [
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 63767,
-	"recovery": 54,
+	"resourceCount": 80366,
+	"recovery": 55,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 44556,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
 	"resourceCount": 0,
@@ -2354,158 +535,6 @@ var map = [
 	"mining": 0,
 	"type": "grass",
 	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 55283,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 71667,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 37925,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 80157,
-	"recovery": 40,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 46020,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 40158,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 98101,
-	"recovery": 58,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 95913,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 52415,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 82831,
-	"recovery": 64,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 37781,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 99919,
-	"recovery": 40,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 48097,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 91108,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 51309,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 35726,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 46095,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 55881,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 49550,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
 },
 {
 	"cityName": "Николаев",
@@ -2527,6 +556,14 @@ var map = [
 	"texture": "City.png"
 },
 {
+	"resourceCount": 70391,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
 	"resourceCount": 0,
 	"recovery": 0,
 	"resourceType": 0,
@@ -2535,47 +572,418 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 75362,
-	"recovery": 55,
+	"resourceCount": 97768,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 92903,
+	"recovery": 33,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 31517,
-	"recovery": 65,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 61097,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 56495,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 89946,
-	"recovery": 68,
+	"resourceCount": 92470,
+	"recovery": 63,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 89480,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 75539,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 78368,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 81413,
+	"recovery": 67,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 69137,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 71174,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 29016,
+	"recovery": 65,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 81462,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 67058,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 74396,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 83420,
+	"recovery": 41,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 84236,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 92232,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 33878,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 38743,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 49015,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 33001,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 57450,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 97242,
+	"recovery": 53,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 92445,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 89508,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 63102,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 38825,
+	"recovery": 32,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 86668,
+	"recovery": 37,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 90281,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"cityName": "Кировоград",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 71834,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 54185,
+	"recovery": 53,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 34525,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 56780,
+	"recovery": 53,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 30039,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 64276,
+	"recovery": 69,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 26855,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 75630,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 50662,
 	"recovery": 43,
 	"resourceType": 0,
 	"mining": 0,
@@ -2583,52 +991,108 @@ var map = [
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 79274,
-	"recovery": 68,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 60625,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 96979,
+	"recovery": 46,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 88384,
+	"recovery": 38,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 59842,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 94892,
-	"recovery": 40,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 66190,
-	"recovery": 45,
+	"resourceCount": 64887,
+	"recovery": 35,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 65601,
-	"recovery": 48,
+	"resourceCount": 55655,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 29790,
+	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 32514,
-	"recovery": 63,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 59843,
+	"recovery": 33,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 38955,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 29296,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 60715,
+	"recovery": 44,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
 },
 {
 	"cityName": "Херсон",
@@ -2650,372 +1114,44 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 36758,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 74680,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 67595,
-	"recovery": 52,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 47024,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 33402,
+	"resourceCount": 47085,
 	"recovery": 57,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
+	"type": "tree",
+	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 59876,
-	"recovery": 45,
+	"resourceCount": 38248,
+	"recovery": 31,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 74379,
-	"recovery": 54,
+	"resourceCount": 33399,
+	"recovery": 37,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "rock",
+	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 93795,
+	"resourceCount": 59721,
 	"recovery": 64,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 78392,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 69629,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 97125,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 66388,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 84018,
-	"recovery": 67,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 25603,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 73109,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 92968,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 75893,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 60855,
-	"recovery": 36,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 69659,
+	"resourceCount": 40676,
 	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 36481,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 86011,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 60865,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 76126,
-	"recovery": 31,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 67257,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 94873,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 88528,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 50436,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 99895,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 59606,
-	"recovery": 46,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 62020,
-	"recovery": 50,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 35614,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 39592,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 88292,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 70895,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 86185,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 25341,
-	"recovery": 39,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 70716,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 43001,
-	"recovery": 37,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 94427,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 32678,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 68695,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 37701,
-	"recovery": 41,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 36963,
-	"recovery": 30,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 54588,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 80829,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
 },
 {
 	"resourceCount": 0,
@@ -3024,6 +1160,38 @@ var map = [
 	"mining": 0,
 	"type": "grass",
 	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 42032,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 75717,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
 	"cityName": "Донецк",
@@ -3045,44 +1213,44 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 51944,
-	"recovery": 63,
+	"resourceCount": 41628,
+	"recovery": 43,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 91528,
-	"recovery": 47,
+	"resourceCount": 33245,
+	"recovery": 56,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "gas",
 	"texture": "gas.jpg"
 },
 {
-	"resourceCount": 75701,
-	"recovery": 59,
+	"resourceCount": 64760,
+	"recovery": 35,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 76125,
-	"recovery": 34,
+	"resourceCount": 89798,
+	"recovery": 41,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 40688,
-	"recovery": 54,
+	"resourceCount": 54022,
+	"recovery": 53,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
+	"type": "tree",
+	"texture": "trees.jpg"
 },
 {
 	"resourceCount": 0,
@@ -3093,24 +1261,123 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 92902,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 98625,
-	"recovery": 54,
+	"resourceCount": 68365,
+	"recovery": 68,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 80222,
-	"recovery": 46,
+	"resourceCount": 26556,
+	"recovery": 44,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 72933,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 81669,
+	"recovery": 36,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 64255,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"cityName": "Тернополь",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 94573,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 94814,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 72202,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 97734,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 31081,
+	"recovery": 31,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
@@ -3136,87 +1403,31 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 70110,
-	"recovery": 54,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 51036,
-	"recovery": 61,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 31742,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 80890,
-	"recovery": 34,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 39698,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 49959,
-	"recovery": 63,
+	"resourceCount": 29101,
+	"recovery": 67,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 55389,
-	"recovery": 59,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 80406,
-	"recovery": 30,
+	"resourceCount": 28526,
+	"recovery": 38,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
+	"type": "tree",
+	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 57906,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 73577,
-	"recovery": 33,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"cityName": "Черкассы",
+	"cityName": "Винница",
 	"level": 1,
 	"health": 50,
 	"taxes": 12,
@@ -3235,167 +1446,7 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 60119,
-	"recovery": 44,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 65040,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 41174,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 61461,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 66510,
-	"recovery": 66,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 64565,
-	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 90970,
-	"recovery": 69,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 41512,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 70921,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 31353,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "rock",
-	"texture": "rocks.jpg"
-},
-{
-	"resourceCount": 25709,
-	"recovery": 60,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 93350,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 48357,
-	"recovery": 47,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 88082,
-	"recovery": 44,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 52259,
-	"recovery": 62,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 56334,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 59986,
-	"recovery": 54,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 82016,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 43901,
-	"recovery": 68,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 75281,
-	"recovery": 59,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 96848,
+	"resourceCount": 63649,
 	"recovery": 34,
 	"resourceType": 0,
 	"mining": 0,
@@ -3403,60 +1454,244 @@ var map = [
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 80837,
-	"recovery": 43,
+	"resourceCount": 44134,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 62004,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 92675,
+	"recovery": 41,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 38531,
-	"recovery": 45,
+	"resourceCount": 26712,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 92217,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 60894,
+	"recovery": 37,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 57071,
+	"recovery": 42,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 97090,
-	"recovery": 61,
+	"resourceCount": 46181,
+	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 37737,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 64210,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 80609,
+	"recovery": 49,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 37964,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 25904,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 48207,
+	"recovery": 32,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 52198,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 52661,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 49676,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 35346,
+	"recovery": 42,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 93559,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 87936,
 	"recovery": 59,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 43479,
-	"recovery": 65,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 63566,
-	"recovery": 36,
+	"resourceCount": 56659,
+	"recovery": 43,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 0,
-	"recovery": 0,
+	"resourceCount": 54461,
+	"recovery": 64,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 73289,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 31127,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 77310,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 66074,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 51813,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
 },
 {
 	"resourceCount": 0,
@@ -3467,7 +1702,39 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 62145,
+	"resourceCount": 59768,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 90829,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 64698,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 67302,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 70552,
 	"recovery": 48,
 	"resourceType": 0,
 	"mining": 0,
@@ -3483,15 +1750,538 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 71754,
-	"recovery": 37,
+	"resourceCount": 30767,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 45828,
+	"recovery": 67,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 44260,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 99822,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 81989,
+	"recovery": 30,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 80566,
+	"resourceCount": 91897,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 81249,
+	"recovery": 46,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 94390,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 35038,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 31719,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 71234,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 83623,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 57209,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 95977,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 76913,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 59099,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 74505,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 53794,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 92679,
+	"recovery": 53,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 80226,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 71320,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 27515,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 25162,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 33304,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 85830,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 74682,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 66332,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 39866,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 46095,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 27215,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 96304,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 69683,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 51019,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 31178,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 56111,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 53416,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 62861,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 74356,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 91784,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 27397,
+	"recovery": 49,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"cityName": "Ивано-Франковск",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 80515,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 67703,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 67963,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 50910,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 97214,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 28498,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 65430,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 54097,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 38523,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 42840,
+	"recovery": 36,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 81175,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 58749,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 82512,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 92967,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 54077,
 	"recovery": 47,
 	"resourceType": 0,
 	"mining": 0,
@@ -3507,15 +2297,74 @@ var map = [
 	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 57138,
+	"cityName": "Днепропетровск",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 26137,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 80466,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 82545,
+	"recovery": 36,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 41468,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 76506,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 45228,
 	"recovery": 45,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 38091,
+	"resourceCount": 98915,
 	"recovery": 66,
 	"resourceType": 0,
 	"mining": 0,
@@ -3523,36 +2372,290 @@ var map = [
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 26953,
-	"recovery": 30,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 38480,
-	"recovery": 65,
+	"resourceCount": 86784,
+	"recovery": 68,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "rock",
 	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 46387,
-	"recovery": 48,
+	"resourceCount": 83941,
+	"recovery": 41,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 73767,
+	"recovery": 60,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 48861,
-	"recovery": 44,
+	"resourceCount": 89423,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 99272,
+	"recovery": 68,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
+},
+{
+	"cityName": "Сумы",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 61108,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 65198,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 92815,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 46567,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 31804,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 28040,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"cityName": "Львов",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 78955,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 44702,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 95203,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 31367,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 82973,
+	"recovery": 37,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 59794,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 59762,
+	"recovery": 69,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 36938,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 38558,
+	"recovery": 63,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 37666,
+	"recovery": 67,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 65565,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 82261,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 31335,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 36437,
+	"recovery": 37,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 80679,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 43386,
+	"recovery": 53,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
 },
 {
 	"cityName": "Запорожье",
@@ -3574,15 +2677,7 @@ var map = [
 	"texture": "City.png"
 },
 {
-	"resourceCount": 36821,
-	"recovery": 35,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 84028,
+	"resourceCount": 36952,
 	"recovery": 59,
 	"resourceType": 0,
 	"mining": 0,
@@ -3590,216 +2685,127 @@ var map = [
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 73561,
-	"recovery": 65,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 59530,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 63400,
-	"recovery": 45,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 56153,
-	"recovery": 51,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 81272,
-	"recovery": 44,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 60863,
-	"recovery": 42,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 38506,
-	"recovery": 53,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-
-{
-	"resourceCount": 44511,
+	"resourceCount": 60032,
 	"recovery": 31,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
-},
-{
-	"resourceCount": 45972,
-	"recovery": 55,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
-},
-{
-	"resourceCount": 88513,
-	"recovery": 63,
-	"resourceType": 0,
-	"mining": 0,
 	"type": "gas",
 	"texture": "gas.jpg"
 },
 {
-	"resourceCount": 55384,
-	"recovery": 40,
+	"resourceCount": 99910,
+	"recovery": 41,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "wheat",
-	"texture": "wheat.jpg"
+	"type": "rock",
+	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 62845,
-	"recovery": 39,
+	"resourceCount": 0,
+	"recovery": 0,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
+	"type": "grass",
+	"texture": "grass.jpg"
 },
 {
-	"resourceCount": 56190,
-	"recovery": 35,
+	"resourceCount": 43878,
+	"recovery": 51,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "coal",
 	"texture": "coal.jpg"
 },
 {
-	"resourceCount": 32853,
-	"recovery": 63,
+	"resourceCount": 65723,
+	"recovery": 68,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "coal",
 	"texture": "coal.jpg"
 },
 {
-	"resourceCount": 47908,
-	"recovery": 43,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 86269,
-	"recovery": 40,
+	"resourceCount": 97908,
+	"recovery": 30,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "gas",
 	"texture": "gas.jpg"
 },
 {
-	"resourceCount": 45616,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 56492,
 	"recovery": 59,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "tree",
-	"texture": "trees.jpg"
+	"type": "rock",
+	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 48219,
-	"recovery": 38,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
-},
-{
-	"resourceCount": 39001,
-	"recovery": 60,
+	"resourceCount": 36244,
+	"recovery": 47,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "tree",
 	"texture": "trees.jpg"
 },
 {
-	"resourceCount": 97972,
-	"recovery": 32,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 0,
-	"recovery": 0,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "grass",
-	"texture": "grass.jpg"
-},
-{
-	"resourceCount": 75281,
-	"recovery": 49,
-	"resourceType": 0,
-	"mining": 0,
-	"type": "gas",
-	"texture": "gas.jpg"
-},
-{
-	"resourceCount": 34186,
-	"recovery": 35,
+	"resourceCount": 72227,
+	"recovery": 57,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 96988,
-	"recovery": 54,
+	"resourceCount": 68695,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 45253,
+	"recovery": 47,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 35509,
-	"recovery": 60,
+	"resourceCount": 96698,
+	"recovery": 55,
 	"resourceType": 0,
 	"mining": 0,
-	"type": "coal",
-	"texture": "coal.jpg"
+	"type": "rock",
+	"texture": "rocks.jpg"
 },
 {
-	"resourceCount": 57172,
+	"resourceCount": 77588,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 51031,
 	"recovery": 50,
 	"resourceType": 0,
 	"mining": 0,
@@ -3807,19 +2813,1010 @@ var map = [
 	"texture": "wheat.jpg"
 },
 {
-	"resourceCount": 29932,
-	"recovery": 46,
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"cityName": "Луцк",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 93184,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 31254,
+	"recovery": 42,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 44549,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 96864,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 29793,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 59546,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 25026,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 78203,
+	"recovery": 54,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "coal",
 	"texture": "coal.jpg"
 },
 {
-	"resourceCount": 25876,
-	"recovery": 55,
+	"resourceCount": 70609,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 65536,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 36438,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 95255,
+	"recovery": 46,
 	"resourceType": 0,
 	"mining": 0,
 	"type": "wheat",
 	"texture": "wheat.jpg"
+},
+{
+	"cityName": "Чернигов",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 77399,
+	"recovery": 32,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 25800,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 85325,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 73754,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 80441,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 54915,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 31330,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 99775,
+	"recovery": 67,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 91869,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"cityName": "Луганск",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 79862,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 36773,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 90202,
+	"recovery": 50,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 40116,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 69713,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 68566,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 74123,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 46951,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 88116,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 55673,
+	"recovery": 64,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 96502,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 62493,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 98356,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 73539,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 91851,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 73614,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 62994,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 98402,
+	"recovery": 58,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 78592,
+	"recovery": 68,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 37073,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 86158,
+	"recovery": 46,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 34534,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 31361,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 67028,
+	"recovery": 57,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 59476,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"cityName": "Черкассы",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 56790,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 47037,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 47860,
+	"recovery": 66,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 96324,
+	"recovery": 56,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 73867,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 72918,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 37555,
+	"recovery": 35,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 32339,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 55396,
+	"recovery": 54,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 36786,
+	"recovery": 61,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 70740,
+	"recovery": 34,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 74310,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 66300,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 68984,
+	"recovery": 40,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 84231,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 27652,
+	"recovery": 38,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 41031,
+	"recovery": 60,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 45776,
+	"recovery": 33,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 34733,
+	"recovery": 43,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 90387,
+	"recovery": 41,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 47614,
+	"recovery": 41,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 67649,
+	"recovery": 47,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 27084,
+	"recovery": 42,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 95681,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"cityName": "Черновцы",
+	"level": 1,
+	"health": 50,
+	"taxes": 12,
+	"crime": 50,
+	"unemployment": 50,
+	"happy": 50,
+	"popularity": 2000,
+	"salary": 100,
+	"owner": "undefined",
+	"treeNeeds": 100,
+	"wheatNeeds": 100,
+	"coalNeeds": 100,
+	"gasNeeds": 100,
+	"rockNeeds": 100,
+	"type": "city",
+	"texture": "City.png"
+},
+{
+	"resourceCount": 79917,
+	"recovery": 55,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 52075,
+	"recovery": 65,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "rock",
+	"texture": "rocks.jpg"
+},
+{
+	"resourceCount": 77173,
+	"recovery": 31,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 94740,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 90421,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 83536,
+	"recovery": 39,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 35244,
+	"recovery": 69,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 52381,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 40552,
+	"recovery": 62,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 94418,
+	"recovery": 30,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "coal",
+	"texture": "coal.jpg"
+},
+{
+	"resourceCount": 0,
+	"recovery": 0,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "grass",
+	"texture": "grass.jpg"
+},
+{
+	"resourceCount": 33290,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 65656,
+	"recovery": 51,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "wheat",
+	"texture": "wheat.jpg"
+},
+{
+	"resourceCount": 96875,
+	"recovery": 52,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 68943,
+	"recovery": 48,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "gas",
+	"texture": "gas.jpg"
+},
+{
+	"resourceCount": 31844,
+	"recovery": 45,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 66470,
+	"recovery": 32,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
+},
+{
+	"resourceCount": 61193,
+	"recovery": 59,
+	"resourceType": 0,
+	"mining": 0,
+	"type": "tree",
+	"texture": "trees.jpg"
 }
 ]
