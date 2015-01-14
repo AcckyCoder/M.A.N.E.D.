@@ -580,7 +580,7 @@ function updateResourceToProduction(resource) {
         if(resource.type != resourceType.grass.value) {
             resource.texture = resource.type.toString() + ".jpg";
             resource.owner = player.name;
-            resource.mining = Math.round(Math.random() * 100);
+            resource.mining = Randomfactors(100, 1000);
             player.money -= 10000;
         }
         return true;
