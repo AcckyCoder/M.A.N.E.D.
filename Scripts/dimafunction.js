@@ -10,34 +10,7 @@ function crashInSawmill(){// авария на лесопилке
         player.money -= Math.round(Math.random()*money);
         player.tree-=Math.round(Math.random()*trees);
         addHappy(city,-happy);
-        KillSomePeople();
         showEventPopup("Произошла авария на лесопилке", eventType.negative);
     }
     showResInPanel();
-}
-
-
-function getAllUserCities()
-{
-    var cities = [];
-    var k = 0;
-    for (var i = 0; i < map.length; i++)
-    {
-        if(map[i].owner == player.name)
-        {
-            cities[k] = map[i];
-        }
-    }
-
-    return cities;
-}
-
-function KillSomePeople()
-{
-    var cities = getAllUserCities();
-
-    for(var i=0; i< cities.length; i++)
-    {
-        cities[i].popularity -= Randomfactors(0,10);
-    }
 }
