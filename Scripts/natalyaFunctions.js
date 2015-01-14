@@ -535,6 +535,7 @@ function nextGameStep() {
     economiCrizes(30);
     banding(20);
     gumKonvoy(25);
+    crashInSawmill(20);
     updateCityInfoPanel(getSelectedCityId());
 }
 
