@@ -148,6 +148,7 @@ function updateCityInfoPanel(cityid) {
 
         document.getElementById('salaryAddButton').style.display = 'block';
         document.getElementById('taxesAddButton').style.display = 'block';
+        document.getElementById('policeAddButton').style.display = 'block';
         document.getElementById('captureTheCityButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'block';
         document.getElementById('cityOwner').innerHTML = player.name;
@@ -169,6 +170,7 @@ function updateCityInfoPanel(cityid) {
         document.getElementById('taxesAddButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'none';
         document.getElementById('salaryProfitText').style.display = 'none';
+        document.getElementById('policeAddButton').style.display = 'none';
     }
 
 
@@ -529,9 +531,10 @@ function nextGameStep() {
 
     player.step++;
     showResInPanel();
-    economiCrizes();
-    banding();
-    gumKonvoy();
+    envyToOtherCity(5);
+    economiCrizes(30);
+    banding(20);
+    gumKonvoy(25);
     updateCityInfoPanel(getSelectedCityId());
 }
 
