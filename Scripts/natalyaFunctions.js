@@ -530,12 +530,14 @@ function nextGameStep() {
     }
 
     player.step++;
-    showResInPanel();
+
     envyToOtherCity(5);
     economiCrizes(30);
     banding(20);
     gumKonvoy(25);
     crashInSawmill(20);
+
+    showResInPanel();
     updateCityInfoPanel(getSelectedCityId());
 }
 
