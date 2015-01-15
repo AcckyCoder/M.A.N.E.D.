@@ -147,3 +147,10 @@ function fundingSchool(){// финансирование школ, больни�
     nextGameStep();
     updateCityInfoPanel(id);
 }
+
+function improveInfrastr(){// улучшение инфраструктуры....
+    var id = getSelectedCityId();
+    var rest = player.money-100;
+    //var crime = Math.round(map[id].crime*Math.random());
+
+}
