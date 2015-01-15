@@ -106,3 +106,28 @@ function tornado(){// торнадо
     }
     showResInPanel();
 }
+
+function flood(){// наводнение
+    var id= randomUserCities();
+    var pos=Math.round(Math.random()*100);
+    var money = player.money;
+    var coal = player.coal;
+    var trees = player.tree;
+    var wheat = player.wheat;
+    var gas = player.gas;
+    var rock = player.rock;
+    var city = map[id];
+    var happy = Randomfactors(10,20);
+    if(pos%50==0)
+    {
+        player.money -= Math.round(Math.random()*money);
+        player.coal -= Math.round(Math.random()*coal);
+        player.tree-=Math.round(Math.random()*trees);
+        player.wheat-=Math.round(Math.random()*wheat);
+        player.gas-=Math.round(Math.random()*gas);
+        player.rock-=Math.round(Math.random()*rock);
+        addHappy(city,-happy);
+        showEventPopup("На город "+map[id].cityName+" обрушилось наводнение", eventType.negative);
+    }
+    showResInPanel();
+}

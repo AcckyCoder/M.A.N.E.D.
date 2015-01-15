@@ -538,6 +538,7 @@ function nextGameStep() {
     crashInSawmill(50);
     crashInMine(50);
     tornado();
+    flood();
     updateCityInfoPanel(getSelectedCityId());
 }
 
