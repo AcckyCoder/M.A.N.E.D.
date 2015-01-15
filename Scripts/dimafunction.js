@@ -136,5 +136,14 @@ function fundingSchool(){// финансирование школ, больни�
     var id = getSelectedCityId();
     var rest = player.money-100;
     //var crime = Math.round(map[id].crime*Math.random());
-
+    var unemployment = Randomfactors(1,2);
+    player.wheat-=100;
+    player.coal-=100;
+    player.tree-=100;
+    player.gas-=100;
+    addUnemployment(map[id],-unemployment);
+    addHappy(map[id],1);
+    showResInPanel();
+    nextGameStep();
+    updateCityInfoPanel(id);
 }
