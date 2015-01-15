@@ -152,5 +152,12 @@ function improveInfrastr(){// улучшение инфраструктуры...
     var id = getSelectedCityId();
     var rest = player.money-100;
     //var crime = Math.round(map[id].crime*Math.random());
-
+    var unemployment = Randomfactors(1,2);
+    player.wheat-=100;
+    player.coal-=100;
+    player.gas-=100;
+    addHappy(map[id],3);
+    showResInPanel();
+    nextGameStep();
+    updateCityInfoPanel(id);
 }
