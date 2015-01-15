@@ -131,3 +131,10 @@ function flood(){// наводнение
     }
     showResInPanel();
 }
+
+function fundingSchool(){// финансирование школ, больниц.....
+    var id = getSelectedCityId();
+    var rest = player.money-100;
+    //var crime = Math.round(map[id].crime*Math.random());
+
+}
