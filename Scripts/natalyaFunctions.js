@@ -537,6 +537,7 @@ function nextGameStep() {
     gumKonvoy(25);
     crashInSawmill(50);
     crashInMine(50);
+    tornado();
     updateCityInfoPanel(getSelectedCityId());
 }
 
