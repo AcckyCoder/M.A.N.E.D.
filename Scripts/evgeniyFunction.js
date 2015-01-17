@@ -78,12 +78,12 @@ function economiCrizes(possible){///экономический кризис, з�
         //alert("THERA AA CRIZESSS");
         showEventPopup("КРИЗИС", eventType.negative);
     }
-    showResInPanel();
+   //showResInPanel();
     //else alert("Кризисс минул вас стороной");
 }
-function banding(possible){// нападение банды на случайный город пренадлежаший игроку,увеличивает преступность,
+function banding(possible,city){// нападение банды на случайный город пренадлежаший игроку,увеличивает преступность,
                             // уменьшает население и уровень здоровья
-    var id =randomUserCities();
+    var id = city;//randomUserCities();
     var crime =map[id].crime;
     var c;
     if(crime<50){
@@ -102,8 +102,8 @@ function banding(possible){// нападение банды на случайн�
         showEventPopup("На город "+map[id].cityName+ " напала банда из города "+map[randomNotUserCities()].cityName, eventType.neutral);
     }
 }
-function gumKonvoy(possible){//гуманитарынй конвой, бывает двух типов.
-    var id =randomUserCities();
+function gumKonvoy(possible,city){//гуманитарынй конвой, бывает двух типов.
+    var id =city;
     var type =Math.random();
     var pos=Math.round(Math.random()*100);
     var crime = Math.round(Math.random()*20);
@@ -133,9 +133,10 @@ function allCitiesAreUser()// присваеваем все города игр�
         if(map[i].type==resourceType.city.value)
         map[i].owner=player.name;
     }
+    return true;
 }
-function police(money){//проверка города полицией, забирает деньги, уменшает преступность в городе, увеличивает счастья
-    var id = getSelectedCityId();
+function police(money,index_city){//проверка города полицией, забирает деньги, уменшает преступность в городе, увеличивает счастья
+    var id = index_city;
     var rest = player.money-money;
     var crime = Math.round(map[id].crime*Math.random());
     addCrime(map[id],-crime);
@@ -143,15 +144,15 @@ function police(money){//проверка города полицией, заб�
     nextGameStep();
     updateCityInfoPanel(id);
 }
-function envyToOtherCity(step){//зависть к другим городам которые под контролем юзера
+function envyToOtherCity(step,index1,index2){//зависть к другим городам которые под контролем юзера
     var citiesCount=userCitiesCount();
     console.log(citiesCount);
     var cities=[];
     var k=0;
     if(citiesCount>1){
         do{
-            var city1=randomUserCities();
-            var city2 = randomUserCities();
+            var city1=index1;
+            var city2 = index2;
         }while(map[city1].cityName==map[city2].cityName);
        console.log(map[city1].cityName);
        console.log(map[city2].cityName);

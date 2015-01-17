@@ -531,10 +531,10 @@ function nextGameStep() {
 
     player.step++;
     showResInPanel();
-    envyToOtherCity(5);
+    envyToOtherCity(5,randomUserCities(),randomUserCities());
     economiCrizes(30);
-    banding(20);
-    gumKonvoy(25);
+    banding(20,randomUserCities());
+    gumKonvoy(25,randomUserCities());
     crashInSawmill(50);
     crashInMine(50);
     tornado();
