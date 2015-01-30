@@ -36,6 +36,7 @@
     <script src="Scripts/gameOverReason.js" type="text/javascript"></script>
     <script src="Scripts/eventType.js" type="text/javascript"></script>
     <script src="Scripts/agitationType.js" type="text/javascript"></script>
+    <script src="Scripts/dimafunction.js" type="text/javascript"></script>
     <!--<script src="Scripts/JQ/jquery.scrollview.js"></script>-->
 
     <!--APACHE CORDOVA (PHONEGAP CAPABILITY)-->
@@ -240,14 +241,17 @@
 
             </div>
             <div class="cityMenu" id="rightMenu">
-                <span class="simpleText" id="ownerText">Владелец: <span id="cityOwner"></span></span><br>
-                <span class="simpleText" id="salaryProfitText">Выручка: <span id="cityProfit"></span></span><br>
-                <div class="button AgitationButton" id="concertButton" onclick="StartAgitation(agitatonType.concert);">Концерт+1000</div>
-                <div class="button AgitationButton" id="humanitarianReliefButton" onclick="StartAgitation(agitatonType.humanitarianRelief);">Гуманитарная помощь+2000</div>
-                <div class="button AgitationButton" id="charityButton" onclick="StartAgitation(agitatonType.charity);">Благотворительность+2500</div>
+                <span class="simpleText" id="ownerText">Владелец: <span id="cityOwner"></span></span>
+                <span class="simpleText" id="salaryProfitText">Выручка: <span id="cityProfit"></span></span>
+                <div class="button AgitationButton" id="concertButton" onclick="StartAgitation(agitatonType.concert);">Концерт</div>
+                <div class="button AgitationButton" id="humanitarianReliefButton" onclick="StartAgitation(agitatonType.humanitarianRelief);">Гуманитарная помощь</div>
+                <div class="button AgitationButton" id="charityButton" onclick="StartAgitation(agitatonType.charity);">Благотворительность</div>
+                <div class="button AgitationButton" id="fundingSchoolButton" onclick="StartAgitation(agitatonType.fundingSchool);">Финансирование</div>
+                <div class="button AgitationButton" id="improveInfrastrButton" onclick="StartAgitation(agitatonType.improveInfrastr);">Инфраструктура</div>
 
-                <div class="button AgitationButton" id="salaryAddButton" onclick="StartAgitation(agitatonType.addSalary);">Зарплата+500</div>
+                <div class="button AgitationButton" id="salaryAddButton" onclick="StartAgitation(agitatonType.addSalary);">Зарплата</div>
                 <div class="button AgitationButton" id="taxesAddButton" onclick="augmentTax();">Увеличить налог+1</div>
+                <div class="button AgitationButton" id="policeAddButton" onclick="police(500,getSelectedCityId());">Полиция</div>
                 <div class="button AgitationButton" id="captureTheCityButton" onclick="setCityPlayer();">Захватить город</div>
             </div>
             <div class="cityMenu" id="bottomMenu" >

@@ -15,33 +15,51 @@ function showResInPanel(){
     document.getElementById('coin_out').innerHTML=player.money;
 }
 
-function randomNotUserCities(){
+function randomNotUserCities(){//возврашает случайный город не пренадлежаший игроку
     var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
-        if(map[i].owner!=player.name){
+        if(map[i].type==resourceType.city.value){
+        if(map[i].owner=='undefined'){
             cities[k] = i;
             k++;
         }
     }
+    }
     var retCity = Math.floor(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
     return cities[retCity];
 }
-function randomUserCities(){
+function randomUserCities(){//возврашает случайный город  пренадлежаший игроку
     var cities=[];
     var k = 0;
     for(var i=0;i<map.length;i++){
+        if(map[i].type==resourceType.city.value){
         if(map[i].owner==player.name){
             console.log(map[i].owner);
             cities[k] = i;
             k++;
         }
+        }
     }
     var retCity = Math.floor(Math.random() * cities.length);
+    console.log(map[cities[retCity]].cityName);
     return cities[retCity];
 }
+function userCitiesCount(){//возвращает количество городов, которые под контролем юзера
+    var k = 0;
+    for(var i=0;i<map.length;i++){
+        if(map[i].type==resourceType.city.value){
+            if(map[i].owner==player.name){
+                k++;
+            }
+        }
+    }
+    return k;
+}
 
-function economiCrizes(){
+function economiCrizes(possible){///экономический кризис, забирает у игрока рандомное количество ресурсов,
+                                    // но не больше чем у немго есть
     var pos=Math.round(Math.random()*100);
     var money = player.money;
     var coal = player.coal;
@@ -49,7 +67,7 @@ function economiCrizes(){
     var wheat = player.wheat;
     var gas = player.gas;
     var rock = player.rock;
-    if(pos%20==0)
+    if(pos%possible==0)
     {
         player.money -= Math.round(Math.random()*money);
         player.coal -= Math.round(Math.random()*coal);
@@ -60,11 +78,12 @@ function economiCrizes(){
         //alert("THERA AA CRIZESSS");
         showEventPopup("КРИЗИС", eventType.negative);
     }
-    showResInPanel();
+   //showResInPanel();
     //else alert("Кризисс минул вас стороной");
 }
-function banding(){
-    var id =randomUserCities();
+function banding(possible,city){// нападение банды на случайный город пренадлежаший игроку,увеличивает преступность,
+                            // уменьшает население и уровень здоровья
+    var id = city;//randomUserCities();
     var crime =map[id].crime;
     var c;
     if(crime<50){
@@ -74,24 +93,24 @@ function banding(){
     var pos= Math.round(Math.random()*100);
     var pop=Math.round(Math.random()*c*100);
     var heal =Math.round(Math.random()*c);
-    if(pos%30==0)
+    if(pos%possible==0)
     {
         addCrime(map[id],c);
         map[id].popularity-=pop;
         addHealth(map[id],-heal);
         //alert("Напала банда");
-        showEventPopup("Напала банда", eventType.neutral);
+        showEventPopup("На город "+map[id].cityName+ " напала банда из города "+map[randomNotUserCities()].cityName, eventType.neutral);
     }
 }
-function gumKonvoy(){
-    var id =randomUserCities();
+function gumKonvoy(possible,city){//гуманитарынй конвой, бывает двух типов.
+    var id =city;
     var type =Math.random();
     var pos=Math.round(Math.random()*100);
     var crime = Math.round(Math.random()*20);
     var happy = Math.round(Math.random()*20);
     var pop=Math.round(Math.random()*100);
     var heal =Math.round(Math.random()*20);
-    if(pos%30==0){
+    if(pos%possible==0){
         if(type<0.5)
         {
             addCrime(map[id],crime);
@@ -104,7 +123,60 @@ function gumKonvoy(){
             addHappy(map[id],happy);
         }
     //alert("Пришол гуманитарный конвой");
-    showEventPopup("Пришел гуманитарный конвой", eventType.positive);
+    showEventPopup("В город "+map[id].cityName+" пришел гуманитарный конвой из города "+map[randomNotUserCities()].cityName, eventType.positive);
     }
 }
-
+function allCitiesAreUser()// присваеваем все города игроку
+{
+    for(var i=0; i<map.length;i++)
+    {
+        if(map[i].type==resourceType.city.value)
+        map[i].owner=player.name;
+    }
+    return true;
+}
+function police(money,index_city){//проверка города полицией, забирает деньги, уменшает преступность в городе, увеличивает счастья
+    var id = index_city;
+    var rest = player.money-money;
+    var crime = Math.round(map[id].crime*Math.random());
+    addCrime(map[id],-crime);
+    addHappy(map[id],1);
+    nextGameStep();
+    updateCityInfoPanel(id);
+}
+function envyToOtherCity(step,index1,index2){//зависть к другим городам которые под контролем юзера
+    var citiesCount=userCitiesCount();
+    console.log(citiesCount);
+    var cities=[];
+    var k=0;
+    if(citiesCount>1){
+        do{
+            var city1=index1;
+            var city2 = index2;
+        }while(map[city1].cityName==map[city2].cityName);
+       console.log(map[city1].cityName);
+       console.log(map[city2].cityName);
+        if(player.step%step==0){
+            if(map[city1].happy>map[city2].happy || map[city2].happy>map[city1].happy||map[city2].taxes>map[city1].taxes||map[city1].taxes>map[city2].taxes)
+            {
+                var maxHappy;
+                var maxTaxes;
+                if(map[city1].happy>map[city2].happy){
+                    maxHappy=map[city1].happy;
+                    //map[city2].happy-=Math.round(Math.random()*maxHappy);
+                }
+                else {
+                    maxHappy =map[city2].happy;
+                    //map[city1].happy-=Math.round(Math.random()*maxHappy);
+                }
+                if(map[city1].taxes>map[city2].taxes){
+                    map[city1].happy-=Math.round(Math.random()*maxHappy);
+                }
+                else {
+                    map[city2].happy-=Math.round(Math.random()*maxHappy);
+                }
+                showEventPopup("Ваши города "+map[city1].cityName+ " и "+ map[city2].cityName+ " завидуют друг другу", eventType.negative);
+            }
+        }
+    }
+}

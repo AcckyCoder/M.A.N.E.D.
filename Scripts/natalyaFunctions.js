@@ -148,6 +148,7 @@ function updateCityInfoPanel(cityid) {
 
         document.getElementById('salaryAddButton').style.display = 'block';
         document.getElementById('taxesAddButton').style.display = 'block';
+        document.getElementById('policeAddButton').style.display = 'block';
         document.getElementById('captureTheCityButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'block';
         document.getElementById('cityOwner').innerHTML = player.name;
@@ -169,6 +170,7 @@ function updateCityInfoPanel(cityid) {
         document.getElementById('taxesAddButton').style.display = 'none';
         document.getElementById('ownerText').style.display = 'none';
         document.getElementById('salaryProfitText').style.display = 'none';
+        document.getElementById('policeAddButton').style.display = 'none';
     }
 
 
@@ -529,9 +531,14 @@ function nextGameStep() {
 
     player.step++;
     showResInPanel();
-    economiCrizes();
-    banding();
-    gumKonvoy();
+    envyToOtherCity(5,randomUserCities(),randomUserCities());
+    economiCrizes(30);
+    banding(20,randomUserCities());
+    gumKonvoy(25,randomUserCities());
+    crashInSawmill(50);
+    crashInMine(50);
+    tornado();
+    flood();
     updateCityInfoPanel(getSelectedCityId());
 }
 
@@ -574,7 +581,7 @@ function updateResourceToProduction(resource) {
         if(resource.type != resourceType.grass.value) {
             resource.texture = resource.type.toString() + ".jpg";
             resource.owner = player.name;
-            resource.mining = Math.round(Math.random() * 100);
+            resource.mining = Randomfactors(100, 1000);
             player.money -= 10000;
         }
         return true;

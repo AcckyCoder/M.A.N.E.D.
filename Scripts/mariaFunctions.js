@@ -171,7 +171,9 @@ function setCityPlayer() { //присвоить игроку город
     map[id].owner = player.name;
     updateCityInfoPanel(id);
     console.log(isPlayerCell(id));
-
+    if (isNoMoreFreeCities()) {
+        gameOver(gameOverReason.winner);
+    }
 
 }
 
